@@ -11,3 +11,9 @@ document.body.append(social);
 const note=document.createElement('a');note.className='preview-label';note.href='www.html?view=plan';note.textContent='Makieta WWW · plan i zakres testów';document.body.append(note);
 // Prevent carousel swipe from stealing taps on the added navigation.
 social.addEventListener('touchstart',e=>e.stopPropagation(),{passive:true});
+
+// Local preview paths keep the old public SEO addresses unchanged on production.
+const previewMenuRoutes=['www.html?view=reservation&kind=osoba','www.html?view=reservation&kind=pary','www.html?view=reservation&kind=rytualy',null,'www.html?view=voucher','www.html?view=about',null,'www.html?view=contact'];
+document.querySelectorAll('#tiles .tile').forEach((a,i)=>{if(previewMenuRoutes[i])a.href=previewMenuRoutes[i];});
+document.querySelector('.logo').href='mobilna-v14.html';
+document.querySelector('.lk a[data-ui="kontakt"]').href='www.html?view=contact';

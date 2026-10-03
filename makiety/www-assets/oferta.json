@@ -8,18 +8,20 @@
     "prices": [
       {
         "minutes": 60,
-        "price": 210
+        "price": 210.0
       },
       {
         "minutes": 90,
-        "price": 270
+        "price": 270.0
       },
       {
         "minutes": 120,
-        "price": 330
+        "price": 330.0
       }
     ],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/tradycyjny-tajski-masaz/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/tajski-masaz-olejkami-aromatycznymi/",
@@ -27,8 +29,23 @@
     "text": "Tajski zabieg olejkami aromatycznymi łączy pielęgnację skóry z płynnymi ruchami i technikami uciskowymi inspirowanymi tradycją tajską. Olejek ułatwia pracę na skórze i nadaje wizycie aromatyczny charakter. Przebieg obejmuje miarową pracę dłońmi, ugniatanie oraz elementy rozciągania. To propozycja dla osób ceniących połączenie dotyku, zapachu i spokojnej atmosfery.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 240.0
+      },
+      {
+        "minutes": 90,
+        "price": 300.0
+      },
+      {
+        "minutes": 120,
+        "price": 360.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/tajski-masaz-olejkami-aromatycznymi/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-goracymi-kamieniami/",
@@ -36,8 +53,23 @@
     "text": "Tajski zabieg gorącymi kamieniami wykorzystuje ciepło podgrzanych kamieni bazaltowych i manualną pracę z ciałem. Charakterystycznym elementem jest odczucie ciepła towarzyszące kolejnym ruchom. To propozycja dla osób, które cenią ciepło i spokojny przebieg zabiegu. Warto na bieżąco informować osobę wykonującą zabieg o komforcie temperatury i nacisku.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 250.0
+      },
+      {
+        "minutes": 90,
+        "price": 320.0
+      },
+      {
+        "minutes": 120,
+        "price": 380.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-goracymi-kamieniami/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-swiecami/",
@@ -45,8 +77,23 @@
     "text": "Tajski zabieg ciepłym olejkiem ze świecy łączy pielęgnację skóry z aromatem i płynną pracą dłońmi. Wykorzystuje olejek uzyskany z przeznaczonej do tego świecy, zawierającej masła i oleje roślinne. Ciepły olejek jest rozprowadzany na ciele podczas zabiegu. To propozycja dla osób, które cenią zapach, delikatne ciepło i pielęgnacyjny charakter wizyty.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 240.0
+      },
+      {
+        "minutes": 90,
+        "price": 300.0
+      },
+      {
+        "minutes": 120,
+        "price": 360.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-swiecami/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-sportowy/",
@@ -54,8 +101,23 @@
     "text": "Masaż sportowy opiera się na intensywnej pracy z mięśniami i technikach zaczerpniętych z masażu klasycznego. Siłę nacisku należy dopasować do indywidualnych możliwości i odczuć osoby masowanej. To propozycja dla osób aktywnych, które chcą poświęcić czas na pracę z ciałem. Przed rozpoczęciem warto wskazać obszary wymagające szczególnej uwagi oraz ustalić oczekiwaną intensywność.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 270.0
+      },
+      {
+        "minutes": 90,
+        "price": 330.0
+      },
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-sportowy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/hawajski-masaz-lomi-lomi-nui/",
@@ -63,8 +125,23 @@
     "text": "Tajski zabieg Lomi Lomi w wersji tajskiej wykonywany jest z użyciem olejku, dłońmi i przedramionami. Jego charakter tworzą płynne, rytmiczne ruchy oraz ciągłość pracy z ciałem. To propozycja dla osób, które cenią spokojny rytm. Intensywność jest dopasowywana do indywidualnych potrzeb i odczuć.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 270.0
+      },
+      {
+        "minutes": 90,
+        "price": 330.0
+      },
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/hawajski-masaz-lomi-lomi-nui/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-tajski-stemplami-ziolowymi/",
@@ -72,8 +149,23 @@
     "text": "Tajski zabieg stemplami ziołowymi wykorzystuje podgrzewane bawełniane woreczki wypełnione mieszanką ziół. Łączy ciepło, aromat oraz pracę uciskową inspirowaną tradycją tajską. Stemple przykładane są do ciała w kolejnych sekwencjach. To propozycja dla osób, które cenią rozgrzewający charakter zabiegu i zapach ziół.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 250.0
+      },
+      {
+        "minutes": 90,
+        "price": 320.0
+      },
+      {
+        "minutes": 120,
+        "price": 380.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-tajski-stemplami-ziolowymi/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-tajski-dla-seniorow/",
@@ -81,8 +173,23 @@
     "text": "Masaż tajski dla seniorów wykorzystuje łagodniej prowadzone techniki uciskowe i elementy rozciągania. Przebieg dostosowywany jest do możliwości oraz komfortu osoby korzystającej z wizyty. Przed rozpoczęciem należy omówić oczekiwania i ograniczenia ruchowe. W trakcie można zgłaszać potrzebę zmniejszenia nacisku lub zmiany ułożenia ciała.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 200.0
+      },
+      {
+        "minutes": 90,
+        "price": 260.0
+      },
+      {
+        "minutes": 120,
+        "price": 320.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-tajski-dla-seniorow/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-dla-dzieci-i-mlodziezy/",
@@ -90,8 +197,19 @@
     "text": "Tajski zabieg relaksacyjny dla dzieci i młodzieży opiera się na delikatnej pracy manualnej, dopasowanej do wieku i potrzeb młodej osoby. Ważne są spokojna atmosfera i komfort podczas wizyty. Szczegóły przebiegu oraz odpowiedni wariant należy ustalić z salonem przed rezerwacją. Opis nie zakłada, że każda technika jest odpowiednia dla każdego dziecka.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 180.0
+      },
+      {
+        "minutes": 90,
+        "price": 250.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-dla-dzieci-i-mlodziezy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-czteroreczny/",
@@ -99,8 +217,19 @@
     "text": "Tajski zabieg na cztery ręce wykonywany jest przez dwie terapeutki jednocześnie dla jednej osoby. Wyróżnia go zsynchronizowana praca dwóch par dłoni oraz wspólny rytm ruchów. To propozycja dla osób szukających odmiennego doświadczenia pracy z ciałem. Przebieg opiera się na równoczesnej, skoordynowanej pracy obu terapeutek.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 390.0
+      },
+      {
+        "minutes": 90,
+        "price": 480.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-czteroreczny/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-prenatalny/",
@@ -108,8 +237,19 @@
     "text": "Tajski zabieg prenatalny jest propozycją dla kobiet w ciąży, z delikatnymi technikami dostosowanymi do indywidualnych potrzeb. Komfortowe ułożenie i omówienie przebiegu stanowią istotną część przygotowania. Przed rezerwacją należy skontaktować się z salonem i omówić możliwość wykonania zabiegu. Nie obiecujemy bezwarunkowego bezpieczeństwa ani efektów medycznych.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 210.0
+      },
+      {
+        "minutes": 90,
+        "price": 260.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-prenatalny/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-liftingujacy-twarzy-i-glowy/",
@@ -117,8 +257,19 @@
     "text": "Tajski zabieg liftingujący twarzy i głowy łączy manualną pracę w obrębie twarzy z elementami poświęconymi głowie. To propozycja dla osób, które chcą połączyć pielęgnacyjny charakter wizyty z chwilą odpoczynku. Praca koncentruje się na twarzy i głowie, z uwzględnieniem komfortu nacisku. Określenie liftingujący opisuje kierunek oferty, bez gwarantowania trwałej zmiany owalu lub usunięcia zmarszczek.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 220.0
+      },
+      {
+        "minutes": 90,
+        "price": 270.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-liftingujacy-twarzy-i-glowy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/tajski-masaz-twarzy/",
@@ -126,8 +277,19 @@
     "text": "Tajski zabieg pielęgnacyjny twarzy łączy pracę manualną z zastosowaniem kosmetyków pielęgnacyjnych. Obejmuje między innymi ugniatanie, rozcieranie, uciski i delikatne oklepywanie. To propozycja dla osób, które chcą poświęcić wizytę pielęgnacji twarzy i spokojnej pracy z tym obszarem. Nie obiecujemy zatrzymania starzenia ani wyeliminowania zmarszczek.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 220.0
+      },
+      {
+        "minutes": 90,
+        "price": 270.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/tajski-masaz-twarzy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-glowy-plecow-i-ramion/",
@@ -135,8 +297,19 @@
     "text": "Masaż głowy, pleców i ramion skupia się na górnych partiach ciała, obejmując także szyję i kark. Łączy techniki uciskowe i rozciągające zaczerpnięte z tradycji tajskiej. To propozycja dla osób, które chcą poświęcić wizytę przede wszystkim tym obszarom. Przed rozpoczęciem masażu można wskazać miejsca wymagające uwagi i omówić komfortową siłę nacisku.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 190.0
+      },
+      {
+        "minutes": 90,
+        "price": 260.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-glowy-plecow-i-ramion/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/refleksoterapia-tajski-masaz-glowy/",
@@ -144,8 +317,19 @@
     "text": "Tajski zabieg refleksoterapii głowy obejmuje manualną pracę w obrębie głowy i twarzy. Techniki uciskowe tworzą sekwencję poświęconą tym obszarom. To propozycja dla osób szukających spokojnej wizyty skoncentrowanej na głowie i twarzy. Zabieg nie służy diagnozowaniu stanu narządów ani zastępowaniu leczenia.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 190.0
+      },
+      {
+        "minutes": 90,
+        "price": 240.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/refleksoterapia-tajski-masaz-glowy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/refleksoterapia-tajski-masaz-stop/",
@@ -153,8 +337,19 @@
     "text": "Tajski zabieg refleksoterapii stóp obejmuje wstępną pracę rozluźniającą, sekwencję ucisków oraz spokojne zakończenie. Wykorzystywane są techniki inspirowane akupresurą i tradycją Shiatsu oraz kosmetyki pielęgnacyjne. To propozycja dla osób, które chcą poświęcić wizytę stopom. Nacisk powinien uwzględniać komfort osoby korzystającej z zabiegu; odczucia podczas ucisku nie stanowią diagnozy stanu narządów.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 190.0
+      },
+      {
+        "minutes": 90,
+        "price": 240.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/refleksoterapia-tajski-masaz-stop/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-wyszczuplajacy/",
@@ -162,8 +357,23 @@
     "text": "Tajski zabieg modelujący sylwetkę opiera się na energicznej pracy manualnej, z wykorzystaniem technik opisanych w ofercie, w tym bańki chińskiej. Towarzyszą mu kosmetyki przeznaczone do pielęgnacji skóry. To propozycja dla osób zainteresowanych pielęgnacją ciała i intensywniejszą pracą manualną. Nie obiecujemy utraty kilogramów, spalania tłuszczu ani trwałego usunięcia cellulitu.",
     "salon": "ZW",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 250.0
+      },
+      {
+        "minutes": 90,
+        "price": 320.0
+      },
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-wyszczuplajacy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-tajski-klasyczny-dla-pary/",
@@ -171,8 +381,23 @@
     "text": "Tradycyjny masaż tajski dla par odbywa się jednocześnie w jednym gabinecie. Dwie masażystki pracują równolegle, każda zajmując się jedną osobą. Masaż łączy uciski, rozciąganie i elementy pasywnej jogi. Wspólna wizyta pozwala doświadczyć tradycyjnych technik tajskich we dwoje, z uwzględnieniem indywidualnego komfortu każdej osoby.",
     "salon": "ZW",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 380.0
+      },
+      {
+        "minutes": 90,
+        "price": 500.0
+      },
+      {
+        "minutes": 120,
+        "price": 620.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-tajski-klasyczny-dla-pary/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-tajski-olejkami-dla-par/",
@@ -180,8 +405,23 @@
     "text": "Tajski zabieg olejkami aromatycznymi dla par odbywa się równocześnie w jednym gabinecie, z udziałem dwóch masażystek. Każda z nich zajmuje się jedną osobą. Zabieg łączy płynne ruchy z użyciem olejku z technikami uciskowymi i rozciągającymi inspirowanymi tradycją tajską. To propozycja wspólnej wizyty o aromatycznym, pielęgnacyjnym charakterze.",
     "salon": "ZW",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 460.0
+      },
+      {
+        "minutes": 90,
+        "price": 600.0
+      },
+      {
+        "minutes": 120,
+        "price": 720.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-tajski-olejkami-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-goracymi-kamieniami-dla-par/",
@@ -189,8 +429,23 @@
     "text": "Tajski zabieg gorącymi kamieniami dla par łączy ciepło podgrzanych kamieni z manualną pracą z ciałem. Dwie masażystki wykonują zabiegi jednocześnie w jednym gabinecie. Każda osoba może zgłaszać swoje odczucia dotyczące temperatury i nacisku. To propozycja dla par, które cenią ciepło i spokojny charakter wspólnej wizyty.",
     "salon": "ZW",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 480.0
+      },
+      {
+        "minutes": 90,
+        "price": 630.0
+      },
+      {
+        "minutes": 120,
+        "price": 760.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-goracymi-kamieniami-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-swieca-aromatyczna-dla-par/",
@@ -198,8 +453,23 @@
     "text": "Tajski zabieg świecą aromatyczną dla par wykorzystuje ciepły olejek ze świecy przeznaczonej do pracy na skórze. Łączy zapach, pielęgnację oraz płynne ruchy dłoni. Zabiegi odbywają się równocześnie w jednym gabinecie, z udziałem dwóch masażystek. To propozycja dla osób, które chcą spędzić wspólny czas w spokojnej, aromatycznej atmosferze.",
     "salon": "ZW",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 460.0
+      },
+      {
+        "minutes": 90,
+        "price": 600.0
+      },
+      {
+        "minutes": 120,
+        "price": 720.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-swieca-aromatyczna-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/masaz-stemplami-ziolowymi-dla-par/",
@@ -207,8 +477,23 @@
     "text": "Tajski zabieg stemplami ziołowymi dla par wykorzystuje ciepłe bawełniane woreczki wypełnione ziołami. Charakter wizyty tworzą aromat, ciepło i kolejne sekwencje ucisków. Dwie masażystki wykonują zabiegi równocześnie w jednym gabinecie. Każda osoba może zgłaszać preferencje dotyczące komfortu ciepła i nacisku.",
     "salon": "ZW",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 460.0
+      },
+      {
+        "minutes": 90,
+        "price": 600.0
+      },
+      {
+        "minutes": 120,
+        "price": 720.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/masaz-stemplami-ziolowymi-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/rytual-romantyczny-maliwan-dla-dwojga/",
@@ -216,8 +501,23 @@
     "text": "Rytuał Romantyczny dla Dwojga to wspólny zabieg w jednym gabinecie, wykonywany równocześnie przez dwie masażystki. Łączy pielęgnację stóp, pracę olejkową z ciałem oraz zakończenie poświęcone głowie. Według roboczej rozpiski obejmuje kąpiel stóp z peelingiem, refleksoterapię stóp, etap olejkowy dla dwojga i refleksologię głowy. Nie obejmuje peelingu pleców — potwierdzone przez Norberta. Szczegółowy skład i czasy pozostają w osobnym opracowaniu rytuałów.",
     "salon": "ZW",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 520.0
+      },
+      {
+        "minutes": 90,
+        "price": 670.0
+      },
+      {
+        "minutes": 120,
+        "price": 820.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/rytual-romantyczny-maliwan-dla-dwojga/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/rytual-krolewski-thai-spa/",
@@ -225,8 +525,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "ZW",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 150,
+        "price": 490.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/rytual-krolewski-thai-spa/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/rytual-gorace-kamienie-i-ziola/",
@@ -234,8 +541,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "ZW",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 420.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/rytual-gorace-kamienie-i-ziola/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/rytual-detoks-i-odnowa/",
@@ -243,8 +557,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "ZW",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 420.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/rytual-detoks-i-odnowa/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/rytual-kwiat-duszy-dla-kobiet/",
@@ -252,8 +573,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "ZW",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 420.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/rytual-kwiat-duszy-dla-kobiet/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/rytual-ocean-breath-energetyczny/",
@@ -261,8 +589,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "ZW",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 90,
+        "price": 290.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/rytual-ocean-breath-energetyczny/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwan.pl/service/rytual-romantyczny-maliwan-dla-dwojga/",
@@ -270,8 +605,23 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "ZW",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 520.0
+      },
+      {
+        "minutes": 90,
+        "price": 670.0
+      },
+      {
+        "minutes": 120,
+        "price": 820.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/rytual-romantyczny-maliwan-dla-dwojga/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/tradycyjny-tajski-masaz/",
@@ -279,8 +629,23 @@
     "text": "Masaż tradycyjny tajski łączy techniki uciskowe, rozciąganie i elementy pasywnej jogi. Osoba wykonująca masaż prowadzi ruchy ciała, dostosowując pracę do możliwości osoby masowanej. Uciski przeplatają się z pozycjami rozciągającymi. To propozycja dla osób, które szukają pracy z ciałem z wyraźnym elementem rozciągania. Zachowujemy odrębny fragment o historii tradycyjnego masażu tajskiego.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 210.0
+      },
+      {
+        "minutes": 90,
+        "price": 270.0
+      },
+      {
+        "minutes": 120,
+        "price": 330.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/tradycyjny-tajski-masaz/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/tajski-masaz-olejkami-aromatycznymi/",
@@ -288,8 +653,23 @@
     "text": "Tajski zabieg olejkami aromatycznymi łączy pielęgnację skóry z płynnymi ruchami i technikami uciskowymi inspirowanymi tradycją tajską. Olejek ułatwia pracę na skórze i nadaje wizycie aromatyczny charakter. Przebieg obejmuje miarową pracę dłońmi, ugniatanie oraz elementy rozciągania. To propozycja dla osób ceniących połączenie dotyku, zapachu i spokojnej atmosfery.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 240.0
+      },
+      {
+        "minutes": 90,
+        "price": 300.0
+      },
+      {
+        "minutes": 120,
+        "price": 360.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/tajski-masaz-olejkami-aromatycznymi/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-goracymi-kamieniami/",
@@ -297,8 +677,23 @@
     "text": "Tajski zabieg gorącymi kamieniami wykorzystuje ciepło podgrzanych kamieni bazaltowych i manualną pracę z ciałem. Charakterystycznym elementem jest odczucie ciepła towarzyszące kolejnym ruchom. To propozycja dla osób, które cenią ciepło i spokojny przebieg zabiegu. Warto na bieżąco informować osobę wykonującą zabieg o komforcie temperatury i nacisku.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 250.0
+      },
+      {
+        "minutes": 90,
+        "price": 320.0
+      },
+      {
+        "minutes": 120,
+        "price": 380.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-goracymi-kamieniami/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-swiecami/",
@@ -306,8 +701,23 @@
     "text": "Tajski zabieg ciepłym olejkiem ze świecy łączy pielęgnację skóry z aromatem i płynną pracą dłońmi. Wykorzystuje olejek uzyskany z przeznaczonej do tego świecy, zawierającej masła i oleje roślinne. Ciepły olejek jest rozprowadzany na ciele podczas zabiegu. To propozycja dla osób, które cenią zapach, delikatne ciepło i pielęgnacyjny charakter wizyty.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 240.0
+      },
+      {
+        "minutes": 90,
+        "price": 300.0
+      },
+      {
+        "minutes": 120,
+        "price": 360.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-swiecami/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-sportowy/",
@@ -315,8 +725,23 @@
     "text": "Masaż sportowy opiera się na intensywnej pracy z mięśniami i technikach zaczerpniętych z masażu klasycznego. Siłę nacisku należy dopasować do indywidualnych możliwości i odczuć osoby masowanej. To propozycja dla osób aktywnych, które chcą poświęcić czas na pracę z ciałem. Przed rozpoczęciem warto wskazać obszary wymagające szczególnej uwagi oraz ustalić oczekiwaną intensywność.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 270.0
+      },
+      {
+        "minutes": 90,
+        "price": 330.0
+      },
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-sportowy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/hawajski-masaz-lomi-lomi-nui/",
@@ -324,8 +749,23 @@
     "text": "Tajski zabieg Lomi Lomi w wersji tajskiej wykonywany jest z użyciem olejku, dłońmi i przedramionami. Jego charakter tworzą płynne, rytmiczne ruchy oraz ciągłość pracy z ciałem. To propozycja dla osób, które cenią spokojny rytm. Intensywność jest dopasowywana do indywidualnych potrzeb i odczuć.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 270.0
+      },
+      {
+        "minutes": 90,
+        "price": 330.0
+      },
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/hawajski-masaz-lomi-lomi-nui/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-tajski-stemplami-ziolowymi/",
@@ -333,8 +773,23 @@
     "text": "Tajski zabieg stemplami ziołowymi wykorzystuje podgrzewane bawełniane woreczki wypełnione mieszanką ziół. Łączy ciepło, aromat oraz pracę uciskową inspirowaną tradycją tajską. Stemple przykładane są do ciała w kolejnych sekwencjach. To propozycja dla osób, które cenią rozgrzewający charakter zabiegu i zapach ziół.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 250.0
+      },
+      {
+        "minutes": 90,
+        "price": 320.0
+      },
+      {
+        "minutes": 120,
+        "price": 380.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-tajski-stemplami-ziolowymi/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-tajski-dla-seniorow/",
@@ -342,8 +797,23 @@
     "text": "Masaż tajski dla seniorów wykorzystuje łagodniej prowadzone techniki uciskowe i elementy rozciągania. Przebieg dostosowywany jest do możliwości oraz komfortu osoby korzystającej z wizyty. Przed rozpoczęciem należy omówić oczekiwania i ograniczenia ruchowe. W trakcie można zgłaszać potrzebę zmniejszenia nacisku lub zmiany ułożenia ciała.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 200.0
+      },
+      {
+        "minutes": 90,
+        "price": 260.0
+      },
+      {
+        "minutes": 120,
+        "price": 320.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-tajski-dla-seniorow/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-dla-dzieci-i-mlodziezy/",
@@ -351,8 +821,19 @@
     "text": "Tajski zabieg relaksacyjny dla dzieci i młodzieży opiera się na delikatnej pracy manualnej, dopasowanej do wieku i potrzeb młodej osoby. Ważne są spokojna atmosfera i komfort podczas wizyty. Szczegóły przebiegu oraz odpowiedni wariant należy ustalić z salonem przed rezerwacją. Opis nie zakłada, że każda technika jest odpowiednia dla każdego dziecka.",
     "salon": "SZ",
     "kind": "osoba",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 180.0
+      },
+      {
+        "minutes": 90,
+        "price": 250.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-dla-dzieci-i-mlodziezy/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-tajski-klasyczny-dla-pary/",
@@ -360,8 +841,23 @@
     "text": "Tradycyjny masaż tajski dla par odbywa się jednocześnie w jednym gabinecie. Dwie masażystki pracują równolegle, każda zajmując się jedną osobą. Masaż łączy uciski, rozciąganie i elementy pasywnej jogi. Wspólna wizyta pozwala doświadczyć tradycyjnych technik tajskich we dwoje, z uwzględnieniem indywidualnego komfortu każdej osoby.",
     "salon": "SZ",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 380.0
+      },
+      {
+        "minutes": 90,
+        "price": 500.0
+      },
+      {
+        "minutes": 120,
+        "price": 620.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-tajski-klasyczny-dla-pary/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-tajski-olejkami-dla-par/",
@@ -369,8 +865,23 @@
     "text": "Tajski zabieg olejkami aromatycznymi dla par odbywa się równocześnie w jednym gabinecie, z udziałem dwóch masażystek. Każda z nich zajmuje się jedną osobą. Zabieg łączy płynne ruchy z użyciem olejku z technikami uciskowymi i rozciągającymi inspirowanymi tradycją tajską. To propozycja wspólnej wizyty o aromatycznym, pielęgnacyjnym charakterze.",
     "salon": "SZ",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 460.0
+      },
+      {
+        "minutes": 90,
+        "price": 600.0
+      },
+      {
+        "minutes": 120,
+        "price": 720.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-tajski-olejkami-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-goracymi-kamieniami-dla-par/",
@@ -378,8 +889,23 @@
     "text": "Tajski zabieg gorącymi kamieniami dla par łączy ciepło podgrzanych kamieni z manualną pracą z ciałem. Dwie masażystki wykonują zabiegi jednocześnie w jednym gabinecie. Każda osoba może zgłaszać swoje odczucia dotyczące temperatury i nacisku. To propozycja dla par, które cenią ciepło i spokojny charakter wspólnej wizyty.",
     "salon": "SZ",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 480.0
+      },
+      {
+        "minutes": 90,
+        "price": 630.0
+      },
+      {
+        "minutes": 120,
+        "price": 760.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-goracymi-kamieniami-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-swieca-aromatyczna-dla-par/",
@@ -387,8 +913,23 @@
     "text": "Tajski zabieg świecą aromatyczną dla par wykorzystuje ciepły olejek ze świecy przeznaczonej do pracy na skórze. Łączy zapach, pielęgnację oraz płynne ruchy dłoni. Zabiegi odbywają się równocześnie w jednym gabinecie, z udziałem dwóch masażystek. To propozycja dla osób, które chcą spędzić wspólny czas w spokojnej, aromatycznej atmosferze.",
     "salon": "SZ",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 460.0
+      },
+      {
+        "minutes": 90,
+        "price": 600.0
+      },
+      {
+        "minutes": 120,
+        "price": 720.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-swieca-aromatyczna-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/masaz-stemplami-ziolowymi-dla-par/",
@@ -396,8 +937,23 @@
     "text": "Tajski zabieg stemplami ziołowymi dla par wykorzystuje ciepłe bawełniane woreczki wypełnione ziołami. Charakter wizyty tworzą aromat, ciepło i kolejne sekwencje ucisków. Dwie masażystki wykonują zabiegi równocześnie w jednym gabinecie. Każda osoba może zgłaszać preferencje dotyczące komfortu ciepła i nacisku.",
     "salon": "SZ",
     "kind": "pary",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 460.0
+      },
+      {
+        "minutes": 90,
+        "price": 600.0
+      },
+      {
+        "minutes": 120,
+        "price": 720.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/masaz-stemplami-ziolowymi-dla-par/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/rytual-krolewski-thai-spa/",
@@ -405,8 +961,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "SZ",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 150,
+        "price": 490.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/rytual-krolewski-thai-spa/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/rytual-gorace-kamienie-i-ziola/",
@@ -414,8 +977,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "SZ",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 420.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/rytual-gorace-kamienie-i-ziola/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/rytual-detoks-i-odnowa/",
@@ -423,8 +993,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "SZ",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 420.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/rytual-detoks-i-odnowa/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/rytual-kwiat-duszy-dla-kobiet/",
@@ -432,8 +1009,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "SZ",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 420.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/rytual-kwiat-duszy-dla-kobiet/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/rytual-ocean-breath-energetyczny/",
@@ -441,8 +1025,15 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "SZ",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 90,
+        "price": 290.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/rytual-ocean-breath-energetyczny/",
+    "priceCheckedAt": "2026-10-03"
   },
   {
     "url": "https://thaimaliwanspa.pl/rytual-romantyczny-maliwan-dla-dwojga/",
@@ -450,7 +1041,22 @@
     "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
     "salon": "SZ",
     "kind": "rytualy",
-    "prices": [],
-    "buyUrl": "https://thaimaliwanspa.pl/shop/"
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 520.0
+      },
+      {
+        "minutes": 90,
+        "price": 670.0
+      },
+      {
+        "minutes": 120,
+        "price": 820.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/rytual-romantyczny-maliwan-dla-dwojga/",
+    "priceCheckedAt": "2026-10-03"
   }
 ]
