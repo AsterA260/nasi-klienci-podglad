@@ -1,0 +1,29 @@
+/* Clear heading and frameless choices, customer menu only. Reel geometry is unchanged. */
+#rowTop{gap:26px;height:60px;padding:0 150px;}
+#rowTop .choose-massage{
+ bottom:calc(100% + 2px);font:600 clamp(28px,3.1vw,40px)/1.15 "Cormorant Garamond",Georgia,serif;
+ letter-spacing:.015em;text-transform:none;color:#f4dfb3;pointer-events:auto;cursor:pointer;
+ text-shadow:0 2px 8px #0009;animation:none;transform:none;padding:0 10px;
+}
+#rowTop .choose-massage::before{display:none}
+#rowTop .mnode,#rowTop .mnode.p{
+ width:130px;height:60px;border:0;border-radius:0;background:none;box-shadow:none;
+ animation:none!important;transform:none;filter:none;overflow:visible;
+}
+#rowTop .mnode::before,#rowTop .mnode::after,#rowTop .action-globe{display:none!important}
+#rowTop .mnode svg,#rowTop .mnode.p svg{width:27px;height:27px;stroke:#e6c993;filter:none;flex:none}
+#rowTop .mnode>b,#rowTop .mnode.p>b,#rowTop .mnode[data-node="0"]>b{
+ width:auto;max-width:none;margin:6px 0 0;padding:0;font:500 14px/1.2 "Helvetica Neue",Arial,sans-serif;
+ letter-spacing:0;text-transform:none;white-space:normal;color:#f4e7cd;text-shadow:0 1px 5px #000;
+}
+#rowTop .mnode[data-node="3"]{position:absolute;right:44px;top:0;width:95px}
+#rowTop .mnode[data-node="3"]>b{white-space:pre-line;margin-top:4px;line-height:1.15}
+#rowTop .mnode:hover svg{stroke:#fff0ce}
+#rowTop .mnode:active{transform:translateY(1px)}
+#rowTop :is(a,button):focus-visible{outline:2px solid #e6c993;outline-offset:4px}
+@media(min-width:901px){#rowTop{top:132px!important}}
+@media(min-width:601px) and (max-width:900px){#rowTop{gap:14px;padding:0 125px 0 30px}#rowTop .choose-massage{font-size:34px}#rowTop .mnode{width:125px}#rowTop .mnode[data-node="3"]{right:24px}}
+@media(max-width:600px){#rowTop{gap:4px;padding:0 85px 0 8px}#rowTop .choose-massage{font-size:28px;bottom:calc(100% + 8px)}#rowTop .mnode,#rowTop .mnode.p{width:90px}#rowTop .mnode>b,#rowTop .mnode[data-node="0"]>b{font-size:12px}#rowTop .mnode[data-node="3"]{right:8px;width:68px}#rowTop .mnode svg{width:24px;height:24px}}
+/* Keep the menu control in the header, away from the voucher choice. */
+.hdr .h1m{display:none}
+.hdr .menu-btn{position:static;inset:auto;min-height:36px;height:36px;padding:0 14px;font-size:10px}
