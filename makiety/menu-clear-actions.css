@@ -73,3 +73,22 @@
 @media(max-width:1100px){.preview-social{bottom:calc(108px + env(safe-area-inset-bottom))}}
 @media(max-width:600px){.preview-social{bottom:calc(156px + env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){#rowTop .action-shine{display:none!important}}
+
+/* Wordmark typography and a restrained highlight across the lettering. */
+#menuChoiceHeading{
+ position:absolute;left:50%;bottom:calc(100% + 16px);transform:translateX(-50%);
+ width:max-content;max-width:100%;margin:0;padding:0;text-align:center;
+ font:500 19px/1.2 "Cormorant Garamond",Georgia,serif;letter-spacing:.17em;text-transform:uppercase;
+ color:#e7cf9b;pointer-events:none;
+}
+@supports (-webkit-background-clip:text) or (background-clip:text){
+ #menuChoiceHeading{
+  background-image:linear-gradient(100deg,#d7bd89 0%,#d7bd89 43%,#fff0ca 50%,#d7bd89 57%,#d7bd89 100%);
+  background-size:250% 100%;background-position:100% 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:menuLetterSweep 14s ease-in-out infinite;
+ }
+}
+@keyframes menuLetterSweep{0%{background-position:100% 0}24%,100%{background-position:0% 0}}
+@media(max-width:600px){#menuChoiceHeading{font-size:16px;letter-spacing:.1em;bottom:calc(100% + 14px)}}
+@media(prefers-reduced-motion:reduce){#menuChoiceHeading{animation:none}}
