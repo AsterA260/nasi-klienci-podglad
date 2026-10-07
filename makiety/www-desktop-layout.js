@@ -7,7 +7,7 @@
     const reservedTop=actionsTop+actionsHeight+(tablet?24:44);
     const reservedBottom=height-(tablet?165:214);
     const availableHeight=Math.max(8,reservedBottom-reservedTop);
-    const panelHalf=tablet?(width<=1100?312.5:350):250;
+    const panelHalf=tablet?250*(typeof tablet==='number'?tablet:(width<=1100?1.25:1.4)):250;
     const perspective=1650*panelHalf/250;
     const maxDepth=Math.hypot(radius,panelHalf);
     const project=k=>perspective/(perspective-maxDepth*k);
@@ -15,7 +15,7 @@
     // Reserve both vertical space and the whole visible cylinder width.
     for(let i=0;i<40;i++){
       const k=(low+high)/2;
-      if((tablet?540:452)*k*project(k)<=availableHeight && 2*Math.hypot(radius,panelHalf)*k/Math.sqrt(1-(Math.hypot(radius,panelHalf)*k/perspective)**2)<=width-96)low=k;
+      if((tablet?540:452)*k*project(k)<=availableHeight && 2*Math.hypot(radius,panelHalf)*k/Math.sqrt(1-(Math.hypot(radius,panelHalf)*k/perspective)**2)<=width-(tablet?16:96))low=k;
       else high=k;
     }
     const scale=low;
@@ -28,8 +28,8 @@
 window.mobileReelLayout=function(width,height,safeTop=0,safeBottom=0,tallTablet=false){
  const tablet=width>=601;
  const canvasHeight=Math.max(height,tablet?700:740);
- const radius=(tablet?(tallTablet?266:190):118)/Math.tan(Math.PI/8);
- const halfWidth=tablet?(tallTablet?266:190):118,faceHeight=tablet?(tallTablet?540:400):318,p=tablet?(tallTablet?2310:1650):1340;
+ const radius=(tablet?(tallTablet?190*(typeof tallTablet==='number'?tallTablet:1.4):190):118)/Math.tan(Math.PI/8);
+ const halfWidth=tablet?(tallTablet?190*(typeof tallTablet==='number'?tallTablet:1.4):190):118,faceHeight=tablet?(tallTablet?540:400):318,p=tablet?(tallTablet?1650*(typeof tallTablet==='number'?tallTablet:1.4):1650):1340;
  const actionsTop=(tablet?180:156)+safeTop,actionsHeight=tablet?72:60;
  const reservedTop=actionsTop+actionsHeight+(tallTablet?24:40);
  const reservedBottom=canvasHeight-(tablet?(tallTablet?180:228):268)-safeBottom;
