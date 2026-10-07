@@ -92,3 +92,15 @@
 @keyframes menuLetterSweep{0%{background-position:100% 0}24%,100%{background-position:0% 0}}
 @media(max-width:600px){#menuChoiceHeading{font-size:16px;letter-spacing:.1em;bottom:calc(100% + 14px)}}
 @media(prefers-reduced-motion:reduce){#menuChoiceHeading{animation:none}}
+
+/* Smaller visible choices; retain legible labels and a generous touch area. */
+#rowTop .mnode,#rowTop .mnode.p{
+ height:27px;min-height:27px;padding:0 8px;font-size:10.5px;letter-spacing:.45px;
+}
+#rowTop .mnode::after{inset:-3px}
+#rowTop .mnode::before{
+ content:""!important;display:block!important;position:absolute;
+ left:-2px;right:-2px;top:50%;bottom:auto;height:44px;width:auto;
+ transform:translateY(-50%);border:0;background:none;box-shadow:none;
+ opacity:0;pointer-events:auto;animation:none!important;
+}
