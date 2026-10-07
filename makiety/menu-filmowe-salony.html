@@ -428,7 +428,6 @@ body.menu-tablet-wide .face{height:540px;top:-270px}
 <style id="menu-header-refinement">
 /* Customer menu only: reserve Mali for a later design and recess the slimmer header. */
 .dock-r,#ask{display:none!important}
-html.responsive-scroll body.menu-tablet-wide{overflow:hidden;width:100%}
 .hdr{height:64px;padding:0 20px;border-radius:18px;
  background:linear-gradient(180deg,rgba(12,9,6,.88),rgba(24,18,12,.76));
  border-color:rgba(185,154,93,.22);
@@ -556,7 +555,7 @@ function updateFace(f,index){
  captionFace(f);
 }
 function menuTabletFactor(){
- const tablet=innerWidth>=601&&innerWidth<=1600&&(navigator.maxTouchPoints>0||matchMedia('(any-pointer:coarse)').matches||['wide3','lower1'].includes(new URLSearchParams(location.search).get('reel')));
+ const tablet=innerWidth>=601&&innerWidth<=1600&&(navigator.maxTouchPoints>0||matchMedia('(any-pointer:coarse)').matches||new URLSearchParams(location.search).get('reel')==='wide3');
  if(!tablet)return 0;
  const half=innerWidth>=901?250:190,depth=Math.hypot(half/Math.tan(Math.PI/8),half),p=1650;
  const compact=innerHeight<760;
@@ -797,15 +796,6 @@ function frame(){
 }
 frame();
 function calcK(){ K=Math.max(.6,Math.min(1,(innerHeight-360)/404)); }
-/* Move the accepted reel as a whole; retain its scale, photo dimensions and controls. */
-function lowerMenuReel(layout,tabletFactor){
- if(!tabletFactor)return;
- const offset=76;
- layout.top+=offset;layout.bottom+=offset;layout.center+=offset;
- layout.canvasHeight=(layout.canvasHeight||innerHeight)+offset;
- document.documentElement.classList.add('responsive-scroll');
- document.documentElement.style.setProperty('--responsive-height',layout.canvasHeight+'px');
-}
 function placeSprockets(){
   const tabletFactor=menuTabletFactor();
   const panelHalf=(innerWidth>=901?250:innerWidth>=601?190:118)*(tabletFactor||1);
@@ -819,7 +809,6 @@ function placeSprockets(){
   faces.forEach(f=>{f.style.transform='rotateY('+f.dataset.ang+'deg) translateZ('+R+'px)';});
   if(innerWidth>=901){
     const layout=window.desktopReelLayout(innerWidth,innerHeight,R,tabletFactor);
-    lowerMenuReel(layout,tabletFactor);
     K=layout.scale;
     document.querySelector('.scene').style.top=layout.center+'px';
     rowTop.style.top=layout.actionsTop+'px';
@@ -837,7 +826,6 @@ function placeSprockets(){
   const safeTopValue=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sat'))||0;
   const safeBottomValue=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sab'))||0;
   const layout=window.mobileReelLayout(innerWidth,innerHeight,safeTopValue,safeBottomValue,tabletFactor);
-  lowerMenuReel(layout,tabletFactor);
   document.documentElement.classList.toggle('responsive-scroll',layout.canvasHeight>innerHeight);
   document.documentElement.style.setProperty('--responsive-height',layout.canvasHeight+'px');
   K=layout.scale;
