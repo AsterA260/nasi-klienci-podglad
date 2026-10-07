@@ -1,0 +1,48 @@
+/* Desktop treatment of the approved reel front; mobile rules stay intact. */
+@media (min-width:901px){
+  .hdr{left:max(24px,calc((100vw - 1440px)/2));right:max(24px,calc((100vw - 1440px)/2));top:18px;height:76px;padding:0 24px;border-radius:22px}
+  .logo{gap:12px}.logo svg{width:46px;height:46px}
+  .logo b{font-size:19px;letter-spacing:.22em}.logo strong{font-size:10px;letter-spacing:.35em;margin-top:6px}
+  .hdr .right{gap:20px}.lang-btn{height:44px;min-width:44px;font-size:11px;padding:0 10px}
+  .menu-btn{right:max(28px,calc((100vw - 1400px)/2));top:110px;height:44px;padding:0 20px;font-size:12px}
+  .h1m{top:107px;font-size:10px;letter-spacing:.3em}
+  .mrow.top{gap:20px;padding:0 120px}
+  .mnode,.mnode.p{width:84px;height:84px;flex:none}
+  .mnode svg,.mnode.p svg{width:25px;height:25px}
+  .mnode b,.mnode.p b{font-size:12px;line-height:1.15;margin-top:7px}
+  .short .mnode,.short .mnode.p{width:72px;height:72px}
+  .short .mnode svg,.short .mnode.p svg{width:22px;height:22px}
+  .short .mnode b,.short .mnode.p b{font-size:11px}
+  .scene{animation:none;height:500px;perspective:1650px}
+  .face{width:500px;height:452px;left:-250px;top:-226px;border-radius:16px}
+  .face .cap{left:24px;right:24px;bottom:24px}
+  .face .cap b{font-size:30px}.face .cap span{font-size:12px}.arrow{width:44px;height:44px;font-size:26px;opacity:.9}
+  .arrow.l{left:max(24px,calc((100vw - 1420px)/2))}.arrow.r{right:max(24px,calc((100vw - 1420px)/2))}
+  .hintm{font-size:11px;letter-spacing:.2em}.dots{gap:9px}.dots i{width:6px;height:6px}
+  .world-rail{left:max(28px,calc((100vw - 1400px)/2));bottom:30px;gap:12px}
+  .world-rail::before{font-size:10px;letter-spacing:.24em}
+  .dock-r{right:max(28px,calc((100vw - 1400px)/2));bottom:30px}
+  .ask-word{font-size:10px}.ai-dot{gap:10px;padding-right:16px}
+  .preview-social{bottom:68px;gap:14px}.preview-label{bottom:124px;font-size:11px}
+  .preview-legal{bottom:18px;gap:18px}.preview-legal a{font-size:12px}
+  .tiles{max-width:1100px;margin:auto;gap:22px;padding:0 32px 28px}
+  .tile{height:250px}.short .tile{height:220px}.tile .cap b{font-size:26px}.tile .cap span{font-size:10px}
+  .ovHead{padding-left:max(32px,calc((100vw - 1100px)/2));padding-right:max(32px,calc((100vw - 1100px)/2))}
+  #ask{left:auto;right:max(28px,calc((100vw - 1400px)/2));width:380px;bottom:90px;max-height:calc(100svh - 190px)}
+  .sheet{left:50%;right:auto;width:560px;max-width:calc(100vw - 48px);margin-left:-280px}
+  .opt b{font-size:20px}.opt span{font-size:11px}
+  .mnode:focus-visible,.menu-btn:focus-visible,.preview-social a:focus-visible,.lang-btn:focus-visible{outline:2px solid #efd9a8;outline-offset:5px}
+}
+@media (min-width:901px) and (max-height:759px){
+  .hdr{top:12px;height:64px}.logo svg{width:38px;height:38px}.logo b{font-size:17px}
+  .h1m{top:87px}.menu-btn{top:87px}
+}
+
+
+/* A small reduction of the four desktop actions. */
+@media(min-width:901px){
+ .mnode,.mnode.p{width:78px;height:78px}
+ .mnode svg,.mnode.p svg{width:23px;height:23px}
+ .short .mnode,.short .mnode.p{width:68px;height:68px}
+ .short .mnode svg,.short .mnode.p svg{width:20px;height:20px}
+}

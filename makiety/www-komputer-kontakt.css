@@ -1,0 +1,42 @@
+/* Contact retains the approved data and Luxury background. */
+body.desktop-contact main{max-width:1380px;padding:30px 48px 24px}
+.desktop-contact .contact-heading{max-width:none;position:relative;padding:0 260px 0 0;margin-bottom:26px}
+.desktop-contact .contact-heading h1{font:400 49px/1.1 Georgia,serif;text-align:left;margin:8px 0 12px;color:#efdcba}
+.desktop-contact .contact-heading h1::after{display:none}
+.desktop-contact .about-eyebrow{font:9px/1.6 Montserrat,Arial,sans-serif;letter-spacing:.2em;color:#bba16e;margin:0}
+.desktop-contact .contact-lead{font:12px/1.8 Montserrat,Arial,sans-serif;color:#cbbca2;max-width:680px;margin:0}
+.contact-write-link{position:absolute;right:0;bottom:6px;display:inline-flex;align-items:center;min-height:44px;font:11px/1.6 Montserrat,Arial,sans-serif;color:#d2b780;text-decoration:none;border-bottom:1px solid #a0824966}
+.desktop-contact .contact-locations{gap:24px;margin:0 0 24px;grid-template-columns:1fr 1fr}
+.desktop-contact .contact-location{padding:27px 30px 16px;position:relative;background:radial-gradient(ellipse at 10% 0,#65492632,transparent 60%),linear-gradient(135deg,#302315db,#130d07e8);border:1px solid #a4874f70;border-radius:19px;box-shadow:0 18px 48px #0004,inset 0 1px #e6ce9b12}
+.desktop-contact .contact-location-brand{margin-bottom:12px;color:#bba172;font:8px/1.5 Montserrat,Arial,sans-serif;letter-spacing:.19em}
+.desktop-contact .contact-location-brand img{width:28px;height:28px}
+.desktop-contact .contact-location h2{font:400 37px/1.12 Georgia,serif;margin:0 0 9px;color:#ead4ac}
+.desktop-contact .contact-location address{font:12px/1.7 Montserrat,Arial,sans-serif;color:#cdbb9c}
+.desktop-contact .contact-direct{margin:13px 0 16px;gap:0}
+.desktop-contact .contact-phone{font:400 29px/1.3 Georgia,serif;letter-spacing:.015em;min-height:44px;color:#f0dbb7}
+.desktop-contact .contact-email{font:11px/1.5 Montserrat,Arial,sans-serif;min-height:36px;color:#c7b28b}
+.desktop-contact .contact-hours{margin:0 0 19px;padding:15px 0;gap:20px;border-color:#a8895040}
+.desktop-contact .contact-hours dt{font:9px/1.5 Montserrat,Arial,sans-serif;letter-spacing:.09em;margin-bottom:6px;color:#bda16e}
+.desktop-contact .contact-hours dd{font:11px/1.7 Montserrat,Arial,sans-serif;color:#d6c5a9}
+.desktop-contact .contact-location-actions{gap:12px}
+.desktop-contact .contact-location-actions a{border-radius:25px;min-height:46px;padding:12px 18px;font:11px/1.5 Montserrat,Arial,sans-serif;align-items:center;display:flex;flex:1;text-decoration:none}
+.desktop-contact .about-primary{background:linear-gradient(135deg,#e8d4ab,#cdb079);box-shadow:0 0 26px #d0aa6514}
+.desktop-contact .outline-link{border-color:#a68b5577;background:#1a130ba8;color:#d8bf8e}
+.desktop-contact .contact-gift{font:10px/1.6 Montserrat,Arial,sans-serif;margin:9px 0 0;min-height:36px;color:#bca16f}
+.desktop-contact .contact-compose{border:1px solid #a4874f50;border-radius:16px;background:linear-gradient(135deg,#352719a0,#130d07b8);margin:0 0 20px;scroll-margin-top:22px}
+.contact-compose>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;cursor:pointer;padding:18px 26px;min-height:80px;color:#d9c195}
+.contact-compose>summary::-webkit-details-marker{display:none}
+.contact-compose>summary b{display:block;font:400 24px/1.25 Georgia,serif}
+.contact-compose>summary small{display:block;margin-top:5px;font:10px/1.6 Montserrat,Arial,sans-serif;color:#ad9975}
+.contact-compose>summary>span:last-child{font-size:23px}
+.contact-compose[open]>summary>span:last-child{transform:rotate(45deg)}
+.desktop-contact .contact-form-panel{margin:0;padding:20px 26px 26px;border:0;background:transparent;box-shadow:none}
+.desktop-contact .contact-form-copy h2{font:32px/1.2 Georgia,serif;margin:10px 0 18px;color:#e4cda5}
+.desktop-contact .fields input,.desktop-contact .fields textarea,.desktop-contact .fields select{background:#171108db;border:1px solid #a287515f;color:#ead8ba;font-size:14px}
+.desktop-contact .fields .primary{border-radius:25px;min-height:48px}
+.desktop-contact .contact-source{color:#a99778;margin-bottom:8px;font:10px/1.6 Montserrat,Arial,sans-serif}
+.desktop-contact :is(a,button,summary,input,textarea,select):focus-visible{outline:2px solid #efd49b;outline-offset:4px}
+@media(max-width:1150px){.desktop-contact header{flex-direction:column;gap:14px}.desktop-contact header nav{justify-content:center;flex-wrap:wrap}.desktop-contact .brand b{white-space:nowrap}.desktop-contact .contact-heading{padding-right:0}.contact-write-link{position:static;margin-top:9px}}
+@media(max-width:850px){body.desktop-contact main{padding:27px 24px}.desktop-contact .contact-locations{gap:18px}.desktop-contact .contact-location{padding:22px}.desktop-contact .contact-location-actions{flex-direction:column}.desktop-contact .contact-location-actions a{flex:auto}.desktop-contact .contact-hours{grid-template-columns:1fr;gap:12px}}
+@media(max-width:650px){.desktop-contact .contact-locations{grid-template-columns:1fr}.desktop-contact .contact-heading h1{font-size:42px}.desktop-contact .contact-location h2{font-size:34px}.desktop-contact .contact-hours{grid-template-columns:1fr 1fr;gap:12px}.desktop-contact .contact-form-panel{padding:14px 19px 22px}.contact-compose>summary{padding:18px 20px}.contact-compose>summary b{font-size:22px}.desktop-contact .fields .info-grid{grid-template-columns:1fr}}
+@media(max-width:380px){.desktop-contact .contact-hours{grid-template-columns:1fr}}

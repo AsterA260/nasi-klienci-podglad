@@ -1,0 +1,90 @@
+/* Dokładna kopia zatwierdzonej strony głównej; tylko cztery kategorie. */
+.mrow.top .mnode,.mrow.top .mnode.p,.short .mrow.top .mnode{background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20fill%3D%22none%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20stroke%3D%22%23b8a078%22%20opacity%3D%22.11%22%20transform%3D%22translate%28.7%201%29%22%3E%3Cpath%20d%3D%22M50%2076C32%2057%2034%2031%2050%2010c16%2021%2018%2047%200%2066Z%22%2F%3E%3Cpath%20d%3D%22M50%2076C23%2069%2013%2049%2015%2028c23%204%2035%2025%2035%2048ZM50%2076c27-7%2037-27%2035-48-23%204-35%2025-35%2048Z%22%2F%3E%3Cpath%20d%3D%22M50%2082C24%2087%207%2073%203%2053c21-1%2038%2011%2047%2029ZM50%2082c26%205%2043-9%2047-29-21-1-38%2011-47%2029Z%22%2F%3E%3Cpath%20d%3D%22M35%2091c9%205%2021%205%2030%200%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%23493617%22%20opacity%3D%22.2%22%3E%3Cpath%20d%3D%22M50%2076C32%2057%2034%2031%2050%2010c16%2021%2018%2047%200%2066Z%22%2F%3E%3Cpath%20d%3D%22M50%2076C23%2069%2013%2049%2015%2028c23%204%2035%2025%2035%2048ZM50%2076c27-7%2037-27%2035-48-23%204-35%2025-35%2048Z%22%2F%3E%3Cpath%20d%3D%22M50%2082C24%2087%207%2073%203%2053c21-1%2038%2011%2047%2029ZM50%2082c26%205%2043-9%2047-29-21-1-38%2011-47%2029Z%22%2F%3E%3Cpath%20d%3D%22M35%2091c9%205%2021%205%2030%200%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / 82% 82% no-repeat,radial-gradient(ellipse at 20% 20%,rgba(229,209,167,.12),transparent 58%),linear-gradient(145deg,#392c1d 0%,#241b11 65%,#171008 100%);border:2px solid #b99a5d;outline:1px solid rgba(230,208,160,.32);color:#241c12;animation:categoryLight 16s ease-in-out infinite!important}
+.mrow.top .mnode[data-node="0"]{animation-delay:0s!important}.mrow.top .mnode[data-node="2"]{animation-delay:-12s!important}.mrow.top .mnode[data-node="1"]{animation-delay:-8s!important}.mrow.top .mnode[data-node="3"]{animation-delay:-4s!important}
+.mrow.top .mnode>b,.mrow.top .mnode.p>b,.short .mrow.top .mnode>b{color:#241c12;text-shadow:none;font-size:10px;line-height:1.15;max-width:66px;text-transform:uppercase}
+.mrow.top .mnode>svg,.mrow.top .mnode.p>svg,.short .mrow.top .mnode>svg{stroke:#302416;filter:none;width:21px;height:21px}
+.mrow.top .mnode[data-node="2"]::before{content:none;display:none}.mrow.top .mnode[data-node="2"]>b{margin-top:7px}.mrow.top .action-globe{display:none}
+@keyframes categoryLight{
+ 0%,25%,100%{transform:scale(1);box-shadow:inset 2px 2px 3px rgba(236,215,175,.22),inset -5px -4px 9px rgba(52,35,15,.25),6px 6px 13px rgba(0,0,0,.38),-2px -2px 8px rgba(185,154,93,.06),0 0 8px rgba(185,154,93,.1)}
+ 12.5%{transform:scale(1.025);box-shadow:inset 2px 2px 3px rgba(236,215,175,.26),inset -5px -4px 9px rgba(52,35,15,.25),6px 6px 13px rgba(0,0,0,.38),-2px -2px 8px rgba(185,154,93,.08),0 0 16px rgba(185,154,93,.22)}
+}
+@media(max-width:600px){.mrow.top .mnode>b,.short .mrow.top .mnode>b{font-size:8px;max-width:51px}.mrow.top .mnode>svg,.short .mrow.top .mnode>svg{width:17px;height:17px}}
+@media(prefers-reduced-motion:reduce){.mrow.top .mnode,.mrow.top .mnode.p{animation:none!important;transform:none}}
+
+/* Krótki nagłówek nad ikonką; pełna nazwa pozostaje w aria-label. */
+.mrow.top .mnode[data-node="0"]::before{
+ content:attr(data-top-word);position:relative;inset:auto;top:4px;display:block;flex:none;
+ width:auto;height:auto;margin:0 0 3px;padding:0;border:0;border-radius:0;
+ background:none;-webkit-mask:none;mask:none;animation:none!important;transform:none;
+ opacity:1;z-index:1;mix-blend-mode:normal;color:#241c12;text-shadow:none;
+ font:700 9px/1.1 Arial,Helvetica,sans-serif;letter-spacing:0;text-transform:uppercase;
+}
+.mrow.top .mnode[data-node="0"]>b,.short .mrow.top .mnode[data-node="0"]>b{
+ width:calc(100% - 24px);max-width:52px;flex:none;margin-top:3px;padding:0;font-size:9px;line-height:1.1;
+ letter-spacing:0;white-space:normal;text-transform:uppercase;
+}
+.mrow.top .mnode[data-node="0"]>svg,.short .mrow.top .mnode[data-node="0"]>svg{width:19px;height:19px;flex:none}
+html[lang="en"] .mrow.top .mnode[data-node="2"]>b{font-size:9px;line-height:1.1;white-space:pre-line;max-width:calc(100% - 16px);margin-top:4px}
+/* Obliczenia walca zakładają środek perspektywy w połowie wysokości. */
+.scene{perspective-origin:50% 50%}
+@media(max-width:600px){
+ .mrow.top .mnode[data-node="0"]::before{font-size:8px;margin-bottom:2px}
+ .mrow.top .mnode[data-node="0"]>b,.short .mrow.top .mnode[data-node="0"]>b{font-size:7.5px;margin-top:2px}
+ .mrow.top .mnode[data-node="0"]>svg,.short .mrow.top .mnode[data-node="0"]>svg{width:16px;height:16px}
+ html[lang="en"] .mrow.top .mnode[data-node="2"]>b{font-size:8px}
+}
+
+/* Mali w istniejącym miejscu asystenta — bez zajmowania pola rolki. */
+.dock-r{align-items:flex-end;gap:12px;animation:none}
+#aiDot.mali-guide{position:relative;display:block;flex:none;width:205px;height:124px;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible;cursor:pointer}
+#aiDot.mali-guide::before{display:none}
+.mali-guide .mali-figure{position:absolute;right:0;bottom:0;display:block;width:92px;height:124px;object-fit:contain;object-position:center bottom;pointer-events:none;filter:drop-shadow(0 4px 10px #0004)}
+.mali-guide .mali-bubble{position:absolute;right:97px;bottom:20px;display:block;box-sizing:border-box;width:108px;padding:7px 10px;border:1px solid #bda36e70;border-radius:13px;background:linear-gradient(145deg,#302516ed,#1b150cf5);box-shadow:0 3px 10px #0002;color:#ead6ac;text-align:left}
+.mali-guide .mali-bubble::after{content:'';position:absolute;right:-4px;top:50%;width:6px;height:6px;transform:translateY(-50%) rotate(45deg);border-top:1px solid #bda36e70;border-right:1px solid #bda36e70;background:#211a0f}
+.mali-guide .mali-bubble b{display:block;font:italic 500 17px/1.1 'Cormorant Garamond',Georgia,serif;white-space:nowrap}
+.mali-guide .mali-bubble small{display:block;margin-top:2px;font:8.5px/1.3 Arial,Helvetica,sans-serif;color:#ccb481}
+#aiDot.mali-guide:focus-visible{outline:2px solid #ebc67d;outline-offset:5px;border-radius:15px}
+#aiDot.mali-guide:hover .mali-bubble{border-color:#d9b979;background:#332818}
+@media(min-width:601px) and (max-width:900px){.dock-r{bottom:calc(16px + env(safe-area-inset-bottom))}}
+@media(max-width:600px){
+ .dock-r{gap:10px}
+ #aiDot.mali-guide{width:164px;height:56px}
+ .mali-guide .mali-figure{width:46px;height:56px}
+ .mali-guide .mali-bubble{right:50px;bottom:4px;width:114px;padding:6px 9px;border-radius:12px}
+ .mali-guide .mali-bubble b{font-size:16px}.mali-guide .mali-bubble small{font-size:8px;margin-top:2px}
+ .world-rail{bottom:calc(74px + env(safe-area-inset-bottom))}
+ .preview-legal{bottom:calc(124px + env(safe-area-inset-bottom))}
+}
+
+/* Złoty refleks łagodnie pojawia się na fotografii wychodzącej na przód walca. */
+.face::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;border-radius:inherit;
+ background:linear-gradient(125deg,rgba(255,223,160,.13),transparent 37%,transparent 77%,rgba(228,176,87,.035));
+ box-shadow:inset 0 1px 0 rgba(255,231,181,.45),inset 1px 0 0 rgba(230,190,115,.12);
+ opacity:var(--reel-front,0)}
+.face[data-ang="0"] .ph{background-position:54% top}
+@media(prefers-reduced-motion:reduce){.face::after{opacity:.25}}
+
+/* Quiet Menu outline, matching the gold controls; worlds globe stays intact. */
+#menuBtn{background:linear-gradient(145deg,rgba(47,35,22,.94),rgba(20,14,8,.96));border:1px solid rgba(198,166,110,.8);box-shadow:inset 0 1px 2px rgba(233,204,146,.12),0 3px 12px rgba(0,0,0,.3),0 0 12px rgba(197,155,83,.12)}
+#menuBtn::before{content:none}
+#menuBtn::after{content:"";inset:-4px;border:1px solid rgba(230,208,160,.28);opacity:1;transform:none;animation:none;box-shadow:none}
+#menuBtn>span:first-child{background:transparent;color:#ead4a8;text-shadow:none}
+#menuBtn:hover{border-color:#e2c68d;box-shadow:inset 0 1px 2px rgba(233,204,146,.16),0 3px 12px rgba(0,0,0,.3),0 0 15px rgba(197,155,83,.2)}
+
+/* Independent comparison: dimensional rim and cast shadow. */
+.mrow.top .mnode,.mrow.top .mnode.p,.short .mrow.top .mnode{box-shadow:inset 0 1px 2px rgba(219,184,132,.09),inset 0 -3px 5px rgba(12,7,3,.3),0 3px 0 #4c3422,0 6px 1px #302013,0 12px 16px rgba(0,0,0,.58);transform:translateY(-3px);transition:transform .18s ease,filter .18s ease;isolation:isolate}
+@keyframes categoryLight{0%,25%,100%{transform:translateY(-3px);box-shadow:inset 0 1px 2px rgba(219,184,132,.09),inset 0 -3px 5px rgba(12,7,3,.3),0 3px 0 #4c3422,0 6px 1px #302013,0 12px 16px rgba(0,0,0,.58)}12.5%{transform:translateY(-4px) scale(1.018);box-shadow:inset 0 1px 2px rgba(219,184,132,.09),inset 0 -3px 5px rgba(12,7,3,.3),0 3px 0 #4c3422,0 6px 1px #302013,0 12px 16px rgba(0,0,0,.58),0 0 15px rgba(192,157,95,.14)}}
+@media(hover:hover){.mrow.top .mnode:hover{animation-play-state:paused!important;filter:brightness(1.06)}}
+.mrow.top .mnode:active{animation:none!important;transform:translateY(2px) scale(.99);box-shadow:inset 1px 2px 5px #0005,0 2px 0 #4b361e,0 6px 9px #0007}
+.mrow.top .mnode:focus-visible{outline:2px solid #f0d8a8;outline-offset:5px}
+@media(prefers-reduced-motion:reduce){.mrow.top .mnode,.mrow.top .mnode.p,.short .mrow.top .mnode{animation:none!important;transition:none;transform:none}}
+
+/* Inverted palette, matching Menu. */
+.mrow.top .mnode,.mrow.top .mnode.p,.short .mrow.top .mnode{border-color:#ad8e58;outline-color:rgba(230,208,160,.27);color:#ead4a8}
+.mrow.top .mnode>b,.mrow.top .mnode.p>b,.short .mrow.top .mnode>b,.mrow.top .mnode[data-node="0"]::before{color:#ead4a8;text-shadow:0 0 7px rgba(231,196,126,.28),0 1px 1px #0009}
+.mrow.top .mnode>svg,.mrow.top .mnode.p>svg,.short .mrow.top .mnode>svg{stroke:#e2c68d;filter:drop-shadow(0 0 3px rgba(226,198,141,.24))}
+
+/* Single quiet gold edge; brown depth replaces ornamental rings. */
+.mrow.top .mnode,.mrow.top .mnode.p,.short .mrow.top .mnode{border:1px solid rgba(185,154,93,.55);outline:none}
+.mrow.top .mnode::after,.mrow.top .mnode.p::after,.short .mrow.top .mnode::after{content:none!important;display:none!important}
+.mrow.top .mnode:focus-visible{outline:2px solid #ead4a8;outline-offset:5px}

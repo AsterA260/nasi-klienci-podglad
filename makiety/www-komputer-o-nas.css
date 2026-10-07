@@ -1,0 +1,43 @@
+/* Desktop About: original content, accepted Luxury light and colors. */
+body.desktop-about main{max-width:1380px;padding:38px 48px 30px}
+.desktop-about .about-hero{grid-template-columns:1fr 1fr;gap:58px;padding:0 0 36px}
+.desktop-about .about-hero figure{max-width:none;position:relative}
+.desktop-about .about-hero img{width:100%;height:405px;object-fit:cover;object-position:center;border:1px solid #aa8b525f;border-radius:19px;box-shadow:0 18px 50px #0006}
+.desktop-about .about-hero figcaption{position:absolute;bottom:19px;left:24px;text-align:left;color:#dfc797;text-shadow:0 1px 8px #000;font-size:8px}
+.desktop-about .about-hero-copy{padding-right:18px}
+.desktop-about h1{font:400 clamp(39px,4.3vw,59px)/1.06 Georgia,serif;text-align:left;margin:0 0 24px;color:#efdcba}
+.desktop-about h1::after{display:none}
+.desktop-about .about-eyebrow{font:9px/1.6 Montserrat,Arial,sans-serif;letter-spacing:.22em;color:#bda16d}
+.desktop-about .about-lead{font:13px/1.9 Montserrat,Arial,sans-serif;color:#d0bea0;max-width:480px;margin-bottom:22px}
+.desktop-about .about-actions{flex-direction:row;flex-wrap:wrap;align-items:center;gap:20px}
+.desktop-about .about-primary{border-radius:25px;padding:14px 23px;font:11px/1.5 Montserrat,Arial,sans-serif;box-shadow:0 0 28px #d9b97518}
+.desktop-about .about-text-link{font:11px/1.6 Montserrat,Arial,sans-serif;color:#cbb184;border-color:#93744577}
+.desktop-about .about-story{gap:46px;padding:30px 0;border-color:#aa8b5240}
+.desktop-about h2{font:400 30px/1.2 Georgia,serif;color:#e6cca0}
+.desktop-about .about-story-copy p:not(.about-eyebrow),.desktop-about .about-ritual p:not(.about-eyebrow){font:12px/1.9 Montserrat,Arial,sans-serif;color:#c5b59d}
+.desktop-about .desktop-team-details{margin:24px 0 34px;border:1px solid #9f80494d;border-radius:15px;background:linear-gradient(135deg,#34261799,#171009b0)}
+.desktop-team-details>summary{list-style:none;cursor:pointer;min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 25px;color:#dec496;font:22px/1.3 Georgia,serif}
+.desktop-team-details>summary::-webkit-details-marker{display:none}
+.desktop-team-details[open]>summary>span:last-child{transform:rotate(45deg)}
+.desktop-about .about-team{margin:0;padding:0 24px 24px;scroll-margin-top:25px}
+.desktop-about .about-team .panel{background:#170f0766}
+.desktop-about .about-offer{padding:0 0 32px}
+.desktop-about .about-paths{gap:20px}
+.desktop-about .about-path{min-height:175px;padding:26px;border-radius:16px;border-color:#a98a514d;background:linear-gradient(135deg,#392919bb,#170f08c9);box-shadow:0 12px 30px #0003}
+.desktop-about .about-path:hover{border-color:#d1af73}
+.desktop-about .about-path h3{font:29px/1.1 Georgia,serif}
+.desktop-about .about-path p{font:11px/1.7 Montserrat,Arial,sans-serif}
+.desktop-about .about-ritual{grid-template-columns:.7fr 1.3fr;gap:46px;padding:30px 0;border-color:#aa8b5240}
+.desktop-about .about-ritual figure{max-width:none}
+.desktop-about .about-ritual img{width:100%;height:310px;object-fit:cover;object-position:center 32%;border-radius:16px;border-color:#a98a514d}
+.desktop-about .about-salons{padding-top:32px}
+.desktop-about .about-salons .panel{background:linear-gradient(135deg,#332516c9,#130d07d9);border-color:#a98a514d}
+.desktop-about .about-source{margin-top:20px}
+.desktop-about :is(a,button,summary):focus-visible{outline:2px solid #efd49b;outline-offset:4px}
+@media(max-width:1150px){.desktop-about header{flex-direction:column;gap:14px}.desktop-about header nav{justify-content:center;flex-wrap:wrap}.desktop-about .brand b{white-space:nowrap}.desktop-about .about-hero{gap:30px}.desktop-about .about-actions{gap:12px}.desktop-about .about-hero img{height:370px}}
+@media(max-width:850px){body.desktop-about main{padding:28px 24px}.desktop-about .about-hero{grid-template-columns:1fr 1fr;gap:26px}.desktop-about h1{font-size:39px}.desktop-about .about-story{gap:28px}.desktop-about .about-paths{gap:12px}.desktop-about .about-path{padding:18px}.desktop-about .about-path h3{font-size:25px}.desktop-about .about-hero-copy{padding:0}}
+@media(max-width:650px){.desktop-about .about-hero{grid-template-columns:1fr;gap:25px}.desktop-about .about-hero figure,.desktop-about .about-hero-copy{max-width:none}.desktop-about .about-hero img{height:290px}.desktop-about .about-story,.desktop-about .about-ritual{grid-template-columns:1fr}.desktop-about .about-paths{grid-template-columns:1fr}.desktop-about .about-path{min-height:145px}.desktop-team-details>summary{font-size:20px}.desktop-about .about-team{padding:0 15px 15px}.desktop-about .about-ritual figure{width:100%}.desktop-about .about-ritual img{height:280px}}
+
+/* Frame the authentic greeting and herbal tray inside the existing panels. */
+.desktop-about .about-hero img{object-position:center 35%}
+.desktop-about .about-ritual img{object-position:center 48%}

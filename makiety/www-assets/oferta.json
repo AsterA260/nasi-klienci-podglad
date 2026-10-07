@@ -2,7 +2,7 @@
   {
     "url": "https://thaimaliwan.pl/service/tradycyjny-tajski-masaz/",
     "name": "Tradycyjny masaż tajski",
-    "text": "Masaż tradycyjny tajski łączy techniki uciskowe, rozciąganie i elementy pasywnej jogi. Osoba wykonująca masaż prowadzi ruchy ciała, dostosowując pracę do możliwości osoby masowanej. Uciski przeplatają się z pozycjami rozciągającymi. To propozycja dla osób, które szukają pracy z ciałem z wyraźnym elementem rozciągania. Zachowujemy odrębny fragment o historii tradycyjnego masażu tajskiego.",
+    "text": "Masaż tradycyjny tajski łączy techniki uciskowe, rozciąganie i elementy pasywnej jogi. Osoba wykonująca masaż prowadzi ruchy ciała, dostosowując pracę do możliwości osoby masowanej. Uciski przeplatają się z pozycjami rozciągającymi. To propozycja dla osób, które szukają pracy z ciałem z wyraźnym elementem rozciągania.",
     "salon": "ZW",
     "kind": "osoba",
     "prices": [
@@ -498,7 +498,7 @@
   {
     "url": "https://thaimaliwan.pl/service/rytual-romantyczny-maliwan-dla-dwojga/",
     "name": "Rytuał Romantyczny dla Dwojga",
-    "text": "Rytuał Romantyczny dla Dwojga to wspólny zabieg w jednym gabinecie, wykonywany równocześnie przez dwie masażystki. Łączy pielęgnację stóp, pracę olejkową z ciałem oraz zakończenie poświęcone głowie. Według roboczej rozpiski obejmuje kąpiel stóp z peelingiem, refleksoterapię stóp, etap olejkowy dla dwojga i refleksologię głowy. Nie obejmuje peelingu pleców — potwierdzone przez Norberta. Szczegółowy skład i czasy pozostają w osobnym opracowaniu rytuałów.",
+    "text": "Wspólny zabieg w jednym gabinecie, wykonywany równocześnie przez dwie masażystki. Obejmuje kąpiel stóp z peelingiem, refleksoterapię stóp, masaż olejkowy dla dwojga i refleksologię głowy.",
     "salon": "ZW",
     "kind": "pary",
     "prices": [
@@ -522,7 +522,7 @@
   {
     "url": "https://thaimaliwan.pl/service/rytual-krolewski-thai-spa/",
     "name": "Rytuał Królewski Thai Spa",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Ceremonia łączy kąpiel stóp, tradycyjny masaż tajski, ciepłe kompresy ziołowe i elementy refleksologii. To rozbudowany rytuał, w którym spotykają się dotyk, ciepło i aromat ziół.",
     "salon": "ZW",
     "kind": "rytualy",
     "prices": [
@@ -538,7 +538,7 @@
   {
     "url": "https://thaimaliwan.pl/service/rytual-gorace-kamienie-i-ziola/",
     "name": "Rytuał Gorące Kamienie i Zioła",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Rytuał łączy masaż rozgrzanymi kamieniami z pracą tajskimi kompresami ziołowymi. Ciepło kamieni przeplata się z aromatem i dotykiem ziołowych stempli.",
     "salon": "ZW",
     "kind": "rytualy",
     "prices": [
@@ -554,7 +554,7 @@
   {
     "url": "https://thaimaliwan.pl/service/rytual-detoks-i-odnowa/",
     "name": "Rytuał Detoks i Odnowa",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Ceremonia rozpoczyna się peelingiem całego ciała. Następnie wykonywany jest drenaż limfatyczny z elementami akupresury, a ostatni etap stanowi maska na ciało z naturalnych składników.",
     "salon": "ZW",
     "kind": "rytualy",
     "prices": [
@@ -570,7 +570,7 @@
   {
     "url": "https://thaimaliwan.pl/service/rytual-kwiat-duszy-dla-kobiet/",
     "name": "Rytuał Kwiat Duszy (dla kobiet)",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Rytuał dla kobiet wykonywany z użyciem olejku różanego. Delikatne techniki masażu obejmują twarz i ciało, tworząc spokojną ceremonię zapachu i dotyku.",
     "salon": "ZW",
     "kind": "rytualy",
     "prices": [
@@ -586,7 +586,7 @@
   {
     "url": "https://thaimaliwan.pl/service/rytual-ocean-breath-energetyczny/",
     "name": "Rytuał Ocean Breath (energetyczny)",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Dynamiczny rytuał łączący stretching, świadomy oddech i masaż energetyczny. To propozycja dla osób, które szukają bardziej aktywnej pracy z ciałem.",
     "salon": "ZW",
     "kind": "rytualy",
     "prices": [
@@ -600,9 +600,41 @@
     "priceCheckedAt": "2026-10-03"
   },
   {
+    "url": "https://thaimaliwan.pl/service/klasyczna-maliwan-spa-terapia/",
+    "name": "Tajski zabieg — Klasyczna Maliwan Spa Terapia",
+    "text": "Pakiet łączy tradycyjny masaż tajski z refleksoterapią. Do wyboru jest praca z głową, ze stopami lub połączenie obu tych zabiegów.",
+    "salon": "ZW",
+    "kind": "rytualy",
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 370.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/klasyczna-maliwan-spa-terapia/",
+    "priceCheckedAt": "2026-10-03"
+  },
+  {
+    "url": "https://thaimaliwan.pl/service/oil-aroma-relaks-spa/",
+    "name": "Tajski zabieg — Oil Aroma Relaks SPA",
+    "text": "Masaż olejkami aromatycznymi uzupełnia refleksoterapia głowy lub stóp. Można również wybrać połączenie refleksoterapii stóp i głowy w ramach jednego pakietu.",
+    "salon": "ZW",
+    "kind": "rytualy",
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwan.pl/bony-podarunkowe-vouchery-karnety/",
+    "priceSource": "https://thaimaliwan.pl/service/oil-aroma-relaks-spa/",
+    "priceCheckedAt": "2026-10-03"
+  },
+  {
     "url": "https://thaimaliwan.pl/service/rytual-romantyczny-maliwan-dla-dwojga/",
     "name": "Rytuał Romantyczny Maliwan™",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Ceremonia dla dwóch osób rozpoczyna się aromatyczną kąpielą stóp. Następnie wykonywany jest masaż olejkowy z elementami refleksologii. Rytuał kończy chwila odpoczynku przy tajskiej herbacie.",
     "salon": "ZW",
     "kind": "rytualy",
     "prices": [
@@ -626,7 +658,7 @@
   {
     "url": "https://thaimaliwanspa.pl/tradycyjny-tajski-masaz/",
     "name": "Tradycyjny masaż tajski",
-    "text": "Masaż tradycyjny tajski łączy techniki uciskowe, rozciąganie i elementy pasywnej jogi. Osoba wykonująca masaż prowadzi ruchy ciała, dostosowując pracę do możliwości osoby masowanej. Uciski przeplatają się z pozycjami rozciągającymi. To propozycja dla osób, które szukają pracy z ciałem z wyraźnym elementem rozciągania. Zachowujemy odrębny fragment o historii tradycyjnego masażu tajskiego.",
+    "text": "Masaż tradycyjny tajski łączy techniki uciskowe, rozciąganie i elementy pasywnej jogi. Osoba wykonująca masaż prowadzi ruchy ciała, dostosowując pracę do możliwości osoby masowanej. Uciski przeplatają się z pozycjami rozciągającymi. To propozycja dla osób, które szukają pracy z ciałem z wyraźnym elementem rozciągania.",
     "salon": "SZ",
     "kind": "osoba",
     "prices": [
@@ -836,6 +868,170 @@
     "priceCheckedAt": "2026-10-03"
   },
   {
+    "url": "https://thaimaliwanspa.pl/masaz-czteroreczny/",
+    "name": "Tajski zabieg na cztery ręce",
+    "text": "Masaż czteroręczny to wyjątkowe doświadczenie, w którym dwie terapeutki pracują jednocześnie nad Twoim ciałem, tworząc płynny i zsynchronizowany rytm dotyku. Taka forma masażu pozwala szybciej osiągnąć stan głębokiego odprężenia i „wyłączenia” umysłu. Intensywność doznań oraz pełne skupienie na ciele sprawiają, że jest to jedna z najbardziej luksusowych form masażu w ofercie Thai Maliwan Spa – idealna dla osób, które chcą doświadczyć czegoś naprawdę wyjątkowego.",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 390.0
+      },
+      {
+        "minutes": 90,
+        "price": 480.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/masaz-prenatalny/",
+    "name": "Tajski zabieg prenatalny",
+    "text": "Delikatny i bezpieczny masaż stworzony specjalnie z myślą o kobietach w ciąży. Masaż prenatalny w Thai Maliwan Spa pomaga zmniejszyć uczucie ciężkości nóg, napięcia w plecach oraz wspiera naturalny relaks organizmu. Terapeutki stosują techniki dostosowane do etapu ciąży, dbając o komfort, bezpieczeństwo i dobre samopoczucie przyszłej mamy. To chwila wytchnienia, która pozytywnie wpływa zarówno na ciało, jak i na emocje.",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 210.0
+      },
+      {
+        "minutes": 90,
+        "price": 260.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/masaz-liftingujacy-twarzy-i-glowy/",
+    "name": "Tajski zabieg liftingujący twarzy i głowy",
+    "text": "Naturalna pielęgnacja i terapia w jednym. Tajski masaż twarzy i głowy pobudza krążenie, rozluźnia mięśnie mimiczne oraz wspiera naturalne procesy regeneracyjne skóry. Zabieg pomaga poprawić napięcie skóry, nadać twarzy świeżość i jednocześnie przynosi głębokie odprężenie. Masaż obejmuje również okolice karku i głowy, dzięki czemu redukuje napięcia i przywraca poczucie lekkości.",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 220.0
+      },
+      {
+        "minutes": 90,
+        "price": 270.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/tajski-masaz-twarzy-i-glowy-w-stylu-kobido-thai/",
+    "name": "Tajski zabieg twarzy i głowy Kobido Thai",
+    "text": "Styl Kobido Thai to intensywna technika masażu twarzy i głowy zaadaptowana z tradycyjnych japońskich metod Kobido, połączona z zasadami masażu tajskiego. Używa precyzyjnych ruchów rąk, akupresury i rozciągania, aby głęboko rozluźnić mięśnie twarzy, poprawić krążenie i wspomóc naturalną regenerację skóry bez użycia kremów czy produktów.\nDla kogo?\nTen masaż jest odpowiedni dla każdego, kto chce zmniejszyć napięcie mięśni twarzy, wygładzić zmarszczki mimiczne i uzyskać odświeżony wygląd. Jest idealny dla osób poszukujących relaksu, lepszego kolorytu skóry i ulgi od bólów głowy spowodowanych codziennym napięciem.\nKorzyści\nGłęboka rewitalizacja i naturalne odmłodzenie skóry\nPoprawa przepływu krwi i drenaż limfatyczny\nZwiększona elastyczność i jędrność skóry\nJaśniejszy koloryt skóry o równomiernym kolorycie\nUlga napięcia w mięśniach twarzy, skóry głowy i szyi",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 220.0
+      },
+      {
+        "minutes": 90,
+        "price": 270.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/masaz-glowy-plecow-i-ramion/",
+    "name": "Masaż głowy, pleców i ramion",
+    "text": "Tajski masaż kręgosłupa – KrakÓW\nMasaż pleców, ramion oraz głowy to rodzaj masażu tajskiego, który koncentruje się przede wszystkim na górnych partiach ciała. Podstawowe techniki masażu, które wykonywane są przez masażystkę to ugniatanie, masowanie, rozcieranie, głaskanie, a także oklepywanie.\nDobry tajski masaż powinien obejmować zarówno plecy, ramiona i głowę, jak również szyję, kark oraz ręce. Tego typu masaż jest nie tylko pomocny na ból kręgosłupa, czy ból pleców. Doskonale sprawdza się również w przypadku: bóli głowy, migren, bezsenności czy problemów z koncentracją. Wynika to z faktu, iż masaż głowy pobudza krążenie mózgowe. Masaż szyi, karku i pleców pozwala natomiast ograniczyć ryzyko lub niwelować skutki zaburzeń, w obrębie kręgów szyjnych, piersiowych oraz lędźwiowych. Co bardzo ważne, dobrze wykonany masaż pozwala nie tylko zniwelować napięcia mięśniowe, ale również pełni funkcję masażu relaksacyjnego, przynosząc odprężenie psychiczne.\nTechniki stosowane w tajskim masażu pleców i górnych partii ciała\nDobry masaż pleców i górnych części ciała, który pozwala rozluźnić spięte mięśnie, obejmuje kilka kluczowych technik stosowanych w tradycyjnym tajskim masażu, np.:akupresura, pasywna joga czy ajuwerda.\nGłaskanie to technika, która rozpoczyna i kończy masaż, pozwalając się rozluźnić. Kolejna technika to rozcieranie, polegające na masowaniu ciała kolistymi ruchami o różnej sile nacisku. Ugniatanie polega na chwytaniu w dłonie poszczególnych odcinków mięśni i przechodzenie wzdłuż lub w poprzek do kolejnych partii mięśni. Oklepywanie obejmuje natomiast sprężyste uderzenia w mięśnie poprzeczne\nKomu poleca się masaż klasyczny głowy, pleców i ramion?\nMasaż pleców oraz górnych części ciała poleca się osobom, które uskarżają się na obolałe mięśnie pleców. Odczuwają dolegliwości związane z napiętymi mięśniami pleców czy ramion, a także cierpią na przewlekłe bóle kręgosłupa, pleców, barków, szyi, ramion lub głowy. Szczególnie polecany jest osobom, które dużo czasu spędzają w pozycji siedzącej, aby zniwelować wszelkie napięcia mięśniowe.\nDobry masaż tajski pozwala nie tylko na zniwelowanie dolegliwości bólowych, ale również na odprężenie, zrelaksowanie się, i odstresowanie. Wszystko to zapewniamy w naszym salonie Maliwan Thai Spa.\nMasaż pleców, ramion i głowy – najważniejsze korzyści\nograniczenie dolegliwości bólowych w górnych częściach ciała\nzmniejszenie napięć mięśniowych\npobudzenie krążenia, a w konsekwencji m.in. wzmocnienie cebulek włosów\nuczucie lekkości i większej sprawności fizycznej\nwsparcie w walce z bólami głowy, migreną, bezsennością\nrozluźnienie, odprężenie i poprawa samopoczucia\nPrzeciwwskazania do masażu pleców, ramion i głowy\nChoć masaż klasyczny pleców, ramion i głowy niesie za sobą wiele korzyści, w naszym salonie masażu tajskiego w Krakowie stosujemy pewne ograniczenia w przypadku takich przeciwwskazań jak infekcje i zapalenia skórne, choroby nowotworowe, nadciśnienie tętnicze krwi czy łamliwość kości. Masaż nie jest również wykonywany kobietom w ciąży oraz w trakcie miesiączki.\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, jak np. masaż dla seniorów, masaż stóp czy tajski masaż głowy.",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 190.0
+      },
+      {
+        "minutes": 90,
+        "price": 260.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/refleksoterapia-tajski-masaz-glowy/",
+    "name": "Tajski zabieg refleksoterapii głowy",
+    "text": "Masaż głowy – Kraków\nNa czym polega masaż skóry głowy? Refleksoterapia to w głównej mierze zabieg leczniczy, upiększający oraz stanowi niezwykle skuteczne antidotum na stres. Terapeuta masuje skórę głowy, gdzie poprzez układ nerwowy przechodzą tak zwane meridiany. Są one połączone z konkretnymi narządami ludzkiego organizmu. Wywierając wpływ na receptory, osoba wykonująca masaż dokonuje faktycznej poprawy stanu zdrowia pacjenta.\nSam masaż głowy jest bardzo przyjemny doznaniem. Masażystka wykonuje go opuszkami palców. Delikatne, okrężne ruchy pozwalają zrelaksować się oraz wyciszyć – osoba poddająca się zabiegowi pozostaje w pozycji leżącej, co zapewnia maksymalne odprężenie. Masaż skóry głowy szczególnie polecany jest przy różnego rodzaju schorzeniach neurologicznych, gdyż dobroczynnie oddziałuje na centralny układ nerwowy.\nKomu poleca się tajski masaż głowy?\nTajski masaż głowy można podzielić na dwa rodzaje: relaksacyjny i terapeutyczny. Traktując refleksoterapię jako masaż relaksacyjny, warto skorzystać z zabiegu, jeżeli cierpimy na:\ndepresję\nproblemy w życiu prywatnym bądź zawodowym\nprzemęczenie psychiczne\nbezsenność\nstany lękowe\nproblemy z zapamiętywaniem i koncentracją\nnerwowość\nbóle głowy, migreny.\nTraktując refleksoterapię zgodnie z jej przeznaczeniem, czyli jako zabieg terapeutyczny, możemy zapewnić ulgę w przypadku takich dolegliwości układu nerwowego jak:\nobrzęki twarzy i ciała\nzapalenia stawów lub mięśni\nstwardnienie rozsiane\nszczękościsk\nuszkodzenia neurologiczne nabyte\nchoroby nerwu twarzy\nbóle kręgosłupa\nprzemęczenie fizyczne.\nKorzyści płynące z masażu skóry głowy\nOprócz niewątpliwych korzyści relaksujących ciało i duszę, zabieg masażu skóry głowy niesie następujące korzyści zdrowotne:\npoprawia krążenie krwi\npomaga w stanach przewlekłego zmęczenia oraz bólu\nwspomaga w leczeniu migreny i bezsenności\npoprawia wydolność narządów\nwspiera leczenie chorób neurologicznych, jak również dobroczynnie wpływa na układ pokarmowy i oddechowy\ndziała jako terapia łagodząca w leczeniu nowotworów oraz innych chorób przewlekłych i nieuleczalnych\nwspiera organizm kobiet w ciąży i w czasie połogu.\nRefleksoterapia w formie tajskiego masażu głowy, to zabieg niosący ukojenie nie tylko dla ciała, lecz także samopoczucia. Warto oddać się w ręce doświadczonych i certyfikowanych terapeutek, by przekonać się o tym na własnej skórze.\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, np. masaż wyszczuplający, masaż dla dwojga czy masaż świecami.",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 190.0
+      },
+      {
+        "minutes": 90,
+        "price": 240.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/refleksoterapia-tajski-masaz-stop/",
+    "name": "Tajski zabieg refleksoterapii stóp",
+    "text": "Zabieg refleksoterapii składa się z trzech części: rozluźnianie stopy, praca na receptorach, masaż relaksacyjny stóp. Terapeuta podczas masażu wykonuje ruchy uciskowe inspirowane techniką masażu japońskiego – Shiatsu oraz akupresury. Stymulacja niektórych z receptorów znajdujących się na stopie może bywać bolesna – co świadczy o problemie danego narządu, bądź o jego wyraźnym osłabieniu. Masaż ten jest silnie związany z procesem detoksykacji organizmu.\nSerdecznie zapraszamy na tajski masaż stóp! Kraków, Thai Maliwan SPA, Szewska 12.\nDla kogo?\nRefleksoterapię stóp poleca się osobom, które chcą zrelaksować się podczas leczniczego masażu stóp.\nRefleksologia traktowana jest jako masaż leczniczy, w związku z czym osoby pobierające masaże stóp wyraźnie odczują poprawę samopoczucia. Masaż jednocześnie pobudza organizm do procesu samoregulacji oraz samouzdrawiania.\nKorzyści\nIntensywna detoksykacja organizmu\nPoprawa samopoczucia, likwidacja bezsenności\nStymulacja naturalnych procesów obronnych i samoregulujących organizmu\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, jak np. tajski masaż głowy, masaż wyszczuplający czy masaż dla par.",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 190.0
+      },
+      {
+        "minutes": 90,
+        "price": 240.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/masaz-wyszczuplajacy/",
+    "name": "Tajski zabieg modelujący sylwetkę",
+    "text": "Masaż wyszczuplający – Kraków\nNa czym polega masaż wyszczuplający? Pozbycie się zbędnych kilogramów nie oznacza wyłącznie intensywnej aktywności fizycznej. Dzięki odpowiednim technikom masażu, również z wykorzystaniem bańki chińskiej, komórki tłuszczowe w tkance podskórnej ulegają rozbiciu.\nMasaż wyszczuplający w 2-3 seriach tygodniowo w połączeniu z odpowiednią dietą i ćwiczeniami z pewnością przyniesie zadowalające efekty, pozwalając zredukować nadmierną tkankę tłuszczową.\nMasaż wyszczuplający – zalety\nMasaż wyszczuplający, w tym masaż bańką chińską, oprócz niewątpliwych korzyści w zwalczaniu dodatkowych kilogramów, ma także pozytywny wpływ na kondycję skóry. Tracenie wagi może znacząco wpływać na zmniejszenie jędrności skóry, a w efekcie jej obwisanie. Stosowanie regularnych zabiegów, takich jak masaż odchudzający, może sprzyjająco wpłynąć na jakość skóry.\nMasaż tajski wyszczuplający to doskonała metoda na likwidowanie nagromadzonej miejscowo tkanki tłuszczowej, ujędrnienia i zwiększa gładkości skóry, a także walce z cellulitem.\nPrzebieg masażu wyszczuplającego\nMasaż wyszczuplający w Thai Maliwan Spa Kraków, wykonywany jest intensywnie oraz energicznie. Wykorzystywanie odpowiednich technik rozgrzewa wybrane partie ciała, co w skuteczny sposób pozwala na rozbicie komórek tłuszczowych, a w konsekwencji – spalanie tkanki tłuszczowej.\nWskazania do MASAŻU:\nWarto zapisać się na zabieg masażu wyszczuplającego, gdy:\nzauważymy cellulit lub zastoje wody w problematycznych partiach ciała\ntkanka tłuszczowa rozłożona jest nierównomiernie, co skutkuje m.in. otyłością brzuszną\na także:\nw celu wymodelowania sylwetki, podniesieniu pośladków\nw celu wyszczuplenia i ujędrnienia skóry.\nKorzyści płynące z masażu wyszczuplającego i antycellulitowego\nStosowanie masażu wyszczuplającego oraz antycellulitowego niesie za sobą wiele korzyści, do których można zaliczyć między innymi:\nredukcję cellulitu\nutratę wagi\npozytywny wpływ na jędrność oraz wygląd skóry\nuniknięcie efekty obwisłej, luźnej skóry\nodprężenie\nMasaż wyszczuplający jest dedykowany zarówno kobietom, jak i mężczyznom – z powodzeniem wyszczupli brzuch, pośladki i uda, a także ramiona i plecy, co sprzyja procesowi modelowania sylwetki. Co warte podkreślenia, masaż antycellulitowy to nie tylko zabieg modelujący sylwetkę, ale również źródło relaksu i odprężenia. Czas trwania takiego masażu to od 60 do 120 minut. Będzie to z pewnością miło spędzony czas!\nJeżeli pragniesz poznać korzyści, jakie daje masaż wyszczuplający, Maliwan Thai Spa jest do tego odpowiednim miejscem! Zabiegi wykonywane są przez certyfikowane i doświadczone wieloletnią praktyką terapeutki. Pamiętaj, że dążenie do wymarzonej sylwetki to nie tylko odpowiednia dieta i aktywność fizyczna, ale również dodatkowe wsparcie w procesie rozbijania komórek tłuszczowych pod postacią profesjonalnego masażu.\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, np. masaż dla dwojga, masaż świecami czy tradycyjny masaż tajski.",
+    "salon": "SZ",
+    "kind": "osoba",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 250.0
+      },
+      {
+        "minutes": 90,
+        "price": 320.0
+      },
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/cennik/",
+    "priceCheckedAt": "2026-10-04"
+  },
+  {
     "url": "https://thaimaliwanspa.pl/masaz-tajski-klasyczny-dla-pary/",
     "name": "Tradycyjny masaż tajski dla par",
     "text": "Tradycyjny masaż tajski dla par odbywa się jednocześnie w jednym gabinecie. Dwie masażystki pracują równolegle, każda zajmując się jedną osobą. Masaż łączy uciski, rozciąganie i elementy pasywnej jogi. Wspólna wizyta pozwala doświadczyć tradycyjnych technik tajskich we dwoje, z uwzględnieniem indywidualnego komfortu każdej osoby.",
@@ -956,9 +1152,33 @@
     "priceCheckedAt": "2026-10-03"
   },
   {
+    "url": "https://thaimaliwanspa.pl/rytual-romantyczny-maliwan-dla-dwojga/",
+    "name": "Rytuał Romantyczny Maliwan™ (dla dwojga)",
+    "text": "Wspólny zabieg w jednym gabinecie, wykonywany równocześnie przez dwie masażystki. Obejmuje kąpiel stóp z peelingiem, refleksoterapię stóp, masaż olejkowy dla dwojga i refleksologię głowy.",
+    "salon": "SZ",
+    "kind": "pary",
+    "prices": [
+      {
+        "minutes": 60,
+        "price": 520.0
+      },
+      {
+        "minutes": 90,
+        "price": 670.0
+      },
+      {
+        "minutes": 120,
+        "price": 820.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/shop/",
+    "priceSource": "https://thaimaliwanspa.pl/rytual-romantyczny-maliwan-dla-dwojga/",
+    "priceCheckedAt": "2026-10-03"
+  },
+  {
     "url": "https://thaimaliwanspa.pl/rytual-krolewski-thai-spa/",
     "name": "Rytuał Królewski Thai Spa",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Ceremonia łączy kąpiel stóp, tradycyjny masaż tajski, ciepłe kompresy ziołowe i elementy refleksologii. To rozbudowany rytuał, w którym spotykają się dotyk, ciepło i aromat ziół.",
     "salon": "SZ",
     "kind": "rytualy",
     "prices": [
@@ -974,7 +1194,7 @@
   {
     "url": "https://thaimaliwanspa.pl/rytual-gorace-kamienie-i-ziola/",
     "name": "Rytuał Gorące Kamienie i Zioła",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Rytuał łączy masaż rozgrzanymi kamieniami z pracą tajskimi kompresami ziołowymi. Ciepło kamieni przeplata się z aromatem i dotykiem ziołowych stempli.",
     "salon": "SZ",
     "kind": "rytualy",
     "prices": [
@@ -990,7 +1210,7 @@
   {
     "url": "https://thaimaliwanspa.pl/rytual-detoks-i-odnowa/",
     "name": "Rytuał Detoks i Odnowa",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Ceremonia rozpoczyna się peelingiem całego ciała. Następnie wykonywany jest drenaż limfatyczny z elementami akupresury, a ostatni etap stanowi maska na ciało z naturalnych składników.",
     "salon": "SZ",
     "kind": "rytualy",
     "prices": [
@@ -1006,7 +1226,7 @@
   {
     "url": "https://thaimaliwanspa.pl/rytual-kwiat-duszy-dla-kobiet/",
     "name": "Rytuał Kwiat Duszy (dla kobiet)",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Rytuał dla kobiet wykonywany z użyciem olejku różanego. Delikatne techniki masażu obejmują twarz i ciało, tworząc spokojną ceremonię zapachu i dotyku.",
     "salon": "SZ",
     "kind": "rytualy",
     "prices": [
@@ -1022,7 +1242,7 @@
   {
     "url": "https://thaimaliwanspa.pl/rytual-ocean-breath-energetyczny/",
     "name": "Rytuał Ocean Breath (energetyczny)",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Dynamiczny rytuał łączący stretching, świadomy oddech i masaż energetyczny. To propozycja dla osób, które szukają bardziej aktywnej pracy z ciałem.",
     "salon": "SZ",
     "kind": "rytualy",
     "prices": [
@@ -1036,9 +1256,41 @@
     "priceCheckedAt": "2026-10-03"
   },
   {
+    "url": "https://thaimaliwanspa.pl/klasyczna-maliwan-spa-terapia/",
+    "name": "Tajski zabieg — Klasyczna Maliwan Spa Terapia",
+    "text": "Pakiet łączy tradycyjny masaż tajski z refleksoterapią. Do wyboru jest praca z głową, ze stopami lub połączenie obu tych zabiegów.",
+    "salon": "SZ",
+    "kind": "rytualy",
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 370.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/sklep/",
+    "priceSource": "https://thaimaliwanspa.pl/klasyczna-maliwan-spa-terapia/",
+    "priceCheckedAt": "2026-10-03"
+  },
+  {
+    "url": "https://thaimaliwanspa.pl/oil-aroma-relaks-spa/",
+    "name": "Tajski zabieg — Oil Aroma Relaks SPA",
+    "text": "Masaż olejkami aromatycznymi uzupełnia refleksoterapia głowy lub stóp. Można również wybrać połączenie refleksoterapii stóp i głowy w ramach jednego pakietu.",
+    "salon": "SZ",
+    "kind": "rytualy",
+    "prices": [
+      {
+        "minutes": 120,
+        "price": 390.0
+      }
+    ],
+    "buyUrl": "https://thaimaliwanspa.pl/sklep/",
+    "priceSource": "https://thaimaliwanspa.pl/oil-aroma-relaks-spa/",
+    "priceCheckedAt": "2026-10-03"
+  },
+  {
     "url": "https://thaimaliwanspa.pl/rytual-romantyczny-maliwan-dla-dwojga/",
     "name": "Rytuał Romantyczny Maliwan™ (dla dwojga)",
-    "text": "Przebieg rytuału, skład i czas wymagają uzgodnienia według zapisanych procedur. Pełna dotychczasowa oferta dostępna pod zachowanym adresem.",
+    "text": "Ceremonia dla dwóch osób rozpoczyna się aromatyczną kąpielą stóp. Następnie wykonywany jest masaż olejkowy z elementami refleksologii. Rytuał kończy chwila odpoczynku przy tajskiej herbacie.",
     "salon": "SZ",
     "kind": "rytualy",
     "prices": [

@@ -1,0 +1,51 @@
+/* Phone and portrait tablet adaptations of the approved reel. */
+@media(max-width:900px){
+ .scene{animation:none}
+ .mrow.top{padding:0 12px;gap:12px;--action-label-size:7px}
+ .mrow.top .mnode,.short .mrow.top .mnode{width:60px;height:60px;flex:none}
+ .mrow.top .mnode>svg,.short .mrow.top .mnode>svg{width:18px;height:18px}
+ .mrow.top .mnode[data-node="2"]>svg{width:16px;height:16px}
+ .mrow.top .mnode[data-node="0"]>b{margin-top:5px}
+ .h1m{padding:0 12px;font-size:8px;letter-spacing:.15em}
+ .menu-btn{top:calc(102px + env(safe-area-inset-top));right:14px;min-height:44px}
+ .arrow{width:44px;height:44px;font-size:23px}.arrow.l{left:8px}.arrow.r{right:8px}
+ .hintm{font-size:8px;letter-spacing:.12em}
+ .preview-social{bottom:calc(164px + env(safe-area-inset-bottom));gap:12px}
+ .preview-legal{bottom:calc(114px + env(safe-area-inset-bottom));gap:8px}
+ .preview-legal a{font-size:11px}
+ .world-rail{left:50%;transform:translateX(-50%);bottom:calc(68px + env(safe-area-inset-bottom));animation:none;gap:8px}
+ .world-rail::before{font-size:8px;letter-spacing:.2em;white-space:nowrap;bottom:calc(100% + 7px)}
+ .world-rail .world-dot,.world-rail .orb,.world-rail .orb-face,.world-rail .rail-next{min-width:44px;min-height:44px}
+ .dock-r{left:50%;right:auto;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));animation:none}
+ .preview-label{bottom:calc(220px + env(safe-area-inset-bottom));font-size:9px}
+ .tiles .tile .cap b{font-size:22px}.tiles .tile .cap span{font-size:9px;white-space:normal;line-height:1.4}
+ .tiles{gap:12px;padding:0 12px 24px}.tile{height:200px}
+ .lang-btn{min-width:34px;min-height:44px}
+}
+@media(min-width:601px) and (max-width:900px){
+ .hdr{left:18px;right:18px;height:74px;padding:0 18px}
+ .logo b{font-size:17px}.logo strong{font-size:10px}
+ .lang-btn{min-width:44px}
+ .h1m{top:96px;font-size:10px}
+ .menu-btn{top:120px;right:26px}
+ .mrow.top{gap:22px;--action-label-size:9px}
+ .mrow.top .mnode,.short .mrow.top .mnode{width:72px;height:72px}
+ .mrow.top .mnode>svg,.short .mrow.top .mnode>svg{width:22px;height:22px}
+ .face{width:380px;height:400px;left:-190px;top:-200px}
+ .scene{height:500px;perspective:1650px}
+ .face .cap b{font-size:27px}.face .cap span{font-size:11px}
+ .tile{height:250px}
+ .world-rail{left:24px;transform:none;bottom:calc(20px + env(safe-area-inset-bottom))}
+ .dock-r{left:auto;right:24px;transform:none;bottom:calc(20px + env(safe-area-inset-bottom))}
+ .preview-social{bottom:calc(114px + env(safe-area-inset-bottom))}
+ .preview-legal{bottom:calc(64px + env(safe-area-inset-bottom))}
+ .preview-label{bottom:calc(170px + env(safe-area-inset-bottom))}
+}
+/* Landscape phones get a scrollable canvas instead of overlapping fixed controls. */
+html.responsive-scroll{height:auto;overflow-y:auto;overflow-x:hidden}
+html.responsive-scroll body{height:var(--responsive-height);overflow:visible;touch-action:pan-y}
+.responsive-scroll .hdr,.responsive-scroll .h1m,.responsive-scroll .menu-btn,
+.responsive-scroll .scene,.responsive-scroll .mrow,.responsive-scroll .sprocket,
+.responsive-scroll .arrow,.responsive-scroll .dots,.responsive-scroll .hintm,
+.responsive-scroll .world-rail,.responsive-scroll .dock-r,.responsive-scroll .preview-social,
+.responsive-scroll .preview-legal,.responsive-scroll .preview-label{position:absolute}

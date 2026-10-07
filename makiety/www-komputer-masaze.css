@@ -1,0 +1,37 @@
+/* Isolated desktop offer, preserving the accepted Luxury background. */
+.massage-page.massage-browsing main{max-width:1440px;padding:34px 48px 20px}
+.massage-page .massage-heading{display:flex;align-items:center;justify-content:space-between;gap:28px;margin:0 0 28px}
+.massage-page .massage-heading h1{text-align:left;font-size:clamp(34px,3.7vw,50px);margin:10px 0 12px}
+.massage-page .massage-heading h1::after{display:none}
+.massage-heading p{margin:0;color:#c9b892;font-size:13px;line-height:1.6}
+.massage-heading .detail-label{font-size:9px;letter-spacing:.22em}
+.massage-salon{display:grid;gap:8px;min-width:185px;font:10px/1.4 Montserrat,Arial,sans-serif;letter-spacing:.1em;color:#c9b892}
+.massage-salon select{width:100%;min-height:46px;border:1px solid #947749;border-radius:25px;padding:10px 18px;background:#1e160ce8;color:#ead4a9;font:12px Montserrat,Arial,sans-serif;letter-spacing:normal}
+.massage-gateways{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.massage-page .massage-gateway{position:relative;display:block;isolation:isolate;height:clamp(350px,53vh,510px);overflow:hidden;border:1px solid #a48650;border-radius:20px;padding:0;text-align:left;background:#21170d;color:#f1dfbd;box-shadow:0 20px 60px #0007;cursor:pointer}
+.massage-gateway img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;transition:transform 1s ease}
+.massage-gateway:hover img{transform:scale(1.035)}
+.massage-shade{position:absolute;inset:0;background:linear-gradient(180deg,#08050225 30%,#080502d9 94%)}
+.massage-number{position:absolute;top:25px;left:28px;font:11px Montserrat,Arial,sans-serif;letter-spacing:.2em;color:#f0d59e}
+.massage-card-copy{position:absolute;bottom:28px;left:30px;right:30px;display:grid;gap:12px}
+.massage-card-title{font:400 clamp(31px,3.2vw,46px)/1.12 Georgia,serif;color:#f6e5c3}
+.massage-card-subtitle{font:13px/1.5 Montserrat,Arial,sans-serif;color:#e4d2b3}
+.massage-card-bottom{border-top:1px solid #b3966355;padding-top:18px;margin-top:9px;display:flex;justify-content:space-between;align-items:center;gap:14px;font:11px/1.4 Montserrat,Arial,sans-serif;color:#e6c895}
+.massage-card-bottom [aria-hidden]{font-size:20px;margin-left:8px}
+.massage-page .massage-footnote{font:10px/1.6 Montserrat,Arial,sans-serif;color:#b3a080;text-align:center;margin:19px 0 0}
+.massage-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:0 0 26px}
+.massage-toolbar .back{margin:0;font-size:12px;color:#d2bc94}
+.massage-tabs{display:flex;gap:8px}
+.massage-tabs button{min-height:44px;border:1px solid #93754580;padding:10px 18px;border-radius:24px;background:#20170dcc;color:#dec9a0;font:11px Montserrat,Arial,sans-serif}
+.massage-tabs button[aria-pressed=true]{background:linear-gradient(135deg,#e8d5ae,#cbae75);color:#2d2113;border-color:#d9bf89}
+.massage-page .offer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.massage-page .offer-photo{height:245px;object-fit:cover}
+.massage-page .offer-tile{border-radius:16px;overflow:hidden}
+.massage-page .offer-tile h2{font-size:25px;min-height:60px;line-height:1.2}
+.massage-page .offer-description summary{min-height:44px;display:flex;align-items:center;cursor:pointer}
+.massage-page .offer-description p{font-size:13px;line-height:1.7;color:#dfd2bb}
+.massage-page :is(button,a,select):focus-visible{outline:2px solid #f2da9e;outline-offset:4px}
+@media(max-width:1000px){.massage-page.massage-browsing main{padding:28px 24px 20px}.massage-page .offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.massage-card-copy{left:22px;right:22px}.massage-gateways{gap:18px}}
+@media(max-width:600px){.massage-page .massage-heading{display:block}.massage-salon{margin-top:20px;max-width:240px}.massage-gateways{grid-template-columns:1fr}.massage-page .massage-gateway{height:370px}.massage-page .offer-grid{grid-template-columns:1fr}.massage-toolbar{align-items:flex-start;flex-direction:column}.massage-page .offer-tile h2{min-height:0}.massage-page .offer-photo{height:260px}}
+@media(prefers-reduced-motion:reduce){.massage-gateway img{transition:none}.massage-gateway:hover img{transform:none}}
+@media(min-width:761px) and (max-width:1050px){.massage-page header{flex-direction:column;gap:15px}.massage-page header nav{justify-content:center}.massage-page .brand{flex-shrink:0}.massage-page .brand b{white-space:nowrap}}

@@ -1,0 +1,44 @@
+/* Wspólna prezentacja zdjęć: wzorzec zatwierdzony 2026-10-06.
+   Dotyczy kart masaży, rytuałów i rezerwacji; oryginały pozostają zachowane. */
+.desktop-booking.desktop-booking img[src*="oferta-spojna/"]{filter:none;object-fit:cover;object-position:50% 50%}
+.desktop-booking.desktop-booking img[src$="oferta-spojna/sportowy-klisza.png"]{object-position:50% 83%}
+.desktop-booking.desktop-booking img[src$="oferta-spojna/lifting.png"]{object-position:50% 55%}
+.desktop-booking.desktop-booking img[src$="rezerwacje-wybrane/tajski-klisza.png"]{filter:saturate(.83) brightness(.96);object-position:50% 73%}
+.desktop-booking.desktop-booking img[src$="rezerwacje-wybrane/olejki-rolka.png"]{filter:saturate(.84) brightness(.96);object-position:50% 79%}
+.desktop-booking.desktop-booking img[src$="rezerwacje-wybrane/kamienie-klisza.png"]{filter:saturate(.72) contrast(.96) brightness(.97)}
+.desktop-booking.desktop-booking img[src$="rezerwacje-wybrane/swieca-klisza.png"]{filter:saturate(.8) contrast(.96) brightness(.95);object-position:50% 62%}
+.desktop-booking.desktop-booking img[src$="rezerwacje-wybrane/lomi.jpg"]{filter:saturate(.7) sepia(.18) contrast(.95) brightness(.96);object-position:50% 63%}
+.desktop-booking.desktop-booking img[src$="rezerwacje-pary/stemple-wzorzec.png"]{filter:none;object-position:50% 50%}
+.desktop-booking.desktop-booking img[src$="rezerwacje-pary/romantyczny-wzorzec.png"]{filter:saturate(.85);object-position:50% 50%}
+.desktop-booking .massage-gateway img[src$="kategoria-osoba-klisza.png"]{object-position:50% 72%}
+.desktop-booking .massage-gateway img[src$="kategoria-pary.jpg"]{filter:saturate(.55) sepia(.42) contrast(.92) brightness(1.02);object-position:50% 50%}
+
+/* Legacy reservation entry uses the same approved assets and framing. */
+/* Wspólna prezentacja zdjęć: wzorzec zatwierdzony 2026-10-06.
+   Dotyczy kart masaży, rytuałów i rezerwacji; oryginały pozostają zachowane. */
+.booking-photo-standard.booking-photo-standard img[src*="oferta-spojna/"]{filter:none;object-fit:cover;object-position:50% 50%}
+.booking-photo-standard.booking-photo-standard img[src$="oferta-spojna/sportowy-klisza.png"]{object-position:50% 83%}
+.booking-photo-standard.booking-photo-standard img[src$="oferta-spojna/lifting.png"]{object-position:50% 55%}
+.booking-photo-standard.booking-photo-standard img[src$="rezerwacje-wybrane/tajski-klisza.png"]{filter:saturate(.83) brightness(.96);object-position:50% 73%}
+.booking-photo-standard.booking-photo-standard img[src$="rezerwacje-wybrane/olejki-rolka.png"]{filter:saturate(.84) brightness(.96);object-position:50% 79%}
+.booking-photo-standard.booking-photo-standard img[src$="rezerwacje-wybrane/kamienie-klisza.png"]{filter:saturate(.72) contrast(.96) brightness(.97)}
+.booking-photo-standard.booking-photo-standard img[src$="rezerwacje-wybrane/swieca-klisza.png"]{filter:saturate(.8) contrast(.96) brightness(.95);object-position:50% 62%}
+.booking-photo-standard.booking-photo-standard img[src$="rezerwacje-wybrane/lomi.jpg"]{filter:saturate(.7) sepia(.18) contrast(.95) brightness(.96);object-position:50% 63%}
+.booking-photo-standard.booking-photo-standard img[src$="rezerwacje-pary/stemple-wzorzec.png"]{filter:none;object-position:50% 50%}
+.booking-photo-standard.booking-photo-standard img[src$="rezerwacje-pary/romantyczny-wzorzec.png"]{filter:saturate(.85);object-position:50% 50%}
+.booking-photo-standard .massage-gateway img[src$="kategoria-osoba-klisza.png"]{object-position:50% 72%}
+.booking-photo-standard .massage-gateway img[src$="kategoria-pary.jpg"]{filter:saturate(.55) sepia(.42) contrast(.92) brightness(1.02);object-position:50% 50%}
+
+.booking-photo-standard .offer-tile .offer-photo{object-fit:cover}
+
+.booking-photo-standard .offer-photo[src$="rezerwacje-pary/olejki.jpg"]{object-position:50% 40%;filter:saturate(.75) sepia(.22) contrast(.95) brightness(1.02)}
+.booking-photo-standard .offer-photo[src$="rezerwacje-pary/kamienie-zabieg.png"]{filter:saturate(.65) sepia(.18) contrast(.92) brightness(1.05)}
+.booking-photo-standard .category img[src$="kategoria-pary.jpg"]{filter:saturate(.55) sepia(.42) contrast(.92) brightness(1.02)}
+
+/* Karty menu: typografia zgodna z zaakceptowanym widokiem WWW. */
+.booking-photo-standard .offer-tile h2{font-family:"Helvetica Neue",Arial,sans-serif;font-size:17px;font-weight:400;line-height:1.4;letter-spacing:.015em;color:#d7b675;text-shadow:0 1px 2px #100b06,0 0 12px #c4974420;min-height:72px;margin:0 0 10px;text-wrap:pretty}
+.booking-photo-standard .offer-tile .offer-intro{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.5;color:#eee5d5;min-height:36px;margin:0 0 18px}
+.booking-photo-standard .offer-tile .offer-description p{color:#eee5d5}
+.booking-photo-standard .offer-tile .offer-description summary{color:#d7c49e}
+.booking-photo-standard .offer-tile{border-color:#9c7e4888;background:linear-gradient(145deg,#302214e8,#120d08f0);box-shadow:0 12px 36px #0004,inset 0 1px 0 #fff2cf0b}
+@media(max-width:480px){.booking-photo-standard .offer-tile h2{font-size:18px;min-height:0}.booking-photo-standard .offer-tile .offer-intro{min-height:0}}

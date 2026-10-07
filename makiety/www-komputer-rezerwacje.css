@@ -1,0 +1,160 @@
+.world-rail{position:fixed;left:10px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:39;display:flex;align-items:center;gap:8px;animation:fadeUp .9s ease-out 1.8s both}
+.world-rail::before{content:var(--rail-txt,"Wejdź w nasze światy");position:absolute;left:5px;bottom:calc(100% + 10px);font-family:var(--sans);font-size:9px;letter-spacing:.34em;text-transform:uppercase;white-space:nowrap;pointer-events:none;
+  color:#E2C68D;text-shadow:0 0 10px rgba(185,154,93,.18);animation:railGold 7.5s ease-in-out infinite}
+@keyframes railGold{0%,100%{color:#F6E7C0;text-shadow:0 0 12px rgba(246,231,192,.20)}50%{color:#B99A5D;text-shadow:0 0 16px rgba(185,154,93,.45)}}
+.world-rail::after{content:"";position:absolute;left:0;bottom:calc(100% + 6px);width:132px;height:14px;pointer-events:none;border-radius:50%;
+  background:radial-gradient(60% 100% at 34% 50%,rgba(185,154,93,.26),transparent 72%);filter:blur(7px);animation:railBreath 7.5s ease-in-out infinite}
+@keyframes railBreath{0%,100%{opacity:.18}50%{opacity:.60}}
+.world-dot{position:relative;flex:none;height:44px;padding:3px;border-radius:999px;display:flex;align-items:center;color:#f6e8c6;border:1px solid rgba(217,192,138,.58);
+  background:linear-gradient(145deg,rgba(35,25,19,.94),rgba(20,14,11,.96));overflow:visible;
+  box-shadow:0 12px 30px rgba(0,0,0,.42),inset 0 1px 1px rgba(255,244,215,.45),0 0 16px rgba(197,139,72,.16)}
+.world-dot::before{content:"";position:absolute;inset:-3px;border-radius:999px;border:1px solid rgba(246,232,198,.24);box-shadow:0 0 13px rgba(217,192,138,.14);animation:aiBreath 3.8s ease-in-out infinite;pointer-events:none}
+@keyframes aiBreath{0%,100%{opacity:.48;transform:scale(.94)}50%{opacity:1;transform:scale(1.04)}}
+.globe{position:relative;width:38px;height:38px;flex:none;border-radius:50%;perspective:180px;border:1px solid rgba(217,192,138,.74);
+  box-shadow:0 0 12px rgba(197,139,72,.22),inset 0 0 14px rgba(197,139,72,.20);background:radial-gradient(circle at 34% 28%,rgba(214,172,108,.30),rgba(28,20,14,.9) 70%);overflow:hidden}
+.globe-in{position:absolute;inset:4px;transform-style:preserve-3d;animation:globeSpin 16s linear infinite}
+.globe-in i{position:absolute;inset:0;border:1px solid rgba(223,196,141,.60);border-radius:50%}
+.globe-in i:nth-child(1){transform:rotateY(0deg)}.globe-in i:nth-child(2){transform:rotateY(36deg)}.globe-in i:nth-child(3){transform:rotateY(72deg)}.globe-in i:nth-child(4){transform:rotateY(108deg)}.globe-in i:nth-child(5){transform:rotateY(144deg)}
+.globe .par{position:absolute;left:4px;right:4px;border:1px solid rgba(223,196,141,.42);border-radius:50%;pointer-events:none}
+.globe .par.a{top:32%;height:36%}.globe .par.b{top:18%;height:64%}
+@keyframes globeSpin{from{transform:rotateY(0deg)}to{transform:rotateY(360deg)}}
+.orb{position:relative;flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;padding:0;opacity:.86;transition:transform .3s var(--ease),opacity .3s var(--ease)}
+.orb-face{--ic:#e2c68d;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;overflow:hidden;border:1px solid rgba(226,198,141,.62);
+  box-shadow:0 0 12px rgba(226,198,141,.24),inset 0 0 14px rgba(226,198,141,.18);background:radial-gradient(circle at 34% 28%,rgba(226,198,141,.24),rgba(24,18,13,.92) 70%)}
+.orb-face svg{width:19px;height:19px;fill:none;stroke:var(--ic);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.orb-face img.logo-mark{width:27px;height:auto;filter:drop-shadow(0 1px 5px rgba(0,0,0,.55))}
+.orb-face .lock{display:flex;flex-direction:column;align-items:center;gap:1px;line-height:1}
+.orb-face .lock img{width:22px;height:auto}
+.orb-face .lock b{font-family:var(--sans);font-weight:400;font-size:3.7px;letter-spacing:.14em;text-transform:uppercase;color:var(--ic);opacity:.9;white-space:nowrap}
+.orb.soon{opacity:.5}
+.orb-swap{animation:orbSwap .5s var(--ease)}
+@keyframes orbSwap{0%{opacity:0;transform:translateX(10px) scale(.86)}100%{opacity:.86;transform:none}}
+.rail-next{flex:none;display:flex;align-items:center;height:38px;padding:0 11px;border-radius:999px;border:1px solid rgba(185,154,93,.30);
+  background:linear-gradient(145deg,rgba(35,25,19,.72),rgba(20,14,11,.78));color:#e6d3ab}
+.rail-next svg{width:15px;height:15px;fill:none;stroke:var(--gold2);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* Same worlds as the accepted homepage; a quiet desktop footer. */
+.hint{display:none}
+:root{--sans:Arial,Helvetica,sans-serif;--gold2:#B99A5D;--ease:cubic-bezier(.22,.61,.36,1)}
+.world-rail{left:38px;bottom:38px;gap:14px;z-index:12;animation:none}
+.world-rail button{font:inherit;cursor:pointer;color:inherit}
+.world-rail::before{font-size:11px;letter-spacing:.28em;bottom:calc(100% + 16px)}
+.world-dot{height:58px;padding:4px}.globe{width:48px;height:48px}
+.world-rail .orb,.world-rail .orb-face{width:54px;height:54px}
+.world-rail .orb{background:none;border:0;padding:0}
+.world-rail .orb-face img.logo-mark{width:38px}.world-rail .orb-face .lock img{width:32px}.world-rail .orb-face .lock b{font-size:5px}
+.world-rail .orb-face svg{width:32px;height:32px}
+.rail-next{width:54px;height:54px;justify-content:center;padding:0;border-radius:50%}
+.legal-dock{position:fixed;right:38px;bottom:38px;z-index:12;display:flex;align-items:flex-end;gap:25px}
+.legal-dock a{display:flex;flex-direction:column;align-items:center;gap:9px;color:#c9b892;text-decoration:none;font:10px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.025em}
+.legal-dock .legal-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(185,154,93,.52);border-radius:50%;background:radial-gradient(circle at 35% 25%,#2d2317,#130e08);transition:box-shadow .25s,border-color .25s}
+.legal-dock svg{width:21px;height:21px;fill:none;stroke:#dcc28f;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.legal-dock a:hover .legal-icon{border-color:#e6d0a0;box-shadow:0 0 16px #c8a45c30}
+.world-rail button:focus-visible,.legal-dock a:focus-visible{outline:2px solid #e6d0a0;outline-offset:5px}
+.worlds-dialog{position:fixed;inset:0;margin:auto;width:min(440px,90vw);max-height:80vh;padding:28px;border:1px solid #9b783f;border-radius:18px;background:#191208;color:#f7f0e3;box-shadow:0 20px 80px #0009;z-index:50;cursor:auto}
+.worlds-dialog::backdrop{background:#090603bb;backdrop-filter:blur(5px)}
+.worlds-dialog h2{font-size:28px;font-weight:500;margin-bottom:20px}.worlds-dialog a{display:block;padding:16px 0;border-top:1px solid #c8a45c30;color:#e6d0a0;text-decoration:none;font-size:21px}.worlds-dialog a small{display:block;font:12px Arial,sans-serif;color:#c9b892;margin-top:5px}.worlds-dialog button{float:right;background:none;color:#e6d0a0;border:1px solid #9b783f;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:22px}
+@media(max-height:700px){.world-rail,.legal-dock{bottom:28px}.world-rail{left:26px}.legal-dock{right:26px}.world-rail::before{font-size:9px;bottom:calc(100% + 10px)}}
+@media(prefers-reduced-motion:reduce){.globe-in,.world-dot::before,.world-rail::before,.world-rail::after{animation:none}}
+
+
+/* Desktop booking: accepted flow, Luxury palette, isolated from the mobile mockup. */
+body.desktop-booking{--gold:#c8a45c;--cream:#f7f0e3;--ink:#f7f0e3;--muted:#c9b892;--gold2:#b99a5d;--sans:Arial,Helvetica,sans-serif;--ease:cubic-bezier(.22,.61,.36,1);position:relative;isolation:isolate;min-height:100vh;background:#0d0905;color:#f7f0e3;font:14px/1.6 Arial,Helvetica,sans-serif}
+.lux-bg{position:fixed;inset:-5%;z-index:-4;pointer-events:none;background:url('www-assets/desktop-luxury-background.jpg') center 40%/cover;filter:brightness(.52) saturate(1.06);animation:luxDrift 46s ease-in-out infinite}
+.lux-tint{position:fixed;inset:0;z-index:-3;pointer-events:none;background:radial-gradient(120% 92% at 50% 12%,rgba(58,44,23,.30),rgba(13,9,5,.80) 58%,rgba(7,4,2,.96))}
+.lux-glow{position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 45% 35%,#b9883830,transparent 65%);animation:luxLight 9s ease-in-out infinite}
+.lux-vignette{position:fixed;inset:0;z-index:-1;pointer-events:none;box-shadow:inset 0 0 180px 45px #0009}
+@keyframes luxDrift{0%,100%{transform:scale(1.05) translate(0,0)}50%{transform:scale(1.12) translate(-1.6%,1.1%)}}
+@keyframes luxLight{0%,100%{opacity:.4}50%{opacity:1}}
+.desktop-booking header{max-width:none;margin:0;padding:24px 40px;border:0;border-bottom:1px solid #c8a45c25;border-radius:0;background:linear-gradient(#090603e6,#09060344);justify-content:space-between;gap:24px}
+.desktop-booking header nav{display:flex!important;gap:20px;align-items:center}
+.desktop-booking header nav a{border:0;border-radius:0;padding:10px 0;min-height:44px;font:11px/24px Arial,sans-serif;letter-spacing:.10em;text-transform:uppercase;color:#c9b892}
+.desktop-booking header nav a.active{box-shadow:none;border-bottom:1px solid #c8a45c;color:#e6d0a0}
+.desktop-booking .brand{gap:13px}.desktop-booking .brand b{font:600 21px/1.2 Georgia,serif;letter-spacing:.24em;color:#e6d0a0}.desktop-booking .brand strong{font-size:8px;letter-spacing:.32em;color:#c9b892}
+.desktop-booking main{max-width:1240px;padding:32px 36px 170px;margin:0 auto}
+.desktop-booking .booking-salons{gap:26px;margin:2px 0 28px}.desktop-booking .booking-salons button{width:112px;height:112px;gap:8px;box-shadow:0 0 25px #c8a45c12}.desktop-booking .booking-salons button::after{display:none}.desktop-booking .booking-salons b{font:700 10px/1.2 Arial,sans-serif}.desktop-booking .booking-salons .salon-logo{width:30px;height:30px}
+.desktop-booking h1{font:400 clamp(34px,3.5vw,46px)/1.15 Georgia,serif;margin:22px 0 30px;color:#e6d0a0}.desktop-booking h1::after{content:'';display:block;width:48px;height:1px;margin:20px auto 0;background:linear-gradient(90deg,transparent,#c8a45c,transparent)}
+.desktop-booking h2,.desktop-booking h3{font-family:Georgia,serif;color:#e6d0a0}
+.desktop-booking .choices:has([data-stage="categories"]){display:grid;grid-template-columns:repeat(2,minmax(0,360px));justify-content:center;gap:28px;margin:36px 0}
+.desktop-booking .choices>button[data-stage]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;min-height:212px;border:1px solid #c8a45c88;outline:0;border-radius:22px;background:radial-gradient(circle at 35% 15%,#483420b8,#120d08ed 85%);color:#f1dfbd;font:400 24px/1.3 Georgia,serif;box-shadow:0 16px 48px #0005,inset 0 1px 0 #fff1c915;transition:border-color .25s,box-shadow .25s,transform .25s}
+.desktop-booking .choices>button[data-stage]:hover{border-color:#e6d0a0;box-shadow:0 16px 48px #0005,0 0 32px #c8a45c25;transform:translateY(-3px)}
+.desktop-booking .choices>button[data-stage]::before{content:'';display:block;width:38px;height:38px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e6d0a0' stroke-width='1.2'%3E%3Cpath d='M4 6h16v15H4zM4 10h16M8 3v5M16 3v5'/%3E%3C/svg%3E")}
+.desktop-booking .choices>button[data-stage="bon"]::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e6d0a0' stroke-width='1.2'%3E%3Cpath d='M4 9h16v12H4zM3 9V6h18v3M12 6v15M12 6C4 6 5 0 9 2l3 4c8 0 7-6 3-4z'/%3E%3C/svg%3E")}
+.desktop-booking .booking-preview-note{font:11px/1.6 Arial,sans-serif;color:#b7a582;margin:24px auto}
+.desktop-booking .categories{gap:24px;margin-top:28px}.desktop-booking .category,.desktop-booking .category div{min-height:330px}.desktop-booking .category{border-color:#a1834b;box-shadow:0 18px 45px #0006}.desktop-booking .category div{background:linear-gradient(transparent 25%,#0d0905f2);padding:26px}.desktop-booking .category h2{font-size:29px}
+.desktop-booking :is(.panel,.summary,.offer-tile,.offer-selection){color:#f7f0e3;border-color:#9c7e4888;background:linear-gradient(145deg,#302214e8,#120d08f0);box-shadow:0 12px 36px #0004,inset 0 1px 0 #fff2cf0b}
+.desktop-booking .panel .time,.desktop-booking .variant,.desktop-booking .detail-panel .variant{color:#e6d0a0;background:#241a10;border-color:#987c4b}
+.desktop-booking .primary,.desktop-booking .variant.selected,.desktop-booking .time.selected,.desktop-booking .calendar button.selected{background:linear-gradient(145deg,#e8d4ab,#d3b47a);color:#2b2418;border-color:#b99b61}
+.desktop-booking .calendar button{color:#e6d0a0;border-color:#95794b;background:#171007}.desktop-booking .calendar button:disabled{opacity:.35}
+.desktop-booking .calendar .day-name,.desktop-booking .detail-label,.desktop-booking .source-link{color:#c9b892}
+.desktop-booking .offer-photo{height:165px}.desktop-booking .offer-tile h2{color:#e6d0a0}.desktop-booking .offer-intro{color:#c9b892}
+.desktop-booking .offer-selection{background:#24190fed}.desktop-booking .summary{backdrop-filter:blur(10px);top:24px}.desktop-booking .summary strong{color:#e6d0a0}
+.desktop-booking .fields input{background:#171007;color:#f7f0e3;border-color:#9b804e}.desktop-booking .fields input::placeholder{color:#a99a81}
+.desktop-booking :is(.client-help,.client-test-note,.client-intro,.staff-help,.staff-summary){color:#c9b892}.desktop-booking .client-phone-line{background:#21170d;border-color:#806338}.desktop-booking .staff-option{background:#1b130a;color:#e6d0a0;border-color:#95794b}.desktop-booking .staff-option.selected{background:#e1c89a;color:#2b2418}.desktop-booking .staff-initial{background:#48351e;color:#e6d0a0}
+.desktop-booking .legal-dock{background:none}.desktop-booking .world-rail::before{font-family:Arial,sans-serif}
+@media(min-width:1100px){.desktop-booking main:has([data-stage="categories"]){padding-top:42px}.desktop-booking .offer-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1050px){.desktop-booking header{padding:20px 24px}.desktop-booking header nav{gap:14px}.desktop-booking header nav a{font-size:10px}.desktop-booking .brand b{font-size:18px}}
+@media(max-width:760px){.desktop-booking header{margin:0;align-items:center;flex-direction:column;gap:12px}.desktop-booking header nav{flex-wrap:wrap;justify-content:center}.desktop-booking main{padding:24px 20px 170px}.desktop-booking .booking-salons button{width:100px;height:100px}.desktop-booking .choices:has([data-stage="categories"]){grid-template-columns:1fr;gap:18px}.desktop-booking .choices>button[data-stage]{min-height:164px}.desktop-booking .world-rail,.desktop-booking .legal-dock{position:relative;left:auto;right:auto;bottom:auto;justify-content:center;margin:30px auto}.desktop-booking .world-rail::before{left:50%;transform:translateX(-50%)}.desktop-booking .categories{grid-template-columns:1fr}.desktop-booking .category,.desktop-booking .category div{min-height:300px}}
+@media(prefers-reduced-motion:reduce){.lux-bg,.lux-glow{animation:none}.desktop-booking .choices>button[data-stage]{transition:none}}
+
+/* Footer stays below the catalogue instead of covering selectable prices. */
+body.desktop-booking{display:flex;flex-direction:column}
+.desktop-booking main{flex:1;width:100%;padding-bottom:56px}
+.booking-footer{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding:36px 40px 32px;min-height:134px}
+.desktop-booking .booking-footer .world-rail,.desktop-booking .booking-footer .legal-dock{position:relative;left:auto;right:auto;bottom:auto;margin:0;flex:none}
+@media(max-width:760px){.booking-footer{flex-wrap:wrap;justify-content:center;gap:34px;padding:38px 24px 28px}.desktop-booking .booking-footer .world-rail,.desktop-booking .booking-footer .legal-dock{margin:0}.desktop-booking main{padding-bottom:36px}}
+
+
+/* Wybrane przez właściciela autentyczne zdjęcia — 2026-10-06. */
+.desktop-booking .category[data-kind="osoba"]>img{object-position:50% 72%}
+.desktop-booking .category[data-kind="pary"]>img{object-position:50% 50%}
+.desktop-booking .category[data-kind="rytualy"]>img{object-position:50% 45%}
+.desktop-booking .offer-photo[src$="rezerwacje-wybrane/tajski-klisza.png"]{object-position:50% 73%}
+.desktop-booking .offer-photo[src$="rezerwacje-wybrane/olejki.jpg"]{object-position:50% 60%}
+.desktop-booking .offer-photo[src$="rezerwacje-wybrane/swieca-klisza.png"]{object-position:50% 62%}
+.desktop-booking .offer-photo[src$="rezerwacje-wybrane/sportowy-klisza.png"]{object-position:50% 83%}
+
+.desktop-booking .offer-photo[src*="rezerwacje-wybrane/"]{object-fit:cover}
+
+.desktop-booking .offer-photo[src$="/lomi.jpg"]{object-position:50% 63%}
+.desktop-booking .offer-photo[src$="/lifting.jpg"]{object-position:50% 55%}
+
+/* Ujednolicenie kliszy: oryginalne fotografie zachowane; efekt prezentacji. */
+.desktop-booking .offer-photo[src$="/olejki.jpg"],
+.desktop-booking .offer-photo[src$="/lomi.jpg"],
+.desktop-booking .offer-photo[src$="/lifting.jpg"],
+.desktop-booking .category>img[src$="/kategoria-pary.jpg"]{filter:saturate(.55) sepia(.42) contrast(.92) brightness(1.02)}
+
+/* Ziarno dokładnie z zaakceptowanej strony głównej. */
+.desktop-booking .booking-film-grain{position:fixed;inset:0;z-index:9;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+
+/* Lżejsza typografia kart i zaakceptowany kadr olejków z głównej rolki. */
+.desktop-booking .offer-tile h2{font-family:"Helvetica Neue",Arial,sans-serif;font-size:17px;font-weight:400;line-height:1.4;letter-spacing:.015em;color:#e2cfaa;min-height:52px;margin:0 0 10px;text-wrap:pretty}
+.desktop-booking .offer-photo[src$="/olejki-rolka.png"]{object-position:50% 79%;filter:none}
+@media(max-width:480px){.desktop-booking .offer-tile h2{font-size:18px;min-height:0}}
+
+/* Spokojniejsza hierarchia nagłówków — uzgodniona korekta typografii. */
+.desktop-booking.reservation-flow h1{font-size:clamp(26px,2.4vw,32px);line-height:1.25;margin:18px 0 24px;font-weight:400}
+.desktop-booking h1::after{margin-top:16px}
+.desktop-booking .brand b{font-size:17px;letter-spacing:.20em;font-weight:400}
+.desktop-booking .brand strong{font-size:7px;letter-spacing:.26em}
+.desktop-booking .brand{gap:10px}
+.desktop-booking .brand>svg{width:34px;height:34px}
+.desktop-booking .category h2{font-family:"Helvetica Neue",Arial,sans-serif;font-size:21px;font-weight:400;line-height:1.3;letter-spacing:.015em}
+.desktop-booking .choices>button[data-stage]{font-family:"Helvetica Neue",Arial,sans-serif;font-size:20px;font-weight:400;line-height:1.35}
+
+/* Złote nazwy zabiegów i jasne opisy — spójne z kartami kategorii. */
+.desktop-booking .offer-tile h2{color:#d7b675;text-shadow:0 1px 2px #100b06,0 0 12px #c4974420}
+.desktop-booking .offer-tile .offer-intro,
+.desktop-booking .offer-tile .offer-description p{color:#eee5d5}
+.desktop-booking .offer-tile .offer-description summary{color:#d7c49e}
+
+/* Wzorzec zapisany w rezerwacje-pary/WZORZEC_KOLORU.png.
+   Nowe pliki dopasowane do referencji: bez dodatkowego odbarwiania.
+   Dwa nieprzetworzone źródła mają pojedynczą korektę prezentacji. */
+.desktop-booking .offer-photo[src*="rezerwacje-pary/"]{object-fit:cover;object-position:50% 50%;filter:none}
+.desktop-booking .offer-photo[src$="rezerwacje-pary/olejki.jpg"]{object-position:50% 40%;filter:saturate(.75) sepia(.22) contrast(.95) brightness(1.02)}
+.desktop-booking .offer-photo[src$="rezerwacje-pary/kamienie-zabieg.png"]{filter:saturate(.65) sepia(.18) contrast(.92) brightness(1.05)}
+.desktop-booking .offer-photo[src$="rezerwacje-pary/romantyczny-wzorzec.png"]{filter:saturate(.85)}
+.desktop-booking .offer-photo[src$="rezerwacje-pary/swiece-wzorzec.png"]{object-position:50% 32%}

@@ -1,0 +1,362 @@
+[
+  [
+    "Tradycyjny masaż tajski",
+    "Traditional Thai massage",
+    "นวดไทยแบบดั้งเดิม"
+  ],
+  [
+    "Tajski zabieg olejkami aromatycznymi",
+    "Thai aromatic oil treatment",
+    "นวดไทยด้วยน้ำมันหอมระเหย"
+  ],
+  [
+    "Tajski zabieg gorącymi kamieniami",
+    "Thai hot stone treatment",
+    "นวดไทยด้วยหินร้อน"
+  ],
+  [
+    "Tajski zabieg ciepłym olejkiem ze świecy",
+    "Thai warm candle oil treatment",
+    "นวดไทยด้วยน้ำมันเทียนอุ่น"
+  ],
+  [
+    "Masaż sportowy",
+    "Sports massage",
+    "นวดสำหรับผู้เล่นกีฬา"
+  ],
+  [
+    "Tajski zabieg Lomi Lomi — wersja tajska",
+    "Lomi Lomi treatment — Thai adaptation",
+    "นวดโลมิโลมิแบบประยุกต์ไทย"
+  ],
+  [
+    "Tajski zabieg stemplami ziołowymi",
+    "Thai herbal compress treatment",
+    "นวดไทยด้วยลูกประคบสมุนไพร"
+  ],
+  [
+    "Masaż tajski dla seniorów",
+    "Thai massage for seniors",
+    "นวดไทยสำหรับผู้สูงอายุ"
+  ],
+  [
+    "Tajski zabieg relaksacyjny dla dzieci i młodzieży",
+    "Thai relaxation treatment for children and teens",
+    "นวดผ่อนคลายสำหรับเด็กและวัยรุ่น"
+  ],
+  [
+    "Tajski zabieg na cztery ręce",
+    "Thai four-hand treatment",
+    "นวดไทยสี่มือ"
+  ],
+  [
+    "Tajski zabieg prenatalny",
+    "Thai prenatal treatment",
+    "นวดไทยสำหรับคุณแม่ตั้งครรภ์"
+  ],
+  [
+    "Tajski zabieg liftingujący twarzy i głowy",
+    "Thai face and head lifting treatment",
+    "นวดไทยยกกระชับใบหน้าและศีรษะ"
+  ],
+  [
+    "Tajski zabieg pielęgnacyjny twarzy",
+    "Thai facial care treatment",
+    "บริการดูแลผิวหน้าแบบไทย"
+  ],
+  [
+    "Masaż głowy, pleców i ramion",
+    "Head, back and shoulder massage",
+    "นวดศีรษะ หลัง และไหล่"
+  ],
+  [
+    "Tajski zabieg refleksoterapii głowy",
+    "Thai head reflexology treatment",
+    "นวดกดจุดสะท้อนศีรษะแบบไทย"
+  ],
+  [
+    "Tajski zabieg refleksoterapii stóp",
+    "Thai foot reflexology treatment",
+    "นวดกดจุดสะท้อนเท้าแบบไทย"
+  ],
+  [
+    "Tajski zabieg modelujący sylwetkę",
+    "Thai body contouring treatment",
+    "นวดกระชับสัดส่วนแบบไทย"
+  ],
+  [
+    "Tradycyjny masaż tajski dla par",
+    "Traditional Thai massage for couples",
+    "นวดไทยแบบดั้งเดิมสำหรับสองท่าน"
+  ],
+  [
+    "Tajski zabieg olejkami aromatycznymi dla par",
+    "Thai aromatic oil treatment for couples",
+    "นวดไทยด้วยน้ำมันหอมระเหยสำหรับสองท่าน"
+  ],
+  [
+    "Tajski zabieg gorącymi kamieniami dla par",
+    "Thai hot stone treatment for couples",
+    "นวดไทยด้วยหินร้อนสำหรับสองท่าน"
+  ],
+  [
+    "Tajski zabieg świecą aromatyczną dla par",
+    "Thai aromatic candle treatment for couples",
+    "นวดไทยด้วยน้ำมันเทียนหอมสำหรับสองท่าน"
+  ],
+  [
+    "Tajski zabieg stemplami ziołowymi dla par",
+    "Thai herbal compress treatment for couples",
+    "นวดไทยด้วยลูกประคบสมุนไพรสำหรับสองท่าน"
+  ],
+  [
+    "Rytuał Romantyczny dla Dwojga",
+    "Romantic Ritual for Two",
+    "ชุดบริการสปาโรแมนติกสำหรับสองท่าน"
+  ],
+  [
+    "Rytuał Królewski Thai Spa",
+    "Royal Thai Spa Ritual",
+    "ชุดบริการสปาไทยรอยัล"
+  ],
+  [
+    "Rytuał Gorące Kamienie i Zioła",
+    "Hot Stones and Herbs Ritual",
+    "ชุดบริการสปาหินร้อนและสมุนไพร"
+  ],
+  [
+    "Rytuał Detoks i Odnowa",
+    "Detox and Renewal Ritual",
+    "ชุดบริการสปาดีท็อกซ์และฟื้นฟู"
+  ],
+  [
+    "Rytuał Kwiat Duszy (dla kobiet)",
+    "Flower of the Soul Ritual (for women)",
+    "ชุดบริการสปาดอกไม้แห่งจิตใจ (สำหรับผู้หญิง)"
+  ],
+  [
+    "Rytuał Ocean Breath (energetyczny)",
+    "Ocean Breath Ritual (energising)",
+    "ชุดบริการสปาโอเชียนเบรธ (เติมพลัง)"
+  ],
+  [
+    "Tajski zabieg — Klasyczna Maliwan Spa Terapia",
+    "Thai treatment — Classic Maliwan Spa Therapy",
+    "ชุดบริการไทย — คลาสสิกมะลิวัลย์สปาเธอราพี"
+  ],
+  [
+    "Tajski zabieg — Oil Aroma Relaks SPA",
+    "Thai treatment — Oil Aroma Relax Spa",
+    "ชุดบริการไทย — ออยล์อโรม่ารีแลกซ์สปา"
+  ],
+  [
+    "Rytuał Romantyczny Maliwan™",
+    "Maliwan™ Romantic Ritual",
+    "ชุดบริการสปาโรแมนติกมะลิวัลย์™"
+  ],
+  [
+    "Tajski zabieg twarzy i głowy Kobido Thai",
+    "Kobido Thai face and head treatment",
+    "นวดใบหน้าและศีรษะโคบิโดไทย"
+  ],
+  [
+    "Rytuał Romantyczny Maliwan™ (dla dwojga)",
+    "Maliwan™ Romantic Ritual (for two)",
+    "ชุดบริการสปาโรแมนติกมะลิวัลย์™ (สำหรับสองท่าน)"
+  ],
+  [
+    "Masaż tradycyjny tajski łączy techniki uciskowe, rozciąganie i elementy pasywnej jogi. Osoba wykonująca masaż prowadzi ruchy ciała, dostosowując pracę do możliwości osoby masowanej. Uciski przeplatają się z pozycjami rozciągającymi. To propozycja dla osób, które szukają pracy z ciałem z wyraźnym elementem rozciągania.",
+    "Traditional Thai massage combines pressure techniques, stretching and elements of passive yoga. The therapist guides the body through movements adapted to the recipient’s capabilities. Pressure alternates with stretching positions. This treatment suits people looking for bodywork with a clear emphasis on stretching.",
+    "นวดไทยแบบดั้งเดิมผสมผสานการกด การยืดเหยียด และท่าโยคะแบบมีผู้ช่วย หมอนวดช่วยนำการเคลื่อนไหวให้เหมาะกับความสามารถของผู้รับบริการ โดยสลับการกดกับท่ายืดเหยียด เหมาะสำหรับผู้ที่ต้องการการนวดที่เน้นการยืดเหยียดอย่างชัดเจน"
+  ],
+  [
+    "Tajski zabieg olejkami aromatycznymi łączy pielęgnację skóry z płynnymi ruchami i technikami uciskowymi inspirowanymi tradycją tajską. Olejek ułatwia pracę na skórze i nadaje wizycie aromatyczny charakter. Przebieg obejmuje miarową pracę dłońmi, ugniatanie oraz elementy rozciągania. To propozycja dla osób ceniących połączenie dotyku, zapachu i spokojnej atmosfery.",
+    "This Thai aromatic oil treatment combines skin care with flowing movements and pressure techniques inspired by Thai tradition. The oil helps the hands glide over the skin and adds an aromatic dimension to the visit. The treatment includes rhythmic hand movements, kneading and stretching. It suits people who enjoy a combination of touch, fragrance and a peaceful atmosphere.",
+    "บริการนวดไทยด้วยน้ำมันหอมระเหยผสมผสานการดูแลผิว การเคลื่อนไหวที่ต่อเนื่อง และการกดตามแนวทางไทย น้ำมันช่วยให้มือเคลื่อนไปบนผิวได้สะดวกและเพิ่มกลิ่นหอม ประกอบด้วยการนวดเป็นจังหวะ การคลึง และการยืดเหยียด เหมาะสำหรับผู้ที่ชอบสัมผัส กลิ่นหอม และบรรยากาศสงบ"
+  ],
+  [
+    "Tajski zabieg gorącymi kamieniami wykorzystuje ciepło podgrzanych kamieni bazaltowych i manualną pracę z ciałem. Charakterystycznym elementem jest odczucie ciepła towarzyszące kolejnym ruchom. To propozycja dla osób, które cenią ciepło i spokojny przebieg zabiegu. Warto na bieżąco informować osobę wykonującą zabieg o komforcie temperatury i nacisku.",
+    "This Thai hot stone treatment combines the warmth of heated basalt stones with manual bodywork. The sensation of warmth accompanies each sequence of movements. It suits people who enjoy warmth and a calm treatment. Please keep the therapist informed about your comfort with the temperature and pressure.",
+    "บริการนวดไทยด้วยหินร้อนผสมผสานความอุ่นของหินบะซอลต์ที่อุ่นไว้กับการนวดด้วยมือ ความอุ่นจะอยู่ในแต่ละช่วงของการนวด เหมาะสำหรับผู้ที่ชอบความอุ่นและการบริการอย่างสงบ โปรดแจ้งหมอนวดอย่างต่อเนื่องว่าอุณหภูมิและแรงกดสบายสำหรับคุณหรือไม่"
+  ],
+  [
+    "Tajski zabieg ciepłym olejkiem ze świecy łączy pielęgnację skóry z aromatem i płynną pracą dłońmi. Wykorzystuje olejek uzyskany z przeznaczonej do tego świecy, zawierającej masła i oleje roślinne. Ciepły olejek jest rozprowadzany na ciele podczas zabiegu. To propozycja dla osób, które cenią zapach, delikatne ciepło i pielęgnacyjny charakter wizyty.",
+    "This Thai warm candle oil treatment combines skin care, fragrance and flowing hand movements. It uses oil melted from a purpose-made candle containing plant butters and oils. The warm oil is applied to the body during the treatment. It suits people who value fragrance, gentle warmth and a skin-care focus.",
+    "บริการนวดไทยด้วยน้ำมันเทียนอุ่นผสมผสานการดูแลผิว กลิ่นหอม และการนวดด้วยมืออย่างต่อเนื่อง ใช้น้ำมันจากเทียนสำหรับการนวดโดยเฉพาะ ซึ่งมีบัตเตอร์และน้ำมันจากพืช น้ำมันอุ่นถูกทาบนร่างกายระหว่างบริการ เหมาะสำหรับผู้ที่ชอบกลิ่นหอม ความอุ่นอ่อน ๆ และการดูแลผิว"
+  ],
+  [
+    "Masaż sportowy opiera się na intensywnej pracy z mięśniami i technikach zaczerpniętych z masażu klasycznego. Siłę nacisku należy dopasować do indywidualnych możliwości i odczuć osoby masowanej. To propozycja dla osób aktywnych, które chcą poświęcić czas na pracę z ciałem. Przed rozpoczęciem warto wskazać obszary wymagające szczególnej uwagi oraz ustalić oczekiwaną intensywność.",
+    "Sports massage involves intensive muscle work and techniques drawn from classical massage. Pressure should be adapted to the individual’s capabilities and comfort. It suits active people who want to devote time to bodywork. Before starting, identify any areas requiring particular attention and agree on the desired intensity.",
+    "นวดสำหรับผู้เล่นกีฬาเน้นการทำงานกับกล้ามเนื้ออย่างเข้มข้น โดยใช้เทคนิคจากการนวดแบบคลาสสิก ควรปรับแรงกดให้เหมาะกับความสามารถและความรู้สึกของแต่ละคน เหมาะสำหรับผู้ที่มีกิจกรรมทางกายและต้องการดูแลร่างกาย ก่อนเริ่มควรระบุจุดที่ต้องการให้ดูแลเป็นพิเศษและตกลงระดับความหนักของการนวด"
+  ],
+  [
+    "Tajski zabieg Lomi Lomi w wersji tajskiej wykonywany jest z użyciem olejku, dłońmi i przedramionami. Jego charakter tworzą płynne, rytmiczne ruchy oraz ciągłość pracy z ciałem. To propozycja dla osób, które cenią spokojny rytm. Intensywność jest dopasowywana do indywidualnych potrzeb i odczuć.",
+    "This Thai adaptation of Lomi Lomi uses oil, hands and forearms. Flowing, rhythmic movements and continuous bodywork define its character. It suits people who prefer a calm rhythm. The intensity is adapted to individual needs and comfort.",
+    "นวดโลมิโลมิแบบประยุกต์ไทยใช้น้ำมัน มือ และท่อนแขน จุดเด่นคือการเคลื่อนไหวที่ต่อเนื่องและเป็นจังหวะ เหมาะสำหรับผู้ที่ชอบจังหวะสงบ โดยปรับความหนักให้เหมาะกับความต้องการและความรู้สึกของแต่ละคน"
+  ],
+  [
+    "Tajski zabieg stemplami ziołowymi wykorzystuje podgrzewane bawełniane woreczki wypełnione mieszanką ziół. Łączy ciepło, aromat oraz pracę uciskową inspirowaną tradycją tajską. Stemple przykładane są do ciała w kolejnych sekwencjach. To propozycja dla osób, które cenią rozgrzewający charakter zabiegu i zapach ziół.",
+    "This Thai herbal compress treatment uses heated cotton bundles filled with a blend of herbs. It combines warmth, fragrance and pressure techniques inspired by Thai tradition. The compresses are applied to the body in successive sequences. It suits people who enjoy a warming treatment and the scent of herbs.",
+    "บริการนวดไทยด้วยลูกประคบสมุนไพรใช้ห่อผ้าฝ้ายบรรจุสมุนไพรที่อุ่นไว้ ผสมผสานความอุ่น กลิ่นหอม และการกดตามแนวทางไทย โดยวางลูกประคบบนร่างกายตามลำดับ เหมาะสำหรับผู้ที่ชอบความอุ่นและกลิ่นสมุนไพร"
+  ],
+  [
+    "Masaż tajski dla seniorów wykorzystuje łagodniej prowadzone techniki uciskowe i elementy rozciągania. Przebieg dostosowywany jest do możliwości oraz komfortu osoby korzystającej z wizyty. Przed rozpoczęciem należy omówić oczekiwania i ograniczenia ruchowe. W trakcie można zgłaszać potrzebę zmniejszenia nacisku lub zmiany ułożenia ciała.",
+    "Thai massage for seniors uses gentler pressure techniques and elements of stretching. The treatment is adapted to the recipient’s capabilities and comfort. Expectations and mobility limitations should be discussed beforehand. During the session, you may ask for lighter pressure or a different body position.",
+    "นวดไทยสำหรับผู้สูงอายุใช้การกดอย่างอ่อนโยนและการยืดเหยียดบางส่วน โดยปรับบริการตามความสามารถและความสบายของผู้รับบริการ ควรพูดคุยความต้องการและข้อจำกัดในการเคลื่อนไหวก่อนเริ่ม ระหว่างบริการสามารถขอลดแรงกดหรือเปลี่ยนท่าได้"
+  ],
+  [
+    "Tajski zabieg relaksacyjny dla dzieci i młodzieży opiera się na delikatnej pracy manualnej, dopasowanej do wieku i potrzeb młodej osoby. Ważne są spokojna atmosfera i komfort podczas wizyty. Szczegóły przebiegu oraz odpowiedni wariant należy ustalić z salonem przed rezerwacją. Opis nie zakłada, że każda technika jest odpowiednia dla każdego dziecka.",
+    "This Thai relaxation treatment for children and teens uses gentle manual techniques adapted to the young person’s age and needs. A calm atmosphere and comfort during the visit are essential. Please discuss the treatment and suitable option with the salon before booking. This description does not imply that every technique suits every child.",
+    "บริการนวดผ่อนคลายสำหรับเด็กและวัยรุ่นใช้เทคนิคด้วยมืออย่างอ่อนโยน ปรับตามอายุและความต้องการของผู้รับบริการ บรรยากาศสงบและความสบายเป็นสิ่งสำคัญ โปรดติดต่อสาขาเพื่อปรึกษาขั้นตอนและตัวเลือกที่เหมาะสมก่อนจอง คำอธิบายนี้ไม่ได้หมายความว่าทุกเทคนิคเหมาะกับเด็กทุกคน"
+  ],
+  [
+    "Tajski zabieg na cztery ręce wykonywany jest przez dwie terapeutki jednocześnie dla jednej osoby. Wyróżnia go zsynchronizowana praca dwóch par dłoni oraz wspólny rytm ruchów. To propozycja dla osób szukających odmiennego doświadczenia pracy z ciałem. Przebieg opiera się na równoczesnej, skoordynowanej pracy obu terapeutek.",
+    "This Thai four-hand treatment is performed by two therapists simultaneously for one person. Synchronised work by two pairs of hands and a shared rhythm distinguish the treatment. It suits people seeking a different bodywork experience. The session is based on simultaneous, coordinated work by both therapists.",
+    "บริการนวดไทยสี่มือมีหมอนวดสองท่านนวดผู้รับบริการหนึ่งท่านพร้อมกัน จุดเด่นคือมือทั้งสองคู่ทำงานประสานกันในจังหวะเดียว เหมาะสำหรับผู้ที่ต้องการประสบการณ์นวดที่แตกต่าง โดยหมอนวดทั้งสองทำงานพร้อมกันอย่างสอดคล้อง"
+  ],
+  [
+    "Tajski zabieg prenatalny jest propozycją dla kobiet w ciąży, z delikatnymi technikami dostosowanymi do indywidualnych potrzeb. Komfortowe ułożenie i omówienie przebiegu stanowią istotną część przygotowania. Przed rezerwacją należy skontaktować się z salonem i omówić możliwość wykonania zabiegu. Nie obiecujemy bezwarunkowego bezpieczeństwa ani efektów medycznych.",
+    "This Thai prenatal treatment is designed for pregnant women, using gentle techniques adapted to individual needs. Comfortable positioning and discussion of the session are important parts of preparation. Contact the salon before booking to discuss whether the treatment is suitable. We do not promise unconditional safety or medical outcomes.",
+    "บริการนวดไทยสำหรับคุณแม่ตั้งครรภ์ใช้เทคนิคอ่อนโยนที่ปรับตามความต้องการเฉพาะบุคคล การจัดท่าให้สบายและการพูดคุยขั้นตอนเป็นส่วนสำคัญของการเตรียมตัว โปรดติดต่อสาขาก่อนจองเพื่อปรึกษาว่าสามารถรับบริการได้หรือไม่ เราไม่ได้รับรองความปลอดภัยโดยไม่มีเงื่อนไขหรือผลทางการแพทย์"
+  ],
+  [
+    "Tajski zabieg liftingujący twarzy i głowy łączy manualną pracę w obrębie twarzy z elementami poświęconymi głowie. To propozycja dla osób, które chcą połączyć pielęgnacyjny charakter wizyty z chwilą odpoczynku. Praca koncentruje się na twarzy i głowie, z uwzględnieniem komfortu nacisku. Określenie liftingujący opisuje kierunek oferty, bez gwarantowania trwałej zmiany owalu lub usunięcia zmarszczek.",
+    "This Thai face and head lifting treatment combines manual facial work with techniques focused on the head. It suits people who want to combine a skin-care visit with a moment of rest. The work focuses on the face and head, with pressure adapted for comfort. “Lifting” describes the treatment’s focus, without guaranteeing lasting changes to facial contours or the removal of wrinkles.",
+    "บริการนวดไทยยกกระชับใบหน้าและศีรษะผสมผสานการนวดใบหน้าด้วยมือกับเทคนิคสำหรับศีรษะ เหมาะสำหรับผู้ที่ต้องการดูแลผิวพร้อมพักผ่อน เน้นใบหน้าและศีรษะโดยใช้แรงกดที่สบาย คำว่า “ยกกระชับ” อธิบายแนวทางบริการ ไม่ได้รับประกันการเปลี่ยนรูปหน้าอย่างถาวรหรือการกำจัดริ้วรอย"
+  ],
+  [
+    "Tajski zabieg pielęgnacyjny twarzy łączy pracę manualną z zastosowaniem kosmetyków pielęgnacyjnych. Obejmuje między innymi ugniatanie, rozcieranie, uciski i delikatne oklepywanie. To propozycja dla osób, które chcą poświęcić wizytę pielęgnacji twarzy i spokojnej pracy z tym obszarem. Nie obiecujemy zatrzymania starzenia ani wyeliminowania zmarszczek.",
+    "This Thai facial care treatment combines manual techniques with skin-care products. It includes kneading, rubbing, pressure and gentle tapping. It suits people who want to devote their visit to facial care and calm work on this area. We do not promise to stop ageing or eliminate wrinkles.",
+    "บริการดูแลผิวหน้าแบบไทยผสมผสานการนวดด้วยมือกับผลิตภัณฑ์ดูแลผิว ประกอบด้วยการคลึง การถู การกด และการเคาะเบา ๆ เหมาะสำหรับผู้ที่ต้องการดูแลใบหน้าอย่างสงบ เราไม่ได้รับรองว่าจะหยุดความชราหรือกำจัดริ้วรอย"
+  ],
+  [
+    "Masaż głowy, pleców i ramion skupia się na górnych partiach ciała, obejmując także szyję i kark. Łączy techniki uciskowe i rozciągające zaczerpnięte z tradycji tajskiej. To propozycja dla osób, które chcą poświęcić wizytę przede wszystkim tym obszarom. Przed rozpoczęciem masażu można wskazać miejsca wymagające uwagi i omówić komfortową siłę nacisku.",
+    "Head, back and shoulder massage focuses on the upper body, including the neck and nape. It combines pressure and stretching techniques drawn from Thai tradition. It suits people who want to focus their visit on these areas. Before the massage, you may identify areas requiring attention and discuss a comfortable level of pressure.",
+    "นวดศีรษะ หลัง และไหล่เน้นร่างกายส่วนบน รวมถึงคอและท้ายทอย ผสมผสานการกดและการยืดเหยียดตามแนวทางไทย เหมาะสำหรับผู้ที่ต้องการเน้นบริเวณเหล่านี้ ก่อนเริ่มสามารถระบุจุดที่ต้องการให้ดูแลและพูดคุยระดับแรงกดที่สบายได้"
+  ],
+  [
+    "Tajski zabieg refleksoterapii głowy obejmuje manualną pracę w obrębie głowy i twarzy. Techniki uciskowe tworzą sekwencję poświęconą tym obszarom. To propozycja dla osób szukających spokojnej wizyty skoncentrowanej na głowie i twarzy. Zabieg nie służy diagnozowaniu stanu narządów ani zastępowaniu leczenia.",
+    "This Thai head reflexology treatment involves manual work on the head and face. Pressure techniques form a sequence focused on these areas. It suits people looking for a calm visit centred on the head and face. The treatment is not intended to diagnose the condition of organs or replace medical care.",
+    "บริการนวดกดจุดสะท้อนศีรษะแบบไทยใช้เทคนิคด้วยมือบริเวณศีรษะและใบหน้า โดยกดตามลำดับในบริเวณดังกล่าว เหมาะสำหรับผู้ที่ต้องการบริการอย่างสงบที่เน้นศีรษะและใบหน้า บริการนี้ไม่ได้ใช้วินิจฉัยอวัยวะหรือทดแทนการรักษาทางการแพทย์"
+  ],
+  [
+    "Tajski zabieg refleksoterapii stóp obejmuje wstępną pracę rozluźniającą, sekwencję ucisków oraz spokojne zakończenie. Wykorzystywane są techniki inspirowane akupresurą i tradycją Shiatsu oraz kosmetyki pielęgnacyjne. To propozycja dla osób, które chcą poświęcić wizytę stopom. Nacisk powinien uwzględniać komfort osoby korzystającej z zabiegu; odczucia podczas ucisku nie stanowią diagnozy stanu narządów.",
+    "This Thai foot reflexology treatment includes initial relaxation work, a sequence of pressure techniques and a calm finish. It uses techniques inspired by acupressure and Shiatsu, together with skin-care products. It suits people who want to focus their visit on their feet. Pressure should reflect the recipient’s comfort; sensations during pressure are not a diagnosis of organ health.",
+    "บริการนวดกดจุดสะท้อนเท้าแบบไทยเริ่มด้วยการคลายเท้า ตามด้วยการกดเป็นลำดับและจบอย่างสงบ ใช้เทคนิคที่ได้แนวทางจากการกดจุดและชิอัตสึร่วมกับผลิตภัณฑ์ดูแลผิว เหมาะสำหรับผู้ที่ต้องการดูแลเท้า ควรใช้แรงกดตามความสบายของผู้รับบริการ ความรู้สึกขณะกดไม่ใช่การวินิจฉัยสุขภาพอวัยวะ"
+  ],
+  [
+    "Tajski zabieg modelujący sylwetkę opiera się na energicznej pracy manualnej, z wykorzystaniem technik opisanych w ofercie, w tym bańki chińskiej. Towarzyszą mu kosmetyki przeznaczone do pielęgnacji skóry. To propozycja dla osób zainteresowanych pielęgnacją ciała i intensywniejszą pracą manualną. Nie obiecujemy utraty kilogramów, spalania tłuszczu ani trwałego usunięcia cellulitu.",
+    "This Thai body contouring treatment uses energetic manual work and techniques described in the offer, including Chinese cupping. Skin-care products accompany the treatment. It suits people interested in body care and more intensive manual work. We do not promise weight loss, fat burning or permanent cellulite removal.",
+    "บริการนวดกระชับสัดส่วนแบบไทยใช้การนวดด้วยมืออย่างกระฉับกระเฉงและเทคนิคตามรายการบริการ รวมถึงการใช้ถ้วยสุญญากาศแบบจีน พร้อมผลิตภัณฑ์ดูแลผิว เหมาะสำหรับผู้ที่สนใจดูแลร่างกายและการนวดที่เข้มข้นขึ้น เราไม่ได้รับรองการลดน้ำหนัก การเผาผลาญไขมัน หรือการกำจัดเซลลูไลท์อย่างถาวร"
+  ],
+  [
+    "Tradycyjny masaż tajski dla par odbywa się jednocześnie w jednym gabinecie. Dwie masażystki pracują równolegle, każda zajmując się jedną osobą. Masaż łączy uciski, rozciąganie i elementy pasywnej jogi. Wspólna wizyta pozwala doświadczyć tradycyjnych technik tajskich we dwoje, z uwzględnieniem indywidualnego komfortu każdej osoby.",
+    "Traditional Thai massage for couples takes place simultaneously in one treatment room. Two therapists work in parallel, each with one recipient. The massage combines pressure, stretching and elements of passive yoga. A shared visit lets you experience traditional Thai techniques together, with each person’s comfort taken into account.",
+    "นวดไทยแบบดั้งเดิมสำหรับสองท่านให้บริการพร้อมกันในห้องเดียว หมอนวดสองท่านดูแลผู้รับบริการคนละหนึ่งท่าน ผสมผสานการกด การยืดเหยียด และโยคะแบบมีผู้ช่วย คุณทั้งสองได้สัมผัสเทคนิคไทยด้วยกัน โดยคำนึงถึงความสบายของแต่ละคน"
+  ],
+  [
+    "Tajski zabieg olejkami aromatycznymi dla par odbywa się równocześnie w jednym gabinecie, z udziałem dwóch masażystek. Każda z nich zajmuje się jedną osobą. Zabieg łączy płynne ruchy z użyciem olejku z technikami uciskowymi i rozciągającymi inspirowanymi tradycją tajską. To propozycja wspólnej wizyty o aromatycznym, pielęgnacyjnym charakterze.",
+    "This Thai aromatic oil treatment for couples takes place simultaneously in one room with two therapists, each caring for one person. It combines flowing movements using oil with pressure and stretching techniques inspired by Thai tradition. It offers a shared visit with an aromatic, skin-care focus.",
+    "นวดไทยด้วยน้ำมันหอมระเหยสำหรับสองท่านให้บริการพร้อมกันในห้องเดียว โดยหมอนวดสองท่านดูแลคนละหนึ่งท่าน ผสมผสานการนวดด้วยน้ำมันอย่างต่อเนื่องกับการกดและการยืดเหยียดตามแนวทางไทย เป็นบริการร่วมกันที่เน้นกลิ่นหอมและการดูแลผิว"
+  ],
+  [
+    "Tajski zabieg gorącymi kamieniami dla par łączy ciepło podgrzanych kamieni z manualną pracą z ciałem. Dwie masażystki wykonują zabiegi jednocześnie w jednym gabinecie. Każda osoba może zgłaszać swoje odczucia dotyczące temperatury i nacisku. To propozycja dla par, które cenią ciepło i spokojny charakter wspólnej wizyty.",
+    "This Thai hot stone treatment for couples combines the warmth of heated stones with manual bodywork. Two therapists work simultaneously in one treatment room. Each recipient may share their preferences about temperature and pressure. It suits couples who enjoy warmth and a calm shared visit.",
+    "นวดไทยด้วยหินร้อนสำหรับสองท่านผสมผสานความอุ่นของหินกับการนวดด้วยมือ หมอนวดสองท่านให้บริการพร้อมกันในห้องเดียว ผู้รับบริการแต่ละท่านสามารถแจ้งความรู้สึกเรื่องอุณหภูมิและแรงกด เหมาะสำหรับคู่ที่ชอบความอุ่นและการพักผ่อนร่วมกันอย่างสงบ"
+  ],
+  [
+    "Tajski zabieg świecą aromatyczną dla par wykorzystuje ciepły olejek ze świecy przeznaczonej do pracy na skórze. Łączy zapach, pielęgnację oraz płynne ruchy dłoni. Zabiegi odbywają się równocześnie w jednym gabinecie, z udziałem dwóch masażystek. To propozycja dla osób, które chcą spędzić wspólny czas w spokojnej, aromatycznej atmosferze.",
+    "This Thai aromatic candle treatment for couples uses warm oil from a candle designed for use on the skin. It combines fragrance, skin care and flowing hand movements. Treatments take place simultaneously in one room with two therapists. It suits people who want to spend time together in a calm, aromatic atmosphere.",
+    "นวดไทยด้วยน้ำมันเทียนหอมสำหรับสองท่านใช้น้ำมันอุ่นจากเทียนที่ออกแบบสำหรับผิว ผสมผสานกลิ่นหอม การดูแลผิว และการนวดด้วยมืออย่างต่อเนื่อง หมอนวดสองท่านให้บริการพร้อมกันในห้องเดียว เหมาะสำหรับผู้ที่ต้องการใช้เวลาร่วมกันในบรรยากาศสงบและหอมละมุน"
+  ],
+  [
+    "Tajski zabieg stemplami ziołowymi dla par wykorzystuje ciepłe bawełniane woreczki wypełnione ziołami. Charakter wizyty tworzą aromat, ciepło i kolejne sekwencje ucisków. Dwie masażystki wykonują zabiegi równocześnie w jednym gabinecie. Każda osoba może zgłaszać preferencje dotyczące komfortu ciepła i nacisku.",
+    "This Thai herbal compress treatment for couples uses warm cotton bundles filled with herbs. Fragrance, warmth and successive pressure sequences define the visit. Two therapists work simultaneously in one room. Each recipient may share their preferences about warmth and pressure.",
+    "นวดไทยด้วยลูกประคบสมุนไพรสำหรับสองท่านใช้ห่อผ้าฝ้ายบรรจุสมุนไพรอุ่น จุดเด่นคือกลิ่นหอม ความอุ่น และการกดเป็นลำดับ หมอนวดสองท่านให้บริการพร้อมกันในห้องเดียว แต่ละท่านสามารถแจ้งความต้องการเรื่องความอุ่นและแรงกดได้"
+  ],
+  [
+    "Wspólny zabieg w jednym gabinecie, wykonywany równocześnie przez dwie masażystki. Obejmuje kąpiel stóp z peelingiem, refleksoterapię stóp, masaż olejkowy dla dwojga i refleksologię głowy.",
+    "A shared treatment in one room, performed simultaneously by two therapists. It includes a foot bath with exfoliation, foot reflexology, an oil massage for two and head reflexology.",
+    "บริการสำหรับสองท่านในห้องเดียว โดยหมอนวดสองท่านให้บริการพร้อมกัน ประกอบด้วยการแช่เท้าพร้อมสครับ การนวดกดจุดสะท้อนเท้า การนวดน้ำมันสำหรับสองท่าน และการนวดกดจุดสะท้อนศีรษะ"
+  ],
+  [
+    "Ceremonia łączy kąpiel stóp, tradycyjny masaż tajski, ciepłe kompresy ziołowe i elementy refleksologii. To rozbudowany rytuał, w którym spotykają się dotyk, ciepło i aromat ziół.",
+    "This spa ritual combines a foot bath, traditional Thai massage, warm herbal compresses and elements of reflexology. It is an extended ritual bringing together touch, warmth and the aroma of herbs.",
+    "ชุดบริการสปานี้รวมการแช่เท้า นวดไทยแบบดั้งเดิม ลูกประคบสมุนไพรอุ่น และการนวดกดจุดสะท้อนบางส่วน เป็นชุดบริการที่ครบถ้วน ผสมผสานสัมผัส ความอุ่น และกลิ่นสมุนไพร"
+  ],
+  [
+    "Rytuał łączy masaż rozgrzanymi kamieniami z pracą tajskimi kompresami ziołowymi. Ciepło kamieni przeplata się z aromatem i dotykiem ziołowych stempli.",
+    "This ritual combines a heated stone massage with Thai herbal compresses. The warmth of the stones alternates with the fragrance and touch of the herbal compresses.",
+    "ชุดบริการนี้ผสมผสานการนวดด้วยหินอุ่นกับลูกประคบสมุนไพรไทย สลับความอุ่นของหินกับกลิ่นหอมและสัมผัสของลูกประคบ"
+  ],
+  [
+    "Ceremonia rozpoczyna się peelingiem całego ciała. Następnie wykonywany jest drenaż limfatyczny z elementami akupresury, a ostatni etap stanowi maska na ciało z naturalnych składników.",
+    "The ritual begins with a full-body exfoliation. This is followed by lymphatic drainage with elements of acupressure, then a body mask made with natural ingredients.",
+    "ชุดบริการเริ่มด้วยการสครับทั่วร่างกาย ตามด้วยการนวดระบายน้ำเหลืองร่วมกับการกดจุดบางส่วน และจบด้วยมาสก์ร่างกายจากส่วนผสมธรรมชาติ"
+  ],
+  [
+    "Rytuał dla kobiet wykonywany z użyciem olejku różanego. Delikatne techniki masażu obejmują twarz i ciało, tworząc spokojną ceremonię zapachu i dotyku.",
+    "A ritual for women using rose oil. Gentle massage techniques focus on the face and body, creating a peaceful experience of fragrance and touch.",
+    "ชุดบริการสำหรับผู้หญิงใช้น้ำมันกุหลาบ นวดใบหน้าและร่างกายด้วยเทคนิคอ่อนโยน ให้ประสบการณ์สงบผ่านกลิ่นหอมและสัมผัส"
+  ],
+  [
+    "Dynamiczny rytuał łączący stretching, świadomy oddech i masaż energetyczny. To propozycja dla osób, które szukają bardziej aktywnej pracy z ciałem.",
+    "A dynamic ritual combining stretching, mindful breathing and an energising massage. It suits people seeking more active bodywork.",
+    "ชุดบริการที่กระฉับกระเฉง ผสมผสานการยืดเหยียด การหายใจอย่างมีสติ และการนวดเติมพลัง เหมาะสำหรับผู้ที่ต้องการการนวดที่มีการเคลื่อนไหวมากขึ้น"
+  ],
+  [
+    "Pakiet łączy tradycyjny masaż tajski z refleksoterapią. Do wyboru jest praca z głową, ze stopami lub połączenie obu tych zabiegów.",
+    "This package combines traditional Thai massage with reflexology. Choose head work, foot work, or a combination of both treatments.",
+    "ชุดบริการนี้รวมนวดไทยแบบดั้งเดิมกับการนวดกดจุดสะท้อน สามารถเลือกนวดศีรษะ นวดเท้า หรือรวมทั้งสองบริการ"
+  ],
+  [
+    "Masaż olejkami aromatycznymi uzupełnia refleksoterapia głowy lub stóp. Można również wybrać połączenie refleksoterapii stóp i głowy w ramach jednego pakietu.",
+    "Aromatic oil massage is complemented by head or foot reflexology. You may also choose a combination of foot and head reflexology in one package.",
+    "นวดด้วยน้ำมันหอมระเหยเสริมด้วยการนวดกดจุดสะท้อนศีรษะหรือเท้า หรือเลือกนวดกดจุดสะท้อนทั้งเท้าและศีรษะในชุดเดียวได้"
+  ],
+  [
+    "Ceremonia dla dwóch osób rozpoczyna się aromatyczną kąpielą stóp. Następnie wykonywany jest masaż olejkowy z elementami refleksologii. Rytuał kończy chwila odpoczynku przy tajskiej herbacie.",
+    "This ritual for two begins with an aromatic foot bath. Next comes an oil massage with elements of reflexology. The ritual ends with a moment of rest over Thai tea.",
+    "ชุดบริการสำหรับสองท่านเริ่มด้วยการแช่เท้าในน้ำหอม ตามด้วยนวดน้ำมันร่วมกับการนวดกดจุดสะท้อนบางส่วน และจบด้วยการพักผ่อนพร้อมชาไทย"
+  ],
+  [
+    "Masaż czteroręczny to wyjątkowe doświadczenie, w którym dwie terapeutki pracują jednocześnie nad Twoim ciałem, tworząc płynny i zsynchronizowany rytm dotyku. Taka forma masażu pozwala szybciej osiągnąć stan głębokiego odprężenia i „wyłączenia” umysłu. Intensywność doznań oraz pełne skupienie na ciele sprawiają, że jest to jedna z najbardziej luksusowych form masażu w ofercie Thai Maliwan Spa – idealna dla osób, które chcą doświadczyć czegoś naprawdę wyjątkowego.",
+    "Four-hand massage is a distinctive experience in which two therapists work on your body simultaneously, creating a flowing, synchronised rhythm of touch. This form of massage helps you reach deep relaxation and switch off mentally more quickly. The intensity of the sensations and focus on the body make it one of the most luxurious massages offered at Thai Maliwan Spa, ideal for people seeking a truly special experience.",
+    "นวดสี่มือเป็นประสบการณ์พิเศษที่หมอนวดสองท่านนวดร่างกายพร้อมกัน สร้างจังหวะสัมผัสที่ต่อเนื่องและสอดคล้องกัน การนวดแบบนี้ช่วยให้ผ่อนคลายลึกและพักความคิดได้เร็วขึ้น ความเข้มข้นของสัมผัสและการใส่ใจกับร่างกายทำให้เป็นหนึ่งในบริการนวดที่หรูหราที่สุดของ Thai Maliwan Spa เหมาะสำหรับผู้ที่ต้องการประสบการณ์พิเศษ"
+  ],
+  [
+    "Delikatny i bezpieczny masaż stworzony specjalnie z myślą o kobietach w ciąży. Masaż prenatalny w Thai Maliwan Spa pomaga zmniejszyć uczucie ciężkości nóg, napięcia w plecach oraz wspiera naturalny relaks organizmu. Terapeutki stosują techniki dostosowane do etapu ciąży, dbając o komfort, bezpieczeństwo i dobre samopoczucie przyszłej mamy. To chwila wytchnienia, która pozytywnie wpływa zarówno na ciało, jak i na emocje.",
+    "A gentle, safe massage designed specifically for pregnant women. Prenatal massage at Thai Maliwan Spa helps reduce heaviness in the legs and back tension, and supports natural relaxation. Therapists use techniques adapted to the stage of pregnancy, caring for the comfort, safety and wellbeing of the mother-to-be. It offers a moment of respite with a positive effect on both body and emotions.",
+    "การนวดอ่อนโยนและปลอดภัยที่ออกแบบสำหรับคุณแม่ตั้งครรภ์โดยเฉพาะ นวดก่อนคลอดที่ Thai Maliwan Spa ช่วยลดความหนักขาและความตึงหลัง พร้อมส่งเสริมการผ่อนคลายตามธรรมชาติ หมอนวดใช้เทคนิคที่ปรับตามช่วงอายุครรภ์ ดูแลความสบาย ความปลอดภัย และความรู้สึกของคุณแม่ เป็นช่วงพักที่ส่งผลดีทั้งต่อร่างกายและอารมณ์"
+  ],
+  [
+    "Naturalna pielęgnacja i terapia w jednym. Tajski masaż twarzy i głowy pobudza krążenie, rozluźnia mięśnie mimiczne oraz wspiera naturalne procesy regeneracyjne skóry. Zabieg pomaga poprawić napięcie skóry, nadać twarzy świeżość i jednocześnie przynosi głębokie odprężenie. Masaż obejmuje również okolice karku i głowy, dzięki czemu redukuje napięcia i przywraca poczucie lekkości.",
+    "Natural skin care and therapy in one. Thai face and head massage stimulates circulation, relaxes facial muscles and supports the skin’s natural regeneration. The treatment helps improve skin tone, refresh the face and provide deep relaxation. It also includes the neck and head, reducing tension and restoring a feeling of lightness.",
+    "การดูแลผิวตามธรรมชาติและการบำบัดในบริการเดียว นวดใบหน้าและศีรษะแบบไทยกระตุ้นการไหลเวียน คลายกล้ามเนื้อใบหน้า และส่งเสริมการฟื้นฟูผิวตามธรรมชาติ ช่วยปรับความกระชับ ให้ใบหน้าสดชื่นและผ่อนคลายลึก รวมถึงคอและศีรษะเพื่อลดความตึงและคืนความรู้สึกเบาสบาย"
+  ],
+  [
+    "Styl Kobido Thai to intensywna technika masażu twarzy i głowy zaadaptowana z tradycyjnych japońskich metod Kobido, połączona z zasadami masażu tajskiego. Używa precyzyjnych ruchów rąk, akupresury i rozciągania, aby głęboko rozluźnić mięśnie twarzy, poprawić krążenie i wspomóc naturalną regenerację skóry bez użycia kremów czy produktów.\nDla kogo?\nTen masaż jest odpowiedni dla każdego, kto chce zmniejszyć napięcie mięśni twarzy, wygładzić zmarszczki mimiczne i uzyskać odświeżony wygląd. Jest idealny dla osób poszukujących relaksu, lepszego kolorytu skóry i ulgi od bólów głowy spowodowanych codziennym napięciem.\nKorzyści\nGłęboka rewitalizacja i naturalne odmłodzenie skóry\nPoprawa przepływu krwi i drenaż limfatyczny\nZwiększona elastyczność i jędrność skóry\nJaśniejszy koloryt skóry o równomiernym kolorycie\nUlga napięcia w mięśniach twarzy, skóry głowy i szyi",
+    "Kobido Thai is an intensive face and head massage technique adapted from traditional Japanese Kobido methods and combined with Thai massage principles. It uses precise hand movements, acupressure and stretching to deeply relax facial muscles, improve circulation and support natural skin regeneration without creams or products.\nWho is it for?\nThis massage suits anyone who wants to reduce facial muscle tension, smooth expression lines and achieve a refreshed appearance. It is ideal for those seeking relaxation, improved skin tone and relief from headaches caused by everyday tension.\nBenefits\nDeep revitalisation and natural skin rejuvenation\nImproved blood flow and lymphatic drainage\nGreater skin elasticity and firmness\nA brighter, more even complexion\nRelief from tension in the face, scalp and neck",
+    "โคบิโดไทยเป็นเทคนิคนวดใบหน้าและศีรษะอย่างเข้มข้น ประยุกต์จากโคบิโดแบบญี่ปุ่นร่วมกับหลักการนวดไทย ใช้มืออย่างแม่นยำ การกดจุด และการยืดเหยียดเพื่อคลายกล้ามเนื้อใบหน้าอย่างลึก กระตุ้นการไหลเวียน และส่งเสริมการฟื้นฟูผิวตามธรรมชาติ โดยไม่ใช้ครีมหรือผลิตภัณฑ์\nเหมาะสำหรับใคร?\nเหมาะสำหรับผู้ที่ต้องการลดความตึงกล้ามเนื้อใบหน้า ทำให้ริ้วรอยจากการแสดงสีหน้าเรียบขึ้น และดูสดชื่น เหมาะกับผู้ที่ต้องการผ่อนคลาย ปรับสีผิว และบรรเทาปวดศีรษะจากความตึงในชีวิตประจำวัน\nประโยชน์\nฟื้นฟูผิวอย่างลึกและคืนความอ่อนเยาว์ตามธรรมชาติ\nปรับการไหลเวียนเลือดและระบายน้ำเหลือง\nเพิ่มความยืดหยุ่นและความกระชับผิว\nผิวดูกระจ่างใสและมีสีสม่ำเสมอ\nคลายความตึงของกล้ามเนื้อใบหน้า หนังศีรษะ และคอ"
+  ],
+  [
+    "Tajski masaż kręgosłupa – KrakÓW\nMasaż pleców, ramion oraz głowy to rodzaj masażu tajskiego, który koncentruje się przede wszystkim na górnych partiach ciała. Podstawowe techniki masażu, które wykonywane są przez masażystkę to ugniatanie, masowanie, rozcieranie, głaskanie, a także oklepywanie.\nDobry tajski masaż powinien obejmować zarówno plecy, ramiona i głowę, jak również szyję, kark oraz ręce. Tego typu masaż jest nie tylko pomocny na ból kręgosłupa, czy ból pleców. Doskonale sprawdza się również w przypadku: bóli głowy, migren, bezsenności czy problemów z koncentracją. Wynika to z faktu, iż masaż głowy pobudza krążenie mózgowe. Masaż szyi, karku i pleców pozwala natomiast ograniczyć ryzyko lub niwelować skutki zaburzeń, w obrębie kręgów szyjnych, piersiowych oraz lędźwiowych. Co bardzo ważne, dobrze wykonany masaż pozwala nie tylko zniwelować napięcia mięśniowe, ale również pełni funkcję masażu relaksacyjnego, przynosząc odprężenie psychiczne.\nTechniki stosowane w tajskim masażu pleców i górnych partii ciała\nDobry masaż pleców i górnych części ciała, który pozwala rozluźnić spięte mięśnie, obejmuje kilka kluczowych technik stosowanych w tradycyjnym tajskim masażu, np.:akupresura, pasywna joga czy ajuwerda.\nGłaskanie to technika, która rozpoczyna i kończy masaż, pozwalając się rozluźnić. Kolejna technika to rozcieranie, polegające na masowaniu ciała kolistymi ruchami o różnej sile nacisku. Ugniatanie polega na chwytaniu w dłonie poszczególnych odcinków mięśni i przechodzenie wzdłuż lub w poprzek do kolejnych partii mięśni. Oklepywanie obejmuje natomiast sprężyste uderzenia w mięśnie poprzeczne\nKomu poleca się masaż klasyczny głowy, pleców i ramion?\nMasaż pleców oraz górnych części ciała poleca się osobom, które uskarżają się na obolałe mięśnie pleców. Odczuwają dolegliwości związane z napiętymi mięśniami pleców czy ramion, a także cierpią na przewlekłe bóle kręgosłupa, pleców, barków, szyi, ramion lub głowy. Szczególnie polecany jest osobom, które dużo czasu spędzają w pozycji siedzącej, aby zniwelować wszelkie napięcia mięśniowe.\nDobry masaż tajski pozwala nie tylko na zniwelowanie dolegliwości bólowych, ale również na odprężenie, zrelaksowanie się, i odstresowanie. Wszystko to zapewniamy w naszym salonie Maliwan Thai Spa.\nMasaż pleców, ramion i głowy – najważniejsze korzyści\nograniczenie dolegliwości bólowych w górnych częściach ciała\nzmniejszenie napięć mięśniowych\npobudzenie krążenia, a w konsekwencji m.in. wzmocnienie cebulek włosów\nuczucie lekkości i większej sprawności fizycznej\nwsparcie w walce z bólami głowy, migreną, bezsennością\nrozluźnienie, odprężenie i poprawa samopoczucia\nPrzeciwwskazania do masażu pleców, ramion i głowy\nChoć masaż klasyczny pleców, ramion i głowy niesie za sobą wiele korzyści, w naszym salonie masażu tajskiego w Krakowie stosujemy pewne ograniczenia w przypadku takich przeciwwskazań jak infekcje i zapalenia skórne, choroby nowotworowe, nadciśnienie tętnicze krwi czy łamliwość kości. Masaż nie jest również wykonywany kobietom w ciąży oraz w trakcie miesiączki.\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, jak np. masaż dla seniorów, masaż stóp czy tajski masaż głowy.",
+    "Thai spinal massage — Kraków\nBack, shoulder and head massage is a type of Thai massage focused primarily on the upper body. The main techniques used by the therapist include kneading, massaging, rubbing, stroking and tapping.\nA good Thai massage should cover the back, shoulders and head, as well as the neck, nape and arms. It is helpful not only for spinal or back pain, but also for headaches, migraines, insomnia and concentration problems. This is because head massage stimulates cerebral circulation. Neck, nape and back massage can reduce the risk or effects of disorders in the cervical, thoracic and lumbar vertebrae. A well-performed massage reduces muscle tension and also provides mental relaxation.\nTechniques used in Thai back and upper-body massage\nA good back and upper-body massage that releases tight muscles includes key techniques of traditional Thai massage, such as acupressure, passive yoga and Ayurveda.\nStroking begins and ends the massage, helping you relax. Rubbing massages the body with circular movements at varying pressures. Kneading involves grasping sections of muscle and working lengthwise or across successive areas. Tapping consists of springy strokes to the transverse muscles.\nWho is classical head, back and shoulder massage recommended for?\nBack and upper-body massage is recommended for people with sore back muscles, tight back or arm muscles, or chronic pain in the spine, back, shoulders, neck, arms or head. It is particularly recommended for people who spend a lot of time sitting, to relieve muscle tension.\nA good Thai massage helps relieve pain and allows you to unwind, relax and reduce stress. We provide all of this at Maliwan Thai Spa.\nHead, back and shoulder massage — key benefits\nReduced pain in the upper body\nReduced muscle tension\nStimulation of circulation, including strengthening hair follicles\nA feeling of lightness and improved physical mobility\nSupport with headaches, migraines and insomnia\nRelaxation and improved wellbeing\nContraindications for back, shoulder and head massage\nAlthough classical back, shoulder and head massage offers many benefits, our Thai massage salon in Kraków applies restrictions for contraindications such as skin infections and inflammation, cancer, high blood pressure and brittle bones. This massage is also not performed during pregnancy or menstruation.\nWe also recommend other massages at our Thai massage salon in Kraków, such as massage for seniors, foot massage and Thai head massage.",
+    "นวดกระดูกสันหลังแบบไทย — คราคูฟ\nนวดหลัง ไหล่ และศีรษะเป็นการนวดไทยที่เน้นร่างกายส่วนบนเป็นหลัก เทคนิคสำคัญที่หมอนวดใช้ ได้แก่ การคลึง การนวด การถู การลูบ และการเคาะ\nการนวดไทยที่ดีควรครอบคลุมหลัง ไหล่ ศีรษะ คอ ท้ายทอย และแขน ไม่เพียงช่วยเรื่องปวดกระดูกสันหลังหรือหลัง แต่ยังช่วยเรื่องปวดศีรษะ ไมเกรน นอนไม่หลับ และสมาธิ เนื่องจากการนวดศีรษะกระตุ้นการไหลเวียนในสมอง การนวดคอ ท้ายทอย และหลังช่วยลดความเสี่ยงหรือผลของความผิดปกติของกระดูกสันหลังส่วนคอ อก และเอว การนวดที่เหมาะสมช่วยลดความตึงกล้ามเนื้อและผ่อนคลายจิตใจด้วย\nเทคนิคในการนวดหลังและร่างกายส่วนบนแบบไทย\nการนวดหลังและส่วนบนที่ช่วยคลายกล้ามเนื้อตึงใช้เทคนิคสำคัญของนวดไทย เช่น การกดจุด โยคะแบบมีผู้ช่วย และอายุรเวท\nการลูบใช้เริ่มและจบการนวดเพื่อให้ผ่อนคลาย การถูใช้มือเคลื่อนเป็นวงด้วยแรงกดต่างกัน การคลึงจับกล้ามเนื้อแต่ละส่วนและนวดตามแนวยาวหรือแนวขวางไปยังส่วนถัดไป การเคาะเป็นการตีอย่างยืดหยุ่นบนกล้ามเนื้อแนวขวาง\nนวดศีรษะ หลัง และไหล่แบบคลาสสิกเหมาะสำหรับใคร?\nแนะนำสำหรับผู้ที่ปวดกล้ามเนื้อหลัง มีความตึงของหลังหรือแขน หรือปวดเรื้อรังที่กระดูกสันหลัง หลัง บ่า คอ แขน หรือศีรษะ โดยเฉพาะผู้ที่นั่งเป็นเวลานาน เพื่อคลายความตึงกล้ามเนื้อ\nการนวดไทยที่ดีช่วยบรรเทาปวด พักผ่อน ผ่อนคลาย และลดความเครียด ซึ่งมีให้บริการที่ Maliwan Thai Spa\nประโยชน์สำคัญของนวดศีรษะ หลัง และไหล่\nลดอาการปวดร่างกายส่วนบน\nลดความตึงกล้ามเนื้อ\nกระตุ้นการไหลเวียน รวมถึงช่วยให้รากผมแข็งแรง\nรู้สึกเบาสบายและเคลื่อนไหวได้ดีขึ้น\nช่วยเรื่องปวดศีรษะ ไมเกรน และนอนไม่หลับ\nผ่อนคลายและรู้สึกดีขึ้น\nข้อห้ามสำหรับนวดหลัง ไหล่ และศีรษะ\nแม้การนวดแบบคลาสสิกจะมีประโยชน์หลายอย่าง ร้านนวดไทยของเราในคราคูฟมีข้อจำกัดสำหรับภาวะ เช่น ผิวหนังติดเชื้อหรืออักเสบ มะเร็ง ความดันโลหิตสูง และกระดูกเปราะ และไม่ให้บริการนวดนี้ระหว่างตั้งครรภ์หรือมีประจำเดือน\nเราแนะนำบริการอื่นของร้านนวดไทยในคราคูฟด้วย เช่น นวดสำหรับผู้สูงอายุ นวดเท้า และนวดศีรษะแบบไทย"
+  ],
+  [
+    "Masaż głowy – Kraków\nNa czym polega masaż skóry głowy? Refleksoterapia to w głównej mierze zabieg leczniczy, upiększający oraz stanowi niezwykle skuteczne antidotum na stres. Terapeuta masuje skórę głowy, gdzie poprzez układ nerwowy przechodzą tak zwane meridiany. Są one połączone z konkretnymi narządami ludzkiego organizmu. Wywierając wpływ na receptory, osoba wykonująca masaż dokonuje faktycznej poprawy stanu zdrowia pacjenta.\nSam masaż głowy jest bardzo przyjemny doznaniem. Masażystka wykonuje go opuszkami palców. Delikatne, okrężne ruchy pozwalają zrelaksować się oraz wyciszyć – osoba poddająca się zabiegowi pozostaje w pozycji leżącej, co zapewnia maksymalne odprężenie. Masaż skóry głowy szczególnie polecany jest przy różnego rodzaju schorzeniach neurologicznych, gdyż dobroczynnie oddziałuje na centralny układ nerwowy.\nKomu poleca się tajski masaż głowy?\nTajski masaż głowy można podzielić na dwa rodzaje: relaksacyjny i terapeutyczny. Traktując refleksoterapię jako masaż relaksacyjny, warto skorzystać z zabiegu, jeżeli cierpimy na:\ndepresję\nproblemy w życiu prywatnym bądź zawodowym\nprzemęczenie psychiczne\nbezsenność\nstany lękowe\nproblemy z zapamiętywaniem i koncentracją\nnerwowość\nbóle głowy, migreny.\nTraktując refleksoterapię zgodnie z jej przeznaczeniem, czyli jako zabieg terapeutyczny, możemy zapewnić ulgę w przypadku takich dolegliwości układu nerwowego jak:\nobrzęki twarzy i ciała\nzapalenia stawów lub mięśni\nstwardnienie rozsiane\nszczękościsk\nuszkodzenia neurologiczne nabyte\nchoroby nerwu twarzy\nbóle kręgosłupa\nprzemęczenie fizyczne.\nKorzyści płynące z masażu skóry głowy\nOprócz niewątpliwych korzyści relaksujących ciało i duszę, zabieg masażu skóry głowy niesie następujące korzyści zdrowotne:\npoprawia krążenie krwi\npomaga w stanach przewlekłego zmęczenia oraz bólu\nwspomaga w leczeniu migreny i bezsenności\npoprawia wydolność narządów\nwspiera leczenie chorób neurologicznych, jak również dobroczynnie wpływa na układ pokarmowy i oddechowy\ndziała jako terapia łagodząca w leczeniu nowotworów oraz innych chorób przewlekłych i nieuleczalnych\nwspiera organizm kobiet w ciąży i w czasie połogu.\nRefleksoterapia w formie tajskiego masażu głowy, to zabieg niosący ukojenie nie tylko dla ciała, lecz także samopoczucia. Warto oddać się w ręce doświadczonych i certyfikowanych terapeutek, by przekonać się o tym na własnej skórze.\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, np. masaż wyszczuplający, masaż dla dwojga czy masaż świecami.",
+    "Head massage — Kraków\nWhat does scalp massage involve? Reflexology is primarily a therapeutic and beauty treatment, as well as an extremely effective antidote to stress. The therapist massages the scalp, where so-called meridians run through the nervous system. They are connected to specific organs of the body. By influencing the receptors, the therapist brings about an actual improvement in the patient’s health.\nHead massage itself is very pleasant. The therapist uses her fingertips. Gentle circular movements allow you to relax and calm down, while a lying position provides maximum relaxation. Scalp massage is particularly recommended for various neurological conditions because of its beneficial effect on the central nervous system.\nWho is Thai head massage recommended for?\nThai head massage can be divided into relaxing and therapeutic types. As a relaxing massage, reflexology is worth considering if you experience:\nDepression\nProblems in your personal or professional life\nMental exhaustion\nInsomnia\nAnxiety\nMemory and concentration problems\nNervousness\nHeadaches or migraines\nAs a therapeutic treatment, reflexology may provide relief from nervous-system-related complaints such as:\nSwelling of the face and body\nJoint or muscle inflammation\nMultiple sclerosis\nLockjaw\nAcquired neurological damage\nFacial nerve disorders\nSpinal pain\nPhysical exhaustion\nBenefits of scalp massage\nAlongside relaxation of body and mind, scalp massage offers these health benefits:\nImproved blood circulation\nHelp with chronic fatigue and pain\nSupport in treating migraines and insomnia\nImproved organ function\nSupport in treating neurological conditions, with beneficial effects on the digestive and respiratory systems\nA soothing therapy in the treatment of cancer and other chronic and incurable conditions\nSupport for women during pregnancy and after childbirth\nReflexology in the form of Thai head massage brings comfort to the body and wellbeing. Place yourself in the hands of our experienced, certified therapists to experience it for yourself.\nWe also recommend other massages at our Thai massage salon in Kraków, such as body contouring massage, couples massage and candle massage.",
+    "นวดศีรษะ — คราคูฟ\nนวดหนังศีรษะเป็นอย่างไร? การนวดกดจุดสะท้อนเป็นบริการบำบัดและความงามเป็นหลัก อีกทั้งเป็นวิธีต้านความเครียดที่มีประสิทธิภาพมาก หมอนวดนวดหนังศีรษะ ซึ่งมีแนวที่เรียกว่าเมอริเดียนผ่านระบบประสาทและเชื่อมกับอวัยวะเฉพาะในร่างกาย การกระตุ้นจุดรับความรู้สึกทำให้สุขภาพผู้รับบริการดีขึ้นจริง\nการนวดศีรษะให้ความรู้สึกสบาย หมอนวดใช้ปลายนิ้วนวดเป็นวงอย่างอ่อนโยนเพื่อให้ผ่อนคลายและสงบ ผู้รับบริการนอนเพื่อให้พักผ่อนได้เต็มที่ แนะนำเป็นพิเศษสำหรับภาวะทางระบบประสาทต่าง ๆ เพราะส่งผลดีต่อระบบประสาทส่วนกลาง\nนวดศีรษะแบบไทยเหมาะสำหรับใคร?\nนวดศีรษะแบบไทยแบ่งเป็นแบบผ่อนคลายและแบบบำบัด หากใช้เพื่อผ่อนคลาย สามารถพิจารณาบริการเมื่อมี:\nภาวะซึมเศร้า\nปัญหาชีวิตส่วนตัวหรือการทำงาน\nความเหนื่อยล้าทางใจ\nนอนไม่หลับ\nความวิตกกังวล\nปัญหาความจำและสมาธิ\nความประหม่า\nปวดศีรษะหรือไมเกรน\nหากใช้เป็นบริการบำบัด การนวดกดจุดสะท้อนอาจบรรเทาภาวะที่เกี่ยวข้องกับระบบประสาท เช่น:\nอาการบวมที่ใบหน้าและร่างกาย\nข้อหรือกล้ามเนื้ออักเสบ\nโรคปลอกประสาทเสื่อมแข็ง\nขากรรไกรค้าง\nความเสียหายของระบบประสาทที่เกิดภายหลัง\nโรคเส้นประสาทใบหน้า\nปวดกระดูกสันหลัง\nความเหนื่อยล้าทางกาย\nประโยชน์ของนวดหนังศีรษะ\nนอกจากผ่อนคลายร่างกายและจิตใจแล้ว นวดหนังศีรษะมีประโยชน์ต่อสุขภาพดังนี้:\nช่วยการไหลเวียนเลือด\nช่วยเรื่องความเหนื่อยล้าเรื้อรังและอาการปวด\nสนับสนุนการรักษาไมเกรนและนอนไม่หลับ\nช่วยการทำงานของอวัยวะ\nสนับสนุนการรักษาภาวะทางระบบประสาท และส่งผลดีต่อระบบย่อยอาหารและระบบหายใจ\nเป็นการบำบัดเพื่อความสบายในการรักษามะเร็งและโรคเรื้อรังหรือรักษาไม่หายอื่น ๆ\nช่วยร่างกายของผู้หญิงระหว่างตั้งครรภ์และหลังคลอด\nการนวดกดจุดสะท้อนในรูปแบบนวดศีรษะแบบไทยให้ความสบายทั้งร่างกายและความรู้สึก ลองรับบริการจากหมอนวดที่มีประสบการณ์และใบรับรองเพื่อสัมผัสด้วยตัวเอง\nเราแนะนำบริการอื่นในร้านนวดไทยที่คราคูฟ เช่น นวดกระชับสัดส่วน นวดสำหรับสองท่าน และนวดด้วยน้ำมันเทียน"
+  ],
+  [
+    "Zabieg refleksoterapii składa się z trzech części: rozluźnianie stopy, praca na receptorach, masaż relaksacyjny stóp. Terapeuta podczas masażu wykonuje ruchy uciskowe inspirowane techniką masażu japońskiego – Shiatsu oraz akupresury. Stymulacja niektórych z receptorów znajdujących się na stopie może bywać bolesna – co świadczy o problemie danego narządu, bądź o jego wyraźnym osłabieniu. Masaż ten jest silnie związany z procesem detoksykacji organizmu.\nSerdecznie zapraszamy na tajski masaż stóp! Kraków, Thai Maliwan SPA, Szewska 12.\nDla kogo?\nRefleksoterapię stóp poleca się osobom, które chcą zrelaksować się podczas leczniczego masażu stóp.\nRefleksologia traktowana jest jako masaż leczniczy, w związku z czym osoby pobierające masaże stóp wyraźnie odczują poprawę samopoczucia. Masaż jednocześnie pobudza organizm do procesu samoregulacji oraz samouzdrawiania.\nKorzyści\nIntensywna detoksykacja organizmu\nPoprawa samopoczucia, likwidacja bezsenności\nStymulacja naturalnych procesów obronnych i samoregulujących organizmu\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, jak np. tajski masaż głowy, masaż wyszczuplający czy masaż dla par.",
+    "Foot reflexology has three stages: releasing the foot, working on reflex points, and relaxing foot massage. The therapist uses pressure movements inspired by Japanese Shiatsu massage and acupressure. Stimulation of some reflex points on the foot may be painful, which indicates a problem with the associated organ or a clear weakness. This massage is strongly connected with the body’s detoxification process.\nWe warmly invite you to a Thai foot massage at Thai Maliwan SPA, Szewska 12, Kraków.\nWho is it for?\nFoot reflexology is recommended for people who want to relax during a therapeutic foot massage.\nReflexology is regarded as a therapeutic massage, so recipients will experience a clear improvement in wellbeing. It also stimulates the body’s self-regulation and self-healing processes.\nBenefits\nIntensive detoxification of the body\nImproved wellbeing and relief from insomnia\nStimulation of the body’s natural defence and self-regulation processes\nWe also recommend other massages at our Thai massage salon in Kraków, such as Thai head massage, body contouring massage and couples massage.",
+    "การนวดกดจุดสะท้อนเท้ามีสามส่วน ได้แก่ คลายเท้า นวดจุดสะท้อน และนวดเท้าผ่อนคลาย หมอนวดใช้การกดที่ได้แนวทางจากชิอัตสึของญี่ปุ่นและการกดจุด การกระตุ้นบางจุดบนเท้าอาจเจ็บ ซึ่งบ่งบอกปัญหาหรือความอ่อนแอของอวัยวะที่เกี่ยวข้อง การนวดนี้เชื่อมโยงอย่างมากกับกระบวนการขับสารพิษของร่างกาย\nขอเชิญรับบริการนวดเท้าแบบไทยที่ Thai Maliwan SPA, Szewska 12, คราคูฟ\nเหมาะสำหรับใคร?\nแนะนำสำหรับผู้ที่ต้องการผ่อนคลายระหว่างนวดเท้าเพื่อการบำบัด\nการนวดกดจุดสะท้อนถือเป็นนวดบำบัด ผู้รับบริการจึงจะรู้สึกดีขึ้นอย่างชัดเจน และกระตุ้นการปรับสมดุลและการฟื้นฟูตนเองของร่างกาย\nประโยชน์\nขับสารพิษจากร่างกายอย่างเข้มข้น\nรู้สึกดีขึ้นและบรรเทานอนไม่หลับ\nกระตุ้นกลไกป้องกันและปรับสมดุลตามธรรมชาติของร่างกาย\nเราแนะนำบริการอื่นในร้านนวดไทยที่คราคูฟ เช่น นวดศีรษะแบบไทย นวดกระชับสัดส่วน และนวดสำหรับสองท่าน"
+  ],
+  [
+    "Masaż wyszczuplający – Kraków\nNa czym polega masaż wyszczuplający? Pozbycie się zbędnych kilogramów nie oznacza wyłącznie intensywnej aktywności fizycznej. Dzięki odpowiednim technikom masażu, również z wykorzystaniem bańki chińskiej, komórki tłuszczowe w tkance podskórnej ulegają rozbiciu.\nMasaż wyszczuplający w 2-3 seriach tygodniowo w połączeniu z odpowiednią dietą i ćwiczeniami z pewnością przyniesie zadowalające efekty, pozwalając zredukować nadmierną tkankę tłuszczową.\nMasaż wyszczuplający – zalety\nMasaż wyszczuplający, w tym masaż bańką chińską, oprócz niewątpliwych korzyści w zwalczaniu dodatkowych kilogramów, ma także pozytywny wpływ na kondycję skóry. Tracenie wagi może znacząco wpływać na zmniejszenie jędrności skóry, a w efekcie jej obwisanie. Stosowanie regularnych zabiegów, takich jak masaż odchudzający, może sprzyjająco wpłynąć na jakość skóry.\nMasaż tajski wyszczuplający to doskonała metoda na likwidowanie nagromadzonej miejscowo tkanki tłuszczowej, ujędrnienia i zwiększa gładkości skóry, a także walce z cellulitem.\nPrzebieg masażu wyszczuplającego\nMasaż wyszczuplający w Thai Maliwan Spa Kraków, wykonywany jest intensywnie oraz energicznie. Wykorzystywanie odpowiednich technik rozgrzewa wybrane partie ciała, co w skuteczny sposób pozwala na rozbicie komórek tłuszczowych, a w konsekwencji – spalanie tkanki tłuszczowej.\nWskazania do MASAŻU:\nWarto zapisać się na zabieg masażu wyszczuplającego, gdy:\nzauważymy cellulit lub zastoje wody w problematycznych partiach ciała\ntkanka tłuszczowa rozłożona jest nierównomiernie, co skutkuje m.in. otyłością brzuszną\na także:\nw celu wymodelowania sylwetki, podniesieniu pośladków\nw celu wyszczuplenia i ujędrnienia skóry.\nKorzyści płynące z masażu wyszczuplającego i antycellulitowego\nStosowanie masażu wyszczuplającego oraz antycellulitowego niesie za sobą wiele korzyści, do których można zaliczyć między innymi:\nredukcję cellulitu\nutratę wagi\npozytywny wpływ na jędrność oraz wygląd skóry\nuniknięcie efekty obwisłej, luźnej skóry\nodprężenie\nMasaż wyszczuplający jest dedykowany zarówno kobietom, jak i mężczyznom – z powodzeniem wyszczupli brzuch, pośladki i uda, a także ramiona i plecy, co sprzyja procesowi modelowania sylwetki. Co warte podkreślenia, masaż antycellulitowy to nie tylko zabieg modelujący sylwetkę, ale również źródło relaksu i odprężenia. Czas trwania takiego masażu to od 60 do 120 minut. Będzie to z pewnością miło spędzony czas!\nJeżeli pragniesz poznać korzyści, jakie daje masaż wyszczuplający, Maliwan Thai Spa jest do tego odpowiednim miejscem! Zabiegi wykonywane są przez certyfikowane i doświadczone wieloletnią praktyką terapeutki. Pamiętaj, że dążenie do wymarzonej sylwetki to nie tylko odpowiednia dieta i aktywność fizyczna, ale również dodatkowe wsparcie w procesie rozbijania komórek tłuszczowych pod postacią profesjonalnego masażu.\nPolecamy również inne masaże, realizowane w naszym salonie masażu tajskiego w Krakowie, np. masaż dla dwojga, masaż świecami czy tradycyjny masaż tajski.",
+    "Body contouring massage — Kraków\nWhat does slimming massage involve? Losing excess weight does not mean only intensive physical activity. Appropriate massage techniques, including Chinese cupping, break down fat cells in the subcutaneous tissue.\nSlimming massage two or three times a week, combined with an appropriate diet and exercise, will certainly bring satisfying results by reducing excess body fat.\nSlimming massage — advantages\nSlimming massage, including Chinese cupping, not only helps combat excess weight but also benefits the skin. Weight loss can reduce skin firmness and cause sagging. Regular treatments such as slimming massage may improve skin quality.\nThai slimming massage is an excellent way to eliminate localised fat deposits, firm and smooth the skin, and combat cellulite.\nHow slimming massage works\nAt Thai Maliwan Spa Kraków, slimming massage is performed intensively and energetically. Appropriate techniques warm selected body areas, effectively breaking down fat cells and consequently burning body fat.\nIndications for massage:\nConsider slimming massage when:\nYou notice cellulite or fluid retention in problem areas\nFat is unevenly distributed, resulting in abdominal obesity, among other issues\nAlso:\nTo shape the body and lift the buttocks\nTo slim and firm the skin\nBenefits of slimming and anti-cellulite massage\nSlimming and anti-cellulite massage offer many benefits, including:\nCellulite reduction\nWeight loss\nImproved skin firmness and appearance\nAvoiding loose, sagging skin\nRelaxation\nSlimming massage is designed for both women and men. It can slim the abdomen, buttocks and thighs, as well as arms and back, contributing to body contouring. Anti-cellulite massage is also a source of relaxation. The massage lasts 60 to 120 minutes, providing an enjoyable visit.\nIf you want to discover the benefits of slimming massage, Maliwan Thai Spa is the right place. Treatments are performed by certified therapists with many years of experience. Reaching your desired figure involves not only diet and exercise, but also additional support in breaking down fat cells through professional massage.\nWe also recommend other massages at our Thai massage salon in Kraków, such as couples massage, candle massage and traditional Thai massage.",
+    "นวดกระชับสัดส่วน — คราคูฟ\nนวดลดสัดส่วนเป็นอย่างไร? การลดน้ำหนักส่วนเกินไม่ได้หมายถึงการออกกำลังกายหนักเพียงอย่างเดียว เทคนิคการนวดที่เหมาะสม รวมถึงถ้วยสุญญากาศแบบจีน ทำให้เซลล์ไขมันในเนื้อเยื่อใต้ผิวหนังแตกตัว\nการนวดลดสัดส่วนสองถึงสามครั้งต่อสัปดาห์ ร่วมกับอาหารและการออกกำลังกายที่เหมาะสม จะให้ผลน่าพอใจโดยลดไขมันส่วนเกิน\nข้อดีของนวดลดสัดส่วน\nนวดลดสัดส่วน รวมถึงนวดด้วยถ้วยสุญญากาศแบบจีน ไม่เพียงช่วยเรื่องน้ำหนักส่วนเกิน แต่ยังส่งผลดีต่อผิว การลดน้ำหนักอาจลดความกระชับและทำให้ผิวหย่อน การรับบริการเป็นประจำอาจช่วยคุณภาพผิว\nนวดลดสัดส่วนแบบไทยเป็นวิธีที่ดีในการลดไขมันสะสมเฉพาะจุด เพิ่มความกระชับและความเรียบเนียน และจัดการเซลลูไลท์\nขั้นตอนการนวดลดสัดส่วน\nที่ Thai Maliwan Spa Kraków นวดลดสัดส่วนอย่างเข้มข้นและกระฉับกระเฉง เทคนิคที่เหมาะสมทำให้ส่วนที่เลือกอุ่นขึ้น ช่วยให้เซลล์ไขมันแตกตัวอย่างมีประสิทธิภาพ และนำไปสู่การเผาผลาญไขมัน\nข้อบ่งชี้สำหรับการนวด:\nควรพิจารณานวดลดสัดส่วนเมื่อ:\nพบเซลลูไลท์หรือการคั่งของน้ำในบริเวณที่มีปัญหา\nไขมันกระจายไม่สม่ำเสมอ ทำให้เกิดปัญหา เช่น อ้วนลงพุง\nรวมถึง:\nเพื่อปรับสัดส่วนและยกกระชับสะโพก\nเพื่อลดสัดส่วนและกระชับผิว\nประโยชน์ของนวดลดสัดส่วนและนวดต้านเซลลูไลท์\nบริการดังกล่าวมีประโยชน์หลายอย่าง เช่น:\nลดเซลลูไลท์\nลดน้ำหนัก\nเพิ่มความกระชับและปรับรูปลักษณ์ผิว\nหลีกเลี่ยงผิวหลวมและหย่อน\nผ่อนคลาย\nนวดลดสัดส่วนเหมาะกับทั้งผู้หญิงและผู้ชาย ช่วยลดสัดส่วนหน้าท้อง สะโพก ต้นขา แขน และหลัง เพื่อปรับรูปร่าง นวดต้านเซลลูไลท์ยังช่วยผ่อนคลาย บริการใช้เวลา 60 ถึง 120 นาที เป็นช่วงเวลาที่น่าพอใจ\nหากต้องการรู้จักประโยชน์ของนวดลดสัดส่วน Maliwan Thai Spa เป็นสถานที่เหมาะสม บริการโดยหมอนวดที่มีใบรับรองและประสบการณ์หลายปี การไปถึงรูปร่างที่ต้องการไม่ได้มีเพียงอาหารและการออกกำลังกาย แต่มีการนวดมืออาชีพช่วยให้เซลล์ไขมันแตกตัวด้วย\nเราแนะนำบริการอื่นในร้านนวดไทยที่คราคูฟ เช่น นวดสำหรับสองท่าน นวดด้วยน้ำมันเทียน และนวดไทยแบบดั้งเดิม"
+  ]
+]
