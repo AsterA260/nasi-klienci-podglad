@@ -376,7 +376,7 @@ html[lang=th] .face .cap b{font-size:20px}html[lang=th] .face .cap span{white-sp
 <link rel="stylesheet" href="www-desktop.css?v=20261004-14">
 <link rel="stylesheet" href="www-final-polish.css?v=20261005-27">
 <link rel="stylesheet" href="www-responsive.css?v=20261004-19">
-<script src="www-desktop-layout.js?ipad=1&v=20261004-19"></script>
+<script src="www-desktop-layout.js?ipad=2&v=20261004-19"></script>
 <meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="menu-koncepcja-home.css?v=20261006-10">
 <style>.face.asset-photo .ph{background-position:center center!important}.face.asset-photo .cap{z-index:3}</style><style id="film-19-photos">
 .face.asset-photo .ph{overflow:hidden}
@@ -422,6 +422,18 @@ html[lang=th] .face .cap b{font-size:20px}html[lang=th] .face .cap span{white-sp
 #tiles .tile[data-preview-tile="4"] .ph{background-position:50% 35%}
 #tiles .tile[data-preview-tile="5"] .ph{background-position:50% 76%}
 #tiles .tile[data-preview-tile="7"] .ph{background-position:50% 38%}
+/* Customer menu tablet reel: wider panels, unchanged vertical geometry and controls. */
+@media(pointer:coarse) and (min-width:601px) and (max-width:1366px){
+ .scene{perspective:2310px}
+ .face{width:700px;left:-350px}
+}
+@media(pointer:coarse) and (min-width:901px) and (max-width:1100px){
+ .scene{perspective:2062.5px}
+ .face{width:625px;left:-312.5px}
+}
+@media(pointer:coarse) and (min-width:601px) and (max-width:900px){
+ .face{width:532px;left:-266px}
+}
 </style><link rel="stylesheet" href="www-i18n.css?v=20261007-lang5"><link rel="stylesheet" href="www-ipad-fit.css?v=20261007-ipad1">
 </head>
 <body>
@@ -538,7 +550,7 @@ function updateFace(f,index){
  const photo=f.querySelector('img');photo.src=IMG[index];photo.alt=SCENES[index].t||'Detal salonu Thai Maliwan';
  captionFace(f);
 }
-let R=Math.round((innerWidth>=901?250:innerWidth>=601?190:118)/Math.tan((STEP/2)*Math.PI/180));
+let R=Math.round(((innerWidth>=901?250:innerWidth>=601?190:118)*(matchMedia("(pointer:coarse) and (min-width:601px) and (max-width:1366px)").matches?(innerWidth>=901&&innerWidth<=1100?1.25:1.4):1))/Math.tan((STEP/2)*Math.PI/180));
   document.documentElement.classList.remove("responsive-scroll");
   document.documentElement.style.removeProperty("--responsive-height");
 const cyl=document.getElementById('cyl');
@@ -771,7 +783,7 @@ function frame(){
 frame();
 function calcK(){ K=Math.max(.6,Math.min(1,(innerHeight-360)/404)); }
 function placeSprockets(){
-  R=Math.round((innerWidth>=901?250:innerWidth>=601?190:118)/Math.tan((STEP/2)*Math.PI/180));
+  R=Math.round(((innerWidth>=901?250:innerWidth>=601?190:118)*(matchMedia("(pointer:coarse) and (min-width:601px) and (max-width:1366px)").matches?(innerWidth>=901&&innerWidth<=1100?1.25:1.4):1))/Math.tan((STEP/2)*Math.PI/180));
   document.documentElement.classList.remove("responsive-scroll");
   document.documentElement.style.removeProperty("--responsive-height");
   faces.forEach(f=>{f.style.transform='rotateY('+f.dataset.ang+'deg) translateZ('+R+'px)';});
