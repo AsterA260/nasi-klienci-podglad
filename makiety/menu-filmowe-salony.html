@@ -439,7 +439,7 @@ body.menu-tablet-wide .face{height:540px;top:-270px}
 @media(min-width:601px) and (max-width:900px){.hdr{left:24px;right:24px}}
 @media(max-width:600px){.hdr{height:60px;padding:0 14px}.hdr .logo b{font-size:15px}.hdr .logo strong{font-size:8px}.hdr .logo .logo-mark-main{width:32px;height:32px}.hdr .right{gap:10px}}
 </style>
-<link rel="stylesheet" href="menu-clear-actions.css?v=20261008-2"></head>
+<link rel="stylesheet" href="menu-clear-actions.css?v=20261008-3"></head>
 <body>
 <div class="bg"></div><div class="tint"></div>
 <div class="rglow"></div>
@@ -480,7 +480,7 @@ body.menu-tablet-wide .face{height:540px;top:-270px}
 <div class="arrow l" id="prev">‹</div><div class="arrow r" id="next">›</div>
 <div class="edge"></div>
 <div class="hint">Przeciągnij pas · sceny wyginają się na walcu · lotos stoi w środku</div>
-<div class="mrow top" id="rowTop"><button type="button" class="choose-massage" id="chooseMassage">Wybierz masaż i czas dla siebie</button></div>
+<nav class="mrow top" id="rowTop" aria-label="Wybierz ofertę"></nav>
 <!-- DÓŁ LEWO — światy (konstytucja: każda strona ma trzy światy) -->
 <div class="world-rail" id="worldRail">
  <button class="world-dot" id="worldDot" type="button" aria-label="Świat Maliwan">
@@ -748,7 +748,7 @@ const CHAT_URL='https://thaimaliwan.pl/szkola/chat.php';
 function setLang(l){LANG=l;document.documentElement.lang=l==='th'?'th':l;const u=UI[l];
  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('on',b.dataset.lang===l));
  document.querySelectorAll('[data-ui]').forEach(e=>{const k=e.dataset.ui;if(u[k])e.textContent=u[k];});
- document.querySelector('.h1m').textContent=u.h1;document.getElementById('chooseMassage').textContent={pl:'Wybierz masaż',en:'Choose your massage',th:'เลือกการนวดที่คุณต้องการ'}[l];document.querySelector('.hintm').textContent=u.hint;
+ document.querySelector('.h1m').textContent=u.h1;document.querySelector('.hintm').textContent=u.hint;
  document.getElementById('worldRail').style.setProperty('--rail-txt','"'+u.rail+'"');
  document.querySelectorAll('.mnode').forEach(a=>{a.querySelector('b').textContent=u.nodes[NODE_UI[a.dataset.node]];});
  document.querySelectorAll('.face').forEach(captionFace);
@@ -869,5 +869,5 @@ UI.en.scenes=[["Szewska salon", ""], ["Oil massage", ""], ["", ""], ["Zwierzynie
 UI.th.scenes=[["สาขา Szewska", ""], ["นวดน้ำมัน", ""], ["", ""], ["สาขา Zwierzyniecka", ""], ["", ""], ["นวดไทย", ""], ["", ""], ["สาขา Szewska", ""], ["สาขา Szewska", ""], ["นวดไทย", ""], ["", ""], ["สาขา Zwierzyniecka", ""], ["นวดเท้า", ""], ["", ""], ["สาขา Szewska", ""], ["", ""], ["", ""], ["", ""], ["", ""]];
 UI.pl.hint="Przesuń palcem · poznaj nasze salony"; UI.en.hint="Swipe · discover our salons"; UI.th.hint="เลื่อนเพื่อชมบรรยากาศร้าน"; setLang(LANG);
 </script>
-<script defer src="www-i18n-data.js?v=20261007-lang5"></script><script defer src="www-i18n.js?v=20261007-lang5"></script><script defer src="menu-clear-actions.js?v=20261008-2"></script></body>
+<script defer src="www-i18n-data.js?v=20261007-lang5"></script><script defer src="www-i18n.js?v=20261007-lang5"></script><script defer src="menu-clear-actions.js?v=20261008-3"></script></body>
 </html>
