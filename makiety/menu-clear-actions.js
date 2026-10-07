@@ -12,6 +12,9 @@
    a.querySelector('b').textContent=label;
    a.setAttribute('aria-label',label);
    a.removeAttribute('data-top-word');
+   if(!a.querySelector('.action-shine')){
+    const shine=document.createElement('span');shine.className='action-shine';shine.setAttribute('aria-hidden','true');a.appendChild(shine);
+   }
   });
  }
  const original=syncPreviewNav;

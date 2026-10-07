@@ -45,3 +45,31 @@
  #rowTop .mnode[data-node="3"]{margin-left:0}
  .hdr .menu-btn{top:216px!important;right:16px!important}
 }
+
+/* Final finishing: more room under the reel and a quiet sequential light sweep. */
+.hintm{display:none!important}
+.preview-social{bottom:calc(60px + env(safe-area-inset-bottom));gap:12px}
+.preview-social a{width:30px;height:30px;font-size:18px}
+.preview-social svg{width:15px;height:15px}
+#rowTop .mnode>b{position:relative;z-index:1}
+#rowTop .action-shine{
+ display:block!important;position:absolute;inset:0;overflow:hidden;
+ border-radius:inherit;pointer-events:none;z-index:0;
+}
+#rowTop .action-shine::before{
+ content:"";position:absolute;top:0;bottom:0;left:-45%;width:40%;
+ background:linear-gradient(105deg,transparent,rgba(242,218,168,.025) 25%,rgba(242,218,168,.19) 50%,rgba(242,218,168,.025) 75%,transparent);
+ opacity:0;transform:translateX(0);animation:menuLightSweep 16s linear infinite;
+}
+#rowTop [data-node="2"] .action-shine::before{animation-delay:4s}
+#rowTop [data-node="1"] .action-shine::before{animation-delay:8s}
+#rowTop [data-node="3"] .action-shine::before{animation-delay:12s}
+@keyframes menuLightSweep{
+ 0%{opacity:0;transform:translateX(0)}
+ 1.5%{opacity:1}
+ 12%{opacity:1;transform:translateX(375%)}
+ 13%,100%{opacity:0;transform:translateX(375%)}
+}
+@media(max-width:1100px){.preview-social{bottom:calc(108px + env(safe-area-inset-bottom))}}
+@media(max-width:600px){.preview-social{bottom:calc(156px + env(safe-area-inset-bottom))}}
+@media(prefers-reduced-motion:reduce){#rowTop .action-shine{display:none!important}}
