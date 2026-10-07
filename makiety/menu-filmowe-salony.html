@@ -425,6 +425,20 @@ html[lang=th] .face .cap b{font-size:20px}html[lang=th] .face .cap span{white-sp
 /* Width is set from the available tablet screen; photos retain natural proportions. */
 body.menu-tablet-wide .face{height:540px;top:-270px}
 </style><link rel="stylesheet" href="www-i18n.css?v=20261007-lang5"><link rel="stylesheet" href="www-ipad-fit.css?v=20261007-ipad1">
+<style id="menu-header-refinement">
+/* Customer menu only: reserve Mali for a later design and recess the slimmer header. */
+.dock-r,#ask{display:none!important}
+.hdr{height:64px;padding:0 20px;border-radius:18px;
+ background:linear-gradient(180deg,rgba(12,9,6,.88),rgba(24,18,12,.76));
+ border-color:rgba(185,154,93,.22);
+ box-shadow:inset 0 2px 8px rgba(0,0,0,.5),inset 0 -1px 0 rgba(226,198,141,.08),0 3px 12px rgba(0,0,0,.22)}
+.hdr .logo{gap:10px}.hdr .logo b{font-size:18px}.hdr .logo strong{font-size:9.5px;margin-top:5px}
+.hdr .logo .logo-mark-main{width:40px;height:40px}
+.hdr .right{gap:16px}.hdr .lang-btn{font-size:10.5px;padding:0 8px}
+@media(min-width:901px){.hdr{left:max(34px,calc((100vw - 1420px)/2));right:max(34px,calc((100vw - 1420px)/2));top:20px}}
+@media(min-width:601px) and (max-width:900px){.hdr{left:24px;right:24px}}
+@media(max-width:600px){.hdr{height:60px;padding:0 14px}.hdr .logo b{font-size:15px}.hdr .logo strong{font-size:8px}.hdr .logo .logo-mark-main{width:32px;height:32px}.hdr .right{gap:10px}}
+</style>
 </head>
 <body>
 <div class="bg"></div><div class="tint"></div>
