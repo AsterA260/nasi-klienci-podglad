@@ -376,7 +376,7 @@ html[lang=th] .face .cap b{font-size:20px}html[lang=th] .face .cap span{white-sp
 <link rel="stylesheet" href="www-desktop.css?v=20261004-14">
 <link rel="stylesheet" href="www-final-polish.css?v=20261005-27">
 <link rel="stylesheet" href="www-responsive.css?v=20261004-19">
-<script src="www-desktop-layout.js?v=20261004-19"></script>
+<script src="www-desktop-layout.js?ipad=1&v=20261004-19"></script>
 <meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="menu-koncepcja-home.css?v=20261006-10">
 <style>.face.asset-photo .ph{background-position:center center!important}.face.asset-photo .cap{z-index:3}</style><style id="film-19-photos">
 .face.asset-photo .ph{overflow:hidden}
@@ -422,7 +422,8 @@ html[lang=th] .face .cap b{font-size:20px}html[lang=th] .face .cap span{white-sp
 #tiles .tile[data-preview-tile="4"] .ph{background-position:50% 35%}
 #tiles .tile[data-preview-tile="5"] .ph{background-position:50% 76%}
 #tiles .tile[data-preview-tile="7"] .ph{background-position:50% 38%}
-</style><link rel="stylesheet" href="www-i18n.css?v=20261007-lang5"></head>
+</style><link rel="stylesheet" href="www-i18n.css?v=20261007-lang5"><link rel="stylesheet" href="www-ipad-fit.css?v=20261007-ipad1">
+</head>
 <body>
 <div class="bg"></div><div class="tint"></div>
 <div class="rglow"></div>
@@ -775,7 +776,7 @@ function placeSprockets(){
   document.documentElement.style.removeProperty("--responsive-height");
   faces.forEach(f=>{f.style.transform='rotateY('+f.dataset.ang+'deg) translateZ('+R+'px)';});
   if(innerWidth>=901){
-    const layout=window.desktopReelLayout(innerWidth,innerHeight,R);
+    const layout=window.desktopReelLayout(innerWidth,innerHeight,R,matchMedia("(pointer:coarse) and (min-width:601px) and (max-width:1366px)").matches);
     K=layout.scale;
     document.querySelector('.scene').style.top=layout.center+'px';
     rowTop.style.top=layout.actionsTop+'px';
@@ -783,16 +784,16 @@ function placeSprockets(){
     document.querySelector('.sprocket.top').style.top=(layout.top-24)+'px';
     document.querySelector('.sprocket.bot').style.top=(layout.bottom+18)+'px';
     document.getElementById('dots').style.bottom='auto';
-    document.getElementById('dots').style.top=(layout.bottom+46)+'px';
+    document.getElementById('dots').style.top=(layout.bottom+(matchMedia("(pointer:coarse) and (max-width:1366px)").matches?34:46))+'px';
     const hint=document.querySelector('.hintm');
-    hint.style.bottom='auto';hint.style.top=(layout.bottom+62)+'px';
+    hint.style.bottom='auto';hint.style.top=(layout.bottom+(matchMedia("(pointer:coarse) and (max-width:1366px)").matches?48:62))+'px';
     window.__frame={top:layout.top,bottom:layout.bottom};
     document.body.classList.toggle('short',innerHeight<760);
     return;
   }
   const safeTopValue=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sat'))||0;
   const safeBottomValue=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sab'))||0;
-  const layout=window.mobileReelLayout(innerWidth,innerHeight,safeTopValue,safeBottomValue);
+  const layout=window.mobileReelLayout(innerWidth,innerHeight,safeTopValue,safeBottomValue,matchMedia("(pointer:coarse) and (min-width:601px) and (max-width:1366px)").matches);
   document.documentElement.classList.toggle('responsive-scroll',layout.canvasHeight>innerHeight);
   document.documentElement.style.setProperty('--responsive-height',layout.canvasHeight+'px');
   K=layout.scale;

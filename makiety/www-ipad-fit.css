@@ -1,0 +1,8 @@
+/* Physical iPad review: preserve the approved computer layout. */
+@media(pointer:coarse) and (min-width:601px) and (max-width:1366px){
+ body:not(.tablet-www) .face{height:540px;top:-270px}
+ .tablet-www .scene{animation:none;perspective-origin:50% 50%}
+ .tablet-www .face{width:500px;height:452px;left:-250px;top:-226px}
+ .tablet-www .orbit{transform:scale(var(--tablet-reel-scale));transform-origin:center}
+ .tablet-www .hub{transform:translateZ(60px) scale(var(--tablet-reel-scale));transform-origin:center}
+}

@@ -251,7 +251,8 @@ html[lang="th"] .node b{font-size:11px;letter-spacing:0}html[lang="th"] .node sp
 .face.no-caption .cap{display:none}
 .face.no-caption .ph::after{background:linear-gradient(180deg,rgba(9,6,3,.05) 55%,rgba(9,6,3,.35))}
 </style>
-<link rel="stylesheet" href="www-i18n.css?v=20261007-lang5"></head>
+<link rel="stylesheet" href="www-i18n.css?v=20261007-lang5"><link rel="stylesheet" href="www-ipad-fit.css?v=20261007-ipad1">
+</head>
 <body>
 <div class="bg"></div><div class="tint"></div>
 <div class="rglow"></div>
@@ -390,7 +391,8 @@ NODES.forEach((n,i)=>{
 let rot=0,vel=0.02,drag=false,lastX=0,dragV=0;
 function frame(){
   if(!drag){rot+=vel;vel+=(0.02-vel)*0.03;}
-  cyl.style.transform='rotateY('+rot+'deg)';
+  const tabletScale=window.maliwanTabletScale||1;
+  cyl.style.transform='scale3d('+tabletScale+','+tabletScale+','+tabletScale+') rotateY('+rot+'deg)';
   faces.forEach(f=>{
     updateDesktopFace(f,slideForFace(Number(f.dataset.slot),rot));
     let a=((+f.dataset.ang+rot)%360+360)%360;if(a>180)a-=360;
@@ -471,5 +473,6 @@ document.querySelectorAll('.orbit .node').forEach((node,i)=>node.addEventListene
 document.querySelectorAll('.legal-dock a').forEach(a=>{const target=new URL(a.href);target.hostname=homepageSalon==='SZ'?'thaimaliwanspa.pl':'thaimaliwan.pl';a.href=target.href;});
 document.querySelectorAll('.menu a[href]').forEach(a=>{const target=new URL(a.getAttribute('href'),location.href);target.searchParams.set('salon',homepageSalon);a.href=target.href;});
 </script>
+<script defer src="www-ipad-fit.js?v=20261007-ipad1"></script>
 <script defer src="www-i18n-data.js?v=20261007-lang5"></script><script defer src="www-i18n.js?v=20261007-lang5"></script></body>
 </html>
