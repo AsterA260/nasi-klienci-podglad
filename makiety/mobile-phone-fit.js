@@ -38,7 +38,7 @@
    syncSalonLinks(previewSalon);
    if(innerWidth<=600&&LANG==='pl'){
     const book=document.querySelector('.mnode[data-node="0"]');
-    book.querySelector('b').textContent='Zarezerwuj';book.setAttribute('aria-label','Zarezerwuj');
+    book.querySelector('b').textContent='Rezerwuj';book.setAttribute('aria-label','Rezerwuj');
    }
   };
   function arrange(){

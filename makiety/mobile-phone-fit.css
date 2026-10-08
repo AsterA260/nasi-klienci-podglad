@@ -8,8 +8,10 @@
  .h1m{position:absolute;top:116px;font-size:7.5px;letter-spacing:.13em;line-height:14px}
  .mrow.top .mnode,.short .mrow.top .mnode{width:50px;height:50px}
  .mrow.top{gap:14px;--action-label-size:6.7px}
+ .mrow.top .mnode[data-node="3"]{display:none}
+ .mrow.top .mnode[data-node="1"]{position:absolute;right:24px;top:0}
  .mrow.top .mnode[data-node]>b{max-width:calc(100% - 6px);font-size:6.7px;white-space:nowrap;margin-top:3px}
- .mrow.top .mnode[data-node="0"]>b{font-size:6.4px;max-width:none;margin-top:1px}
+ .mrow.top .mnode[data-node="0"]>b{font-size:7px;max-width:none;margin-top:2px}
  .mrow.top .mnode[data-node="2"]::before{font-size:6.4px;margin-bottom:2px}
  .mrow.top .mnode>svg,.short .mrow.top .mnode>svg{width:15px;height:15px}
  .mrow.top .mnode[data-node="2"]>svg{width:14px;height:14px}
