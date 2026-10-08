@@ -385,8 +385,8 @@ html[lang=th] .face .cap b{font-size:20px}html[lang=th] .face .cap span{white-sp
  #menuBtn::before,#menuBtn::after{display:none!important;animation:none!important;box-shadow:none!important}
  #menuBtn>span:first-child{text-shadow:none}
 }
-</style><style id="mobile-home-real-photos">.face .ph{top:0;background-position:center center;background-size:cover}</style><link rel="stylesheet" href="mobile-phone-fit.css?v=20261008-fit5">
-<script src="mobile-phone-fit.js?v=20261008-fit5"></script></head>
+</style><style id="mobile-home-real-photos">.face .ph{top:0;background-position:center center;background-size:cover}</style><link rel="stylesheet" href="mobile-phone-fit.css?v=20261008-final-reference1">
+<script src="mobile-phone-fit.js?v=20261008-final-reference1"></script></head>
 <body>
 <div class="bg"></div><div class="tint"></div>
 <div class="rglow"></div>
@@ -720,7 +720,7 @@ S.forEach(s=>{const d=document.createElement('div');d.className='stat';
 
 /* ROTACJA + drag + bezwładność */
 var K=1;
-let rot=0,vel=0.035,drag=false,lastX=0,dragV=0;
+let rot=innerWidth<=600?-2*STEP:0,vel=0.035,drag=false,lastX=0,dragV=0;
 function frame(){
   if(!drag){rot+=vel;vel+=(0.035-vel)*0.03;}
   cyl.style.transform='scale3d('+K+','+K+','+K+') rotateY('+rot+'deg)';
@@ -744,7 +744,7 @@ function placeSprockets(){
     K=layout.scale;
     document.querySelector('.scene').style.top=layout.center+'px';
     rowTop.style.top=layout.actionsTop+'px';
-    document.querySelectorAll('.arrow').forEach(a=>a.style.top=layout.center+'px');
+    document.querySelectorAll('.arrow').forEach(a=>a.style.top=(layout.center+(layout.arrowOffset||0))+'px');
     document.querySelector('.sprocket.top').style.top=(layout.top-24)+'px';
     document.querySelector('.sprocket.bot').style.top=(layout.bottom+10)+'px';
     document.getElementById('dots').style.bottom='auto';
@@ -763,11 +763,11 @@ function placeSprockets(){
   document.documentElement.style.setProperty('--responsive-height',layout.canvasHeight+'px');
   K=layout.scale;
   document.querySelector('.scene').style.top=layout.center+'px';
-  document.querySelectorAll('.arrow').forEach(a=>a.style.top=layout.center+'px');
+  document.querySelectorAll('.arrow').forEach(a=>a.style.top=(layout.center+(layout.arrowOffset||0))+'px');
   rowTop.style.top=layout.actionsTop+'px';
   document.querySelector('.sprocket.top').style.top=(layout.top-24)+'px';
   document.querySelector('.sprocket.bot').style.top=(layout.bottom+10)+'px';
-  const dots=document.getElementById('dots');dots.style.bottom='auto';dots.style.top=(layout.bottom+34)+'px';
+  const dots=document.getElementById('dots');dots.style.bottom='auto';dots.style.top=(layout.bottom+(layout.dotsOffset??34))+'px';
   const hint=document.querySelector('.hintm');hint.style.bottom='auto';hint.style.top=(layout.bottom+50)+'px';
   window.__frame={top:layout.top,bottom:layout.bottom};
   document.body.classList.toggle('short',innerHeight<760);
