@@ -1,41 +1,44 @@
-/* Phone layout derived from the visible screen; approved artwork retained. */
+/* Phone composition: original portrait ratios, desktop-like depth, one footer. */
 @media(max-width:600px){
  html,body{overflow-x:clip}
  body{position:relative;perspective:none;height:var(--phone-canvas,100svh)}
- .face{height:var(--phone-face-height,410px);top:calc(var(--phone-face-height,410px) / -2)}
- .mrow.top .mnode,.short .mrow.top .mnode{width:52px;height:52px}
- .mrow.top{gap:12px}
- .mrow.top .mnode>svg{width:16px;height:16px}
- .preview-social{bottom:calc(94px + env(safe-area-inset-bottom));gap:12px;transform:translateX(-50%)}
+ .scene{perspective:780px;perspective-origin:50% 50%}
+ .face{height:var(--phone-face-height,318px);top:calc(var(--phone-face-height,318px) / -2);animation:none}
+ .menu-btn{position:absolute;right:13px;top:76px;min-height:32px;height:32px;font-size:10px;padding:0 13px}
+ .h1m{position:absolute;top:116px;font-size:7.5px;letter-spacing:.13em;line-height:14px}
+ .mrow.top .mnode,.short .mrow.top .mnode{width:50px;height:50px}
+ .mrow.top{gap:14px;--action-label-size:6.7px}
+ .mrow.top .mnode[data-node]>b{max-width:calc(100% - 6px);font-size:6.7px;white-space:nowrap;margin-top:3px}
+ .mrow.top .mnode[data-node="0"]>b{font-size:6.4px;max-width:none;margin-top:1px}
+ .mrow.top .mnode[data-node="2"]::before{font-size:6.4px;margin-bottom:2px}
+ .mrow.top .mnode>svg,.short .mrow.top .mnode>svg{width:15px;height:15px}
+ .mrow.top .mnode[data-node="2"]>svg{width:14px;height:14px}
+ .mrow.top .mnode.p{animation:none!important;transform:none;box-shadow:inset 0 1px 2px rgba(255,236,194,.14),0 4px 14px rgba(0,0,0,.32)}
+ .phone-footer-controls{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom));left:12px;right:12px;display:grid;grid-template-columns:max-content max-content;justify-content:center;align-items:end;gap:12px 20px;z-index:39}
+ .phone-footer-controls .preview-social,.phone-footer-controls .preview-legal,.phone-footer-controls .world-rail,.phone-footer-controls .dock-r{position:relative;inset:auto;transform:none;animation:none;margin:0}
+ .phone-footer-controls .preview-social{grid-column:1/-1;justify-self:center;gap:12px}
  .preview-social a{width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;font-size:22px!important}
  .preview-social a::before{inset:6px}
  .preview-social a svg{width:14px!important;height:14px!important}
- .preview-legal{bottom:calc(62px + env(safe-area-inset-bottom));gap:16px;transform:translateX(-50%)}
- .preview-legal a{font-size:10px;min-height:24px;padding:4px 3px}
- .phone-footer-controls{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom));left:12px;right:12px;display:flex;align-items:center;justify-content:center;gap:clamp(10px,4vw,22px);z-index:39}
- .phone-footer-controls .world-rail,.phone-footer-controls .dock-r{position:relative;inset:auto;transform:none;animation:none;gap:6px}
- .world-rail::before{font-size:6.5px;letter-spacing:.12em;bottom:calc(100% + 8px);text-shadow:none}
+ .phone-footer-controls .preview-legal{grid-column:1/-1;justify-self:center;gap:16px}
+ .preview-legal a{font-size:9.5px;min-height:24px;padding:4px 3px}
+ .phone-footer-controls .world-rail{display:grid;grid-template-columns:repeat(4,32px);gap:8px 6px;grid-column:1;grid-row:3}
+ .world-rail::before{grid-column:1/-1;position:static;font-size:7.5px;line-height:10px;letter-spacing:.1em;height:10px;white-space:nowrap;text-shadow:none;text-align:left}
  .world-rail::after{display:none}
+ .phone-footer-controls .dock-r{grid-column:2;grid-row:3;align-self:end;gap:8px}
  .world-rail .world-dot,.world-rail .orb,.world-rail .orb-face,.world-rail .rail-next{width:32px;height:32px;min-width:32px;min-height:32px;padding:0}
  .world-rail .globe{width:28px;height:28px}
  .world-rail .orb-face img.logo-mark{width:24px;height:24px}
  .world-rail .orb-face .lock img{width:20px;height:20px}
  .world-rail .world-dot::before,.ai-dot::before{animation:none;box-shadow:none}
- #askBtn{width:32px;height:32px}
+ #askBtn{width:32px;height:32px;box-shadow:none}
+ #askBtn .pip{display:none;animation:none}
  #askBtn svg{width:16px;height:16px}
- .ai-dot{height:32px;padding:2px 8px 2px 2px;gap:6px}
+ .ai-dot{height:32px;padding:2px 8px 2px 2px;gap:6px;box-shadow:inset 0 1px 1px rgba(255,244,215,.22)}
  .ai-portrait{width:26px;height:26px}
  .ask-word{font-size:6.5px;letter-spacing:.1em}
  .ask-mark{width:12px;height:12px;right:-2px}
  .hintm{display:none}
  .phone-safe-insets{position:fixed;visibility:hidden;pointer-events:none;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
- .face{animation:phoneFilmLight 12s ease-in-out infinite}
- .face:nth-child(even){animation-delay:-6s}
  .responsive-scroll .phone-footer-controls{position:absolute}
 }
-@keyframes phoneFilmLight{
- 0%,75%,100%{border-color:rgba(216,182,116,.45)}
- 84%{border-color:rgba(230,208,160,.72)}
- 92%{border-color:rgba(216,182,116,.45)}
-}
-@media(prefers-reduced-motion:reduce){.face{animation:none}}

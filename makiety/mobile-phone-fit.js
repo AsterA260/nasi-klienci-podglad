@@ -1,4 +1,4 @@
-/* Width first: taller film panels must not squeeze the whole carousel. */
+/* Width remains independent; never stretch photographs to fill a tall screen. */
 (function(){
  const original=window.mobileReelLayout;
  function safeInsets(){
@@ -11,33 +11,44 @@
   if(width>600)return original(width,height,safeTop,safeBottom,tallTablet);
   const [topInset,bottomInset]=safeInsets();
   const visibleHeight=Math.min(height,window.visualViewport?window.visualViewport.height:height);
-  const canvasHeight=Math.max(visibleHeight,620,550+topInset+bottomInset);
+  const canvasHeight=Math.max(visibleHeight,620,576+topInset+bottomInset);
   document.documentElement.style.setProperty('--phone-canvas',canvasHeight+'px');
-  const actionsTop=156+topInset,top=actionsTop+52+36;
-  const available=Math.max(130,canvasHeight-bottomInset-176-top);
-  const p=1340,radius=Math.round(118/Math.tan(Math.PI/8)),depth=Math.hypot(radius,118);
+  const actionsTop=144+topInset,top=actionsTop+50+42;
+  const available=Math.max(130,canvasHeight-bottomInset-212-top);
+  const p=780,radius=Math.round(118/Math.tan(Math.PI/8)),depth=Math.hypot(radius,118);
   const project=k=>p/(p-depth*k);
   let lo=0,hi=1.25;
   for(let i=0;i<40;i++){
    const k=(lo+hi)/2,w=2*depth*k/Math.sqrt(1-(depth*k/p)**2);
-   if(w<=width-24)lo=k;else hi=k;
+   if(w<=width-28)lo=k;else hi=k;
   }
-  const faceHeight=Math.min(540,available/(lo*project(lo)));
+  const faceHeight=Math.min(318,available/(lo*project(lo)));
   document.documentElement.style.setProperty('--phone-face-height',faceHeight+'px');
-  const half=faceHeight*.5*lo*project(lo),center=top+available/2;
+  const half=faceHeight*.5*lo*project(lo),center=top+available/2+10;
   return{scale:lo,center,top:center-half,bottom:center+half,actionsTop,canvasHeight};
  };
  function mount(){
-  const rail=document.querySelector('.world-rail'),dock=document.querySelector('.dock-r');
-  if(!rail||!dock)return;
+  const elements=['.preview-social','.preview-legal','.world-rail','.dock-r'].map(s=>document.querySelector(s));
+  if(elements.some(e=>!e))return;
   const wrapper=document.createElement('div');wrapper.className='phone-footer-controls';
-  const railParent=rail.parentNode,dockParent=dock.parentNode;
-  const railNext=rail.nextSibling,dockNext=dock.nextSibling;
+  const originalNav=syncPreviewNav;
+  syncPreviewNav=function(){
+   window.maliwanLanguage=LANG;
+   originalNav();
+   syncSalonLinks(previewSalon);
+   if(innerWidth<=600&&LANG==='pl'){
+    const book=document.querySelector('.mnode[data-node="0"]');
+    book.querySelector('b').textContent='Zarezerwuj';book.setAttribute('aria-label','Zarezerwuj');
+   }
+  };
   function arrange(){
-   if(innerWidth<=600){document.body.append(wrapper);wrapper.append(rail,dock);}
-   else{railParent.insertBefore(rail,railNext);dockParent.insertBefore(dock,dockNext);wrapper.remove();}
+   if(innerWidth<=600){document.body.append(wrapper);wrapper.append(...elements);}
+   else{elements.forEach(e=>document.body.append(e));wrapper.remove();}
+   syncPreviewNav();
    if(typeof placeSprockets==='function')placeSprockets();
   }
+  const requestedLanguage=new URLSearchParams(location.search).get('lang');
+  if(['pl','en','th'].includes(requestedLanguage))setLang(requestedLanguage);
   arrange();addEventListener('resize',arrange);
   if(window.visualViewport)window.visualViewport.addEventListener('resize',()=>{if(innerWidth<=600)placeSprockets();});
  }
