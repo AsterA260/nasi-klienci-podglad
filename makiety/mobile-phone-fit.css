@@ -10,11 +10,12 @@
  .logo strong{font-size:calc(9.5 * var(--phone-unit));color:#dfc18b}
  .lang{gap:0;padding:1px;border-color:rgba(186,149,80,.46)}
  .lang-btn{width:calc(34 * var(--phone-unit));min-width:0;min-height:0;height:calc(38 * var(--phone-unit));font-size:calc(7.5 * var(--phone-unit));padding:0}
- .menu-btn{position:absolute;right:calc(11.5 * var(--phone-unit));top:calc(65.5 * var(--phone-unit));min-height:0;height:calc(27 * var(--phone-unit));width:calc(76 * var(--phone-unit));justify-content:center;gap:calc(7 * var(--phone-unit));font-size:calc(9 * var(--phone-unit));letter-spacing:.2em;padding:0}
+ .menu-btn{position:absolute;right:calc(11.5 * var(--phone-unit));top:calc(100 * var(--phone-unit));min-height:0;height:calc(27 * var(--phone-unit));width:calc(70 * var(--phone-unit));justify-content:center;gap:calc(5 * var(--phone-unit));font-size:calc(9 * var(--phone-unit));letter-spacing:.2em;padding:0}
  #menuBtn,#menuBtn:hover{border-color:#d4ad67;background:rgba(21,16,8,.6)}
+ #menuBtn>span:first-child{padding:calc(4 * var(--phone-unit))}
  #menuBtn::after{content:"";display:block!important;position:static;width:calc(10 * var(--phone-unit));height:calc(9 * var(--phone-unit));border:0;border-radius:0;background:linear-gradient(#d8b36e,#d8b36e) top/100% 1px no-repeat,linear-gradient(#d8b36e,#d8b36e) center/100% 1px no-repeat,linear-gradient(#d8b36e,#d8b36e) bottom/100% 1px no-repeat;opacity:1;transform:none}
- .h1m{position:absolute;left:0;right:calc(100 * var(--phone-unit));top:calc(72 * var(--phone-unit));padding:0;font-size:calc(8 * var(--phone-unit));letter-spacing:.22em;line-height:calc(14 * var(--phone-unit));color:#d8c29a;opacity:1}
- .mrow.top{gap:calc(22 * var(--phone-unit));padding:0 calc(26 * var(--phone-unit)) 0 0;z-index:12}
+ .h1m{position:absolute;left:0;right:0;top:calc(72 * var(--phone-unit));padding:0;font-size:calc(8 * var(--phone-unit));letter-spacing:.22em;line-height:calc(14 * var(--phone-unit));color:#d8c29a;opacity:1}
+ .mrow.top{gap:calc(22 * var(--phone-unit));padding:0;z-index:12}
  .mrow.top .mnode,.short .mrow.top .mnode{width:calc(60 * var(--phone-unit));height:calc(60 * var(--phone-unit));animation:none!important;transform:none;outline-color:#cdb586;border-color:#a98a54}
  .mrow.top .mnode[data-node="0"],.mrow.top .mnode[data-node="2"]{position:relative;top:calc(-32 * var(--phone-unit))}
  .mrow.top .mnode[data-node="1"],.mrow.top .mnode[data-node="3"]{display:none}

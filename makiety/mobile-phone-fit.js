@@ -18,10 +18,10 @@
   const actionsTop=139*unit+topInset,top=209*unit+topInset;
   const footer=document.querySelector('.phone-footer-controls');
   const footerHeight=footer?footer.getBoundingClientRect().height:114.5*unit;
-  // Extend only the lower edge of the accepted reel; reserve space for its dots and footer.
+  // Preserve the lower edge and footer; extend the reel upward by about 5 mm at 393 px.
   const previousBottom=canvasHeight-bottomInset-(26+138.5+30)*unit;
   const previousHeight=Math.min(Math.max(130*unit,previousBottom-top),width*.72);
-  const reelTop=previousBottom-previousHeight;
+  const reelTop=previousBottom-previousHeight-18*unit;
   const bottom=Math.min(previousBottom+32*unit,canvasHeight-bottomInset-26*unit-footerHeight-22*unit);
   const available=Math.max(130*unit,bottom-reelTop);
   const p=620,radius=Math.round(118/Math.tan(Math.PI/8)),depth=Math.hypot(radius,118);
