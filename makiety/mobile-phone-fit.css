@@ -39,7 +39,7 @@
  .edge{opacity:.45}
  .arrow{width:calc(32 * var(--phone-unit));height:calc(32 * var(--phone-unit));font-size:calc(22 * var(--phone-unit));opacity:1;border-color:rgba(221,186,121,.76);background:rgba(18,14,7,.62)}
  .arrow.l{left:calc(8 * var(--phone-unit))}.arrow.r{right:calc(8 * var(--phone-unit))}
- .dots{gap:calc(9 * var(--phone-unit))}
+ .dots{gap:calc(9 * var(--phone-unit));visibility:hidden;pointer-events:none}
  .dots i{width:calc(5 * var(--phone-unit));height:calc(5 * var(--phone-unit));background:#685335}
  .dots i.on{background:#f2d7a8;transform:scale(1.08)}
  .phone-footer-controls{position:fixed;bottom:calc(26 * var(--phone-unit) + env(safe-area-inset-bottom));left:calc(12 * var(--phone-unit));right:calc(12 * var(--phone-unit));display:grid;grid-template-columns:max-content max-content;justify-content:center;align-items:end;row-gap:calc(2 * var(--phone-unit));column-gap:calc(10 * var(--phone-unit));z-index:39}
@@ -54,6 +54,7 @@
  .preview-legal a{position:relative;font-size:max(6.5px,calc(6.75 * var(--phone-unit)));min-height:max(20px,calc(24 * var(--phone-unit)));padding:calc(4 * var(--phone-unit)) calc(2 * var(--phone-unit));color:#edd6ac;border-color:#ba9658}
  /* Extend the hit area while the legal text becomes visually smaller. */
  .preview-legal a::before{content:"";position:absolute;inset:0 -8px}
+ .phone-footer-controls .preview-legal a,.phone-footer-controls .preview-legal a:hover{border-bottom-color:transparent}
  .preview-legal::after{content:"";position:absolute;left:calc(50% + 14 * var(--phone-unit));top:calc(7 * var(--phone-unit));height:calc(8 * var(--phone-unit));width:1px;background:#987541}
  .phone-footer-controls .world-rail{display:grid;grid-template-columns:repeat(4,calc(36 * var(--phone-unit)));gap:calc(6.5 * var(--phone-unit));grid-column:1;grid-row:3;margin-top:calc(6 * var(--phone-unit))}
  .world-rail::before{grid-column:1/-1;position:static;font-size:calc(7.5 * var(--phone-unit));line-height:calc(10 * var(--phone-unit));letter-spacing:.2em;height:calc(10 * var(--phone-unit));white-space:nowrap;text-shadow:none;text-align:left;animation:none;color:#dfc38e}
