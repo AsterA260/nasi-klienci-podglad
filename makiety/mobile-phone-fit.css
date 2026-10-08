@@ -13,9 +13,10 @@
  .menu-btn{position:absolute;right:calc(5 * var(--phone-unit));top:calc(64 * var(--phone-unit));min-height:0;height:calc(30 * var(--phone-unit));width:calc(89 * var(--phone-unit));justify-content:center;gap:calc(10 * var(--phone-unit));font-size:calc(9 * var(--phone-unit));letter-spacing:.2em;padding:0}
  #menuBtn,#menuBtn:hover{border-color:#d4ad67;background:rgba(21,16,8,.6)}
  #menuBtn::after{content:"";display:block!important;position:static;width:calc(10 * var(--phone-unit));height:calc(9 * var(--phone-unit));border:0;border-radius:0;background:linear-gradient(#d8b36e,#d8b36e) top/100% 1px no-repeat,linear-gradient(#d8b36e,#d8b36e) center/100% 1px no-repeat,linear-gradient(#d8b36e,#d8b36e) bottom/100% 1px no-repeat;opacity:1;transform:none}
- .h1m{position:absolute;left:0;right:0;top:calc(105 * var(--phone-unit));padding:0;font-size:calc(8 * var(--phone-unit));letter-spacing:.22em;line-height:calc(14 * var(--phone-unit));color:#d8c29a;opacity:1}
+ .h1m{position:absolute;left:0;right:calc(100 * var(--phone-unit));top:calc(72 * var(--phone-unit));padding:0;font-size:calc(8 * var(--phone-unit));letter-spacing:.22em;line-height:calc(14 * var(--phone-unit));color:#d8c29a;opacity:1}
  .mrow.top{gap:calc(22 * var(--phone-unit));padding:0 calc(26 * var(--phone-unit)) 0 0;z-index:12}
  .mrow.top .mnode,.short .mrow.top .mnode{width:calc(60 * var(--phone-unit));height:calc(60 * var(--phone-unit));animation:none!important;transform:none;outline-color:#cdb586;border-color:#a98a54}
+ .mrow.top .mnode[data-node="0"],.mrow.top .mnode[data-node="2"]{position:relative;top:calc(-32 * var(--phone-unit))}
  .mrow.top .mnode[data-node="3"]{display:none}
  .mrow.top .mnode[data-node="1"]{position:absolute;right:calc(26 * var(--phone-unit));top:calc(4 * var(--phone-unit));width:calc(52 * var(--phone-unit));height:calc(52 * var(--phone-unit));background:radial-gradient(circle at 35% 25%,#251e12,#0e0c07 78%);outline-color:#baa578;border-color:#d8bb84}
  .mrow.top::after{content:"";position:absolute;right:calc(108 * var(--phone-unit));top:calc(9 * var(--phone-unit));height:calc(44 * var(--phone-unit));width:1px;background:linear-gradient(transparent,#927343 18%,#927343 82%,transparent);opacity:.7}
