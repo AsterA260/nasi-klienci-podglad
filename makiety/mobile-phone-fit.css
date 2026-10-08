@@ -1,4 +1,4 @@
-/* Final phone reference supplied by the owner, 08.10.2026. */
+/* Owner-approved phone design; four spacing corrections, 08.10.2026. */
 @media(max-width:600px){
  :root{--phone-unit:1px}
  html,body{overflow-x:clip}
@@ -42,7 +42,7 @@
  .dots{gap:calc(9 * var(--phone-unit))}
  .dots i{width:calc(5 * var(--phone-unit));height:calc(5 * var(--phone-unit));background:#685335}
  .dots i.on{background:#f2d7a8;transform:scale(1.08)}
- .phone-footer-controls{position:fixed;bottom:calc(26 * var(--phone-unit) + env(safe-area-inset-bottom));left:calc(12 * var(--phone-unit));right:calc(12 * var(--phone-unit));display:grid;grid-template-columns:max-content max-content;justify-content:center;align-items:end;gap:calc(12 * var(--phone-unit));z-index:39}
+ .phone-footer-controls{position:fixed;bottom:calc(26 * var(--phone-unit) + env(safe-area-inset-bottom));left:calc(12 * var(--phone-unit));right:calc(12 * var(--phone-unit));display:grid;grid-template-columns:max-content max-content;justify-content:center;align-items:end;row-gap:calc(10 * var(--phone-unit));column-gap:calc(10 * var(--phone-unit));z-index:39}
  .phone-footer-controls .preview-social,.phone-footer-controls .preview-legal,.phone-footer-controls .world-rail,.phone-footer-controls .dock-r{position:relative;inset:auto;transform:none;animation:none;margin:0}
  .phone-footer-controls .preview-social{grid-column:1/-1;justify-self:center;gap:calc(10 * var(--phone-unit))}
  .preview-social a{width:calc(36 * var(--phone-unit))!important;height:calc(36 * var(--phone-unit))!important;min-width:0!important;min-height:0!important;font-size:calc(27 * var(--phone-unit))!important;color:#21190c}
@@ -51,10 +51,10 @@
  .phone-footer-controls .preview-legal{grid-column:1/-1;justify-self:center;gap:calc(34 * var(--phone-unit))}
  .preview-legal a{font-size:calc(9.5 * var(--phone-unit));min-height:calc(24 * var(--phone-unit));padding:calc(4 * var(--phone-unit)) calc(2 * var(--phone-unit));color:#edd6ac;border-color:#ba9658}
  .preview-legal::after{content:"";position:absolute;left:calc(50% + 19 * var(--phone-unit));top:calc(2 * var(--phone-unit));height:calc(18 * var(--phone-unit));width:1px;background:#987541}
- .phone-footer-controls .world-rail{display:grid;grid-template-columns:repeat(4,calc(36 * var(--phone-unit)));gap:calc(8 * var(--phone-unit));grid-column:1;grid-row:3;margin-top:calc(6 * var(--phone-unit))}
+ .phone-footer-controls .world-rail{display:grid;grid-template-columns:repeat(4,calc(36 * var(--phone-unit)));gap:calc(6.5 * var(--phone-unit));grid-column:1;grid-row:3;margin-top:calc(6 * var(--phone-unit))}
  .world-rail::before{grid-column:1/-1;position:static;font-size:calc(7.5 * var(--phone-unit));line-height:calc(10 * var(--phone-unit));letter-spacing:.2em;height:calc(10 * var(--phone-unit));white-space:nowrap;text-shadow:none;text-align:left;animation:none;color:#dfc38e}
  .world-rail::after{display:none}
- .phone-footer-controls .dock-r{grid-column:2;grid-row:3;align-self:end;gap:calc(12 * var(--phone-unit))}
+ .phone-footer-controls .dock-r{grid-column:2;grid-row:3;align-self:end;gap:calc(10 * var(--phone-unit))}
  .world-rail .world-dot,.world-rail .orb,.world-rail .orb-face,.world-rail .rail-next{width:calc(36 * var(--phone-unit));height:calc(36 * var(--phone-unit));min-width:0;min-height:0;padding:0;opacity:1}
  .world-rail .globe{width:calc(29 * var(--phone-unit));height:calc(29 * var(--phone-unit));box-shadow:none;background:rgba(24,18,9,.85)}
  .world-rail .orb-face img.logo-mark{width:calc(29 * var(--phone-unit));height:calc(29 * var(--phone-unit))}

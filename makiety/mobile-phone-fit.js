@@ -15,22 +15,22 @@
   document.documentElement.style.setProperty('--phone-unit',unit+'px');
   const canvasHeight=Math.max(visibleHeight,680*unit+topInset+bottomInset);
   document.documentElement.style.setProperty('--phone-canvas',canvasHeight+'px');
-  const actionsTop=139*unit+topInset,top=224*unit+topInset;
+  const actionsTop=139*unit+topInset,top=209*unit+topInset;
   const footer=document.querySelector('.phone-footer-controls');
-  const footerHeight=footer?footer.getBoundingClientRect().height:144*unit;
-  const bottom=canvasHeight-bottomInset-26*unit-footerHeight-38*unit;
+  const footerHeight=footer?footer.getBoundingClientRect().height:138.5*unit;
+  const bottom=canvasHeight-bottomInset-26*unit-footerHeight-30*unit;
   const available=Math.max(130*unit,bottom-top);
   const p=620,radius=Math.round(118/Math.tan(Math.PI/8)),depth=Math.hypot(radius,118);
   const project=k=>p/(p-depth*k);
   let lo=0,hi=1.25;
   for(let i=0;i<40;i++){
    const k=(lo+hi)/2,w=2*depth*k/Math.sqrt(1-(depth*k/p)**2);
-   if(w<=width-24*unit)lo=k;else hi=k;
+   if(w<=width-20)lo=k;else hi=k;
   }
   const faceHeight=Math.min(available,width*.72)/(lo*project(lo));
   document.documentElement.style.setProperty('--phone-face-height',faceHeight+'px');
   const half=faceHeight*.5*lo*project(lo),center=bottom-half;
-  return{scale:lo,center,top:center-half,bottom:center+half,actionsTop,canvasHeight,dotsOffset:15*unit,arrowOffset:-10*unit};
+  return{scale:lo,center,top:center-half,bottom:center+half,actionsTop,canvasHeight,dotsOffset:12*unit,arrowOffset:-10*unit};
  };
  function mount(){
   const elements=['.preview-social','.preview-legal','.world-rail','.dock-r'].map(s=>document.querySelector(s));
