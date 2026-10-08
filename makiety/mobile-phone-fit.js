@@ -13,8 +13,11 @@
   const visibleHeight=Math.min(height,window.visualViewport?window.visualViewport.height:height);
   const canvasHeight=Math.max(visibleHeight,620,576+topInset+bottomInset);
   document.documentElement.style.setProperty('--phone-canvas',canvasHeight+'px');
-  const actionsTop=144+topInset,top=actionsTop+50+42;
-  const available=Math.max(130,canvasHeight-bottomInset-212-top);
+  const actionsTop=128+topInset,top=actionsTop+50+36;
+  const footer=document.querySelector('.phone-footer-controls');
+  const footerHeight=footer?footer.getBoundingClientRect().height:120;
+  const bottom=canvasHeight-bottomInset-14-footerHeight-44;
+  const available=Math.max(130,bottom-top);
   const p=780,radius=Math.round(118/Math.tan(Math.PI/8)),depth=Math.hypot(radius,118);
   const project=k=>p/(p-depth*k);
   let lo=0,hi=1.25;
@@ -22,9 +25,9 @@
    const k=(lo+hi)/2,w=2*depth*k/Math.sqrt(1-(depth*k/p)**2);
    if(w<=width-28)lo=k;else hi=k;
   }
-  const faceHeight=Math.min(318,available/(lo*project(lo)));
+  const faceHeight=Math.min(386,available/(lo*project(lo)));
   document.documentElement.style.setProperty('--phone-face-height',faceHeight+'px');
-  const half=faceHeight*.5*lo*project(lo),center=top+available/2+10;
+  const half=faceHeight*.5*lo*project(lo),center=bottom-half;
   return{scale:lo,center,top:center-half,bottom:center+half,actionsTop,canvasHeight};
  };
  function mount(){
