@@ -31,5 +31,13 @@ function syncSalonLinks(salon){
   const href=a.getAttribute('href');
   if(href)a.setAttribute('href',previewLink(href,salon,!a.hasAttribute('data-context-salon')));
  });
+ // On the phone, the brand returns to the accepted mobile homepage.
+ // Use an absolute URL so the legacy desktop/menu rewrite cannot replace it.
+ if(matchMedia('(max-width:760px)').matches&&/\/(?:www|mobilna-v14)\.html$/.test(location.pathname)){
+  const home=new URL('mobilna-v14.html',location.href);
+  home.search=new URLSearchParams({salon:validSalon(salon),lang:window.maliwanLanguage||new URLSearchParams(location.search).get('lang')||'pl',v:'20261008-home-return1'}).toString();
+  const brand=document.querySelector('header .brand,header .logo');
+  if(brand){brand.href=home.href;brand.setAttribute('title','Strona główna');}
+ }
  const picker=document.querySelector('#salon-context');if(picker)picker.value=validSalon(salon);
 }

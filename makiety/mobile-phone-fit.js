@@ -36,13 +36,13 @@
   const elements=['.preview-social','.preview-legal','.world-rail','.dock-r'].map(s=>document.querySelector(s));
   if(elements.some(e=>!e))return;
   const wrapper=document.createElement('div');wrapper.className='phone-footer-controls';
-  previewRoutes[0]='www.html?view=reservation&v=20261008-reservation1';
+  previewRoutes[0]='www.html?view=reservation&v=20261008-home-return1';
   const originalNav=syncPreviewNav;
   syncPreviewNav=function(){
    window.maliwanLanguage=LANG;
    originalNav();
    syncSalonLinks(previewSalon);
-   document.querySelectorAll('a[href*="www.html?view=reservation"]').forEach(a=>{const url=new URL(a.href);url.searchParams.set("v","20261008-reservation1");a.href=url;});
+   document.querySelectorAll('a[href*="www.html?view=reservation"]').forEach(a=>{const url=new URL(a.href);url.searchParams.set("v","20261008-home-return1");a.href=url;});
    if(innerWidth<=600&&LANG==='pl'){
     const book=document.querySelector('.mnode[data-node="0"]');
     book.querySelector('b').textContent='Rezerwuj';book.setAttribute('aria-label','Rezerwuj');
