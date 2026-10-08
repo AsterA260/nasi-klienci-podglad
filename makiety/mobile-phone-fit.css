@@ -22,7 +22,7 @@
  .mrow.top::after{content:"";position:absolute;right:calc(108 * var(--phone-unit));top:calc(9 * var(--phone-unit));height:calc(44 * var(--phone-unit));width:1px;background:linear-gradient(transparent,#927343 18%,#927343 82%,transparent);opacity:.7}
  .mrow.top .mnode[data-node]>b{max-width:calc(100% - 6px);font-size:calc(7.5 * var(--phone-unit));white-space:nowrap;margin-top:calc(4 * var(--phone-unit))}
  .mrow.top .mnode[data-node="0"]>b{font-size:calc(7.5 * var(--phone-unit));max-width:none;margin-top:calc(4 * var(--phone-unit))}
- .mrow.top .mnode[data-node="1"]>b{font-weight:500;letter-spacing:.09em;color:#eed3a1}
+ .mrow.top .mnode[data-node="1"]>b{font-weight:500;letter-spacing:.09em;color:#eed3a1;white-space:normal;line-height:1.05;margin-top:calc(2 * var(--phone-unit))}
  .mrow.top .mnode[data-node="2"]::before{font-size:calc(7.5 * var(--phone-unit));margin-bottom:calc(3 * var(--phone-unit));color:#171209}
  .mrow.top .mnode>svg,.short .mrow.top .mnode>svg{width:calc(18 * var(--phone-unit));height:calc(18 * var(--phone-unit))}
  .mrow.top .mnode[data-node="1"]>svg{width:calc(15 * var(--phone-unit));height:calc(15 * var(--phone-unit))}
