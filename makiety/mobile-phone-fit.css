@@ -43,6 +43,8 @@
  .dots i{width:calc(5 * var(--phone-unit));height:calc(5 * var(--phone-unit));background:#685335}
  .dots i.on{background:#f2d7a8;transform:scale(1.08)}
  .phone-footer-controls{position:fixed;bottom:calc(26 * var(--phone-unit) + env(safe-area-inset-bottom));left:calc(12 * var(--phone-unit));right:calc(12 * var(--phone-unit));display:grid;grid-template-columns:max-content max-content;justify-content:center;align-items:end;row-gap:calc(2 * var(--phone-unit));column-gap:calc(10 * var(--phone-unit));z-index:39}
+ /* Decorative frame only: the worlds, contact and Mali retain their exact positions. */
+ .phone-footer-controls::before{content:"";position:absolute;left:calc(8px - 12 * var(--phone-unit));right:calc(8px - 12 * var(--phone-unit));bottom:calc(-10 * var(--phone-unit));height:calc(68.5 * var(--phone-unit));box-sizing:border-box;border:1px solid rgba(201,162,90,.68);border-radius:calc(16 * var(--phone-unit));background:linear-gradient(rgba(28,21,16,.62),rgba(16,12,9,.44));box-shadow:0 24px 60px rgba(0,0,0,.26),inset 0 1px 0 rgba(242,232,214,.055);-webkit-backdrop-filter:blur(18px) saturate(1.1);backdrop-filter:blur(18px) saturate(1.1);pointer-events:none;z-index:-1}
  .phone-footer-controls .preview-social,.phone-footer-controls .preview-legal,.phone-footer-controls .world-rail,.phone-footer-controls .dock-r{position:relative;inset:auto;transform:none;animation:none;margin:0}
  .phone-footer-controls .preview-social{grid-column:1/-1;justify-self:center;gap:calc(6 * var(--phone-unit))}
  .preview-social a{width:calc(36 * var(--phone-unit))!important;height:max(24px,calc(28 * var(--phone-unit)))!important;min-width:0!important;min-height:0!important;font-size:calc(20 * var(--phone-unit))!important;color:#21190c}
