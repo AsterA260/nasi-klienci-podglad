@@ -1,24 +1,26 @@
-/* Phone-only proportions; desktop and tablet remain unchanged. */
+/* Phone layout derived from the visible screen; approved artwork retained. */
 @media(max-width:600px){
  html,body{overflow-x:clip}
- .face{height:440px;top:-220px}
+ body{position:relative;perspective:none;height:var(--phone-canvas,100svh)}
+ .face{height:var(--phone-face-height,410px);top:calc(var(--phone-face-height,410px) / -2)}
  .mrow.top .mnode,.short .mrow.top .mnode{width:52px;height:52px}
- .mrow.top{gap:10px}
+ .mrow.top{gap:12px}
  .mrow.top .mnode>svg{width:16px;height:16px}
- .preview-social{bottom:calc(102px + env(safe-area-inset-bottom));gap:14px}
- .preview-social a{width:26px!important;height:26px!important;min-width:26px!important;min-height:26px!important;font-size:24px!important}
- .preview-social a svg{width:15px!important;height:15px!important}
- .preview-legal{bottom:calc(72px + env(safe-area-inset-bottom));gap:16px}
+ .preview-social{bottom:calc(94px + env(safe-area-inset-bottom));gap:12px;transform:translateX(-50%)}
+ .preview-social a{width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;font-size:22px!important}
+ .preview-social a::before{inset:6px}
+ .preview-social a svg{width:14px!important;height:14px!important}
+ .preview-legal{bottom:calc(62px + env(safe-area-inset-bottom));gap:16px;transform:translateX(-50%)}
  .preview-legal a{font-size:10px;min-height:24px;padding:4px 3px}
- .world-rail{left:12px;transform:none;bottom:calc(18px + env(safe-area-inset-bottom));gap:6px}
- .world-rail::before{font-size:6.5px;letter-spacing:.12em;bottom:calc(100% + 9px);text-shadow:none}
+ .phone-footer-controls{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom));left:12px;right:12px;display:flex;align-items:center;justify-content:center;gap:clamp(10px,4vw,22px);z-index:39}
+ .phone-footer-controls .world-rail,.phone-footer-controls .dock-r{position:relative;inset:auto;transform:none;animation:none;gap:6px}
+ .world-rail::before{font-size:6.5px;letter-spacing:.12em;bottom:calc(100% + 8px);text-shadow:none}
  .world-rail::after{display:none}
  .world-rail .world-dot,.world-rail .orb,.world-rail .orb-face,.world-rail .rail-next{width:32px;height:32px;min-width:32px;min-height:32px;padding:0}
  .world-rail .globe{width:28px;height:28px}
  .world-rail .orb-face img.logo-mark{width:24px;height:24px}
  .world-rail .orb-face .lock img{width:20px;height:20px}
  .world-rail .world-dot::before,.ai-dot::before{animation:none;box-shadow:none}
- .dock-r{left:auto;right:12px;transform:none;bottom:calc(18px + env(safe-area-inset-bottom));gap:6px}
  #askBtn{width:32px;height:32px}
  #askBtn svg{width:16px;height:16px}
  .ai-dot{height:32px;padding:2px 8px 2px 2px;gap:6px}
@@ -26,4 +28,14 @@
  .ask-word{font-size:6.5px;letter-spacing:.1em}
  .ask-mark{width:12px;height:12px;right:-2px}
  .hintm{display:none}
+ .phone-safe-insets{position:fixed;visibility:hidden;pointer-events:none;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+ .face{animation:phoneFilmLight 12s ease-in-out infinite}
+ .face:nth-child(even){animation-delay:-6s}
+ .responsive-scroll .phone-footer-controls{position:absolute}
 }
+@keyframes phoneFilmLight{
+ 0%,75%,100%{border-color:rgba(216,182,116,.45)}
+ 84%{border-color:rgba(230,208,160,.72)}
+ 92%{border-color:rgba(216,182,116,.45)}
+}
+@media(prefers-reduced-motion:reduce){.face{animation:none}}
