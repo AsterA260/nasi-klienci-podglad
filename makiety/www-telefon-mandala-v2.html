@@ -426,7 +426,7 @@ let R=300;
 function fitFace(fwA,fhA,P){const k=1/Math.tan(STEP/2*Math.PI/180)/2;const fw=fwA*P/(P+k*fwA);const sc=P/(P-k*fw);return [Math.round(fw),Math.round(fhA/sc)];}
 let fitK=1;
 function layout(){
- const W=hero.clientWidth,H=hero.clientHeight,P=1300,ff=fitFace(Math.min(W*.8,H*.7,640)*fitK,H*.94*fitK,P),fw=ff[0],fh=ff[1];
+ const W=hero.clientWidth,H=hero.clientHeight,P=1300,ff=fitFace(Math.min(W*.66,H*.62,560)*fitK,H*.94*fitK,P),fw=ff[0],fh=ff[1];
  R=Math.round(fw/2/Math.tan(STEP/2*Math.PI/180));
  faces.forEach((f,i)=>{f.style.width=fw+'px';f.style.height=fh+'px';f.style.left=-fw/2+'px';f.style.top=-fh/2+'px';
   f.style.transform='rotateY('+(i*STEP)+'deg) translateZ('+R+'px)';});
@@ -438,7 +438,7 @@ function calibrate(n){
  let maxH=0,maxW=0;faces.forEach(f=>{const r=f.getBoundingClientRect();if(r.height>maxH){maxH=r.height;maxW=r.width;}});
  if(!maxH)return;
  hero.style.setProperty('--sp',Math.round(maxH*.30)+'px');
- const k=Math.min((H*.95)/maxH,(W*.82)/maxW);
+ const k=Math.min((H*.95)/maxH,(W*.68)/maxW);
  if(Math.abs(k-1)>.02&&n<4){fitK*=k;layout();requestAnimationFrame(()=>calibrate(n+1));}
 }
 function relayout(){fitK=1;layout();requestAnimationFrame(()=>requestAnimationFrame(()=>calibrate(0)));}
