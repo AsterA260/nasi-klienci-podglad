@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0905">
+<title>Thai Maliwan — Mandala v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══ THAI MALIWAN — WERSJA TELEFON / iPAD „MANDALA” (10.10.2026) ═══
+   Ten sam świat co www-komputer-luxury.html, ale ułożony pionowo:
+   nagłówek → mandala (skaluje się do ekranu) → podpis rolki → światy → stopka.
+   Wszystkie wymiary mandali liczone z jednej zmiennej --S (bok kwadratu sceny). */
+:root{color-scheme:dark;--gold:#C8A45C;--gold-l:#E6D0A0;--gold2:#B99A5D;--cream:#F7F0E3;--ink2:#C9B892;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Montserrat","Helvetica Neue",Arial,sans-serif;--ease:cubic-bezier(.22,.61,.36,1);
+  --pad:10px;
+  --S:clamp(276px,min(calc(100vw - 2*var(--pad)),calc(100vh - 292px)),620px)}
+@supports (height:100svh){:root{--S:clamp(276px,min(calc(100vw - 2*var(--pad)),calc(100svh - 292px)),620px)}}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:#0d0905;overflow-x:hidden}
+body{min-height:100vh;min-height:100svh;background:#0d0905;color:var(--cream);font-family:var(--serif);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+
+/* tło — ta sama panorama co na komputerze */
+.bg{position:fixed;inset:-6%;z-index:0;background-size:cover;background-position:center 40%;
+  filter:brightness(.5) saturate(1.05);animation:drift 46s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:scale(1.05)}50%{transform:scale(1.12) translate(-1.6%,1.1%)}}
+.tint{position:fixed;inset:0;z-index:1;background:radial-gradient(120% 80% at 50% 38%,rgba(58,44,23,.22),rgba(13,9,5,.82) 60%,rgba(7,4,2,.97))}
+.grain{position:fixed;inset:0;z-index:30;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+
+/* odsłonięcie — jedwabne kurtyny jak na komputerze, krócej */
+.curtain{position:fixed;left:-3%;right:-3%;height:52%;z-index:60;pointer-events:none;overflow:hidden;background:linear-gradient(180deg,#160d07,#241609 55%,#0e0805)}
+.curtain::before{content:"";position:absolute;inset:0;opacity:.55;background:repeating-linear-gradient(90deg,rgba(255,240,210,.06) 0 22px,rgba(0,0,0,.24) 44px,rgba(255,240,210,.05) 70px)}
+.curtain::after{content:"";position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(200,164,92,.75),transparent)}
+.curtain.top{top:0;animation:curtUp .95s cubic-bezier(.66,0,.28,1) .3s both}.curtain.top::after{bottom:0}
+.curtain.bot{bottom:0;animation:curtDown .95s cubic-bezier(.66,0,.28,1) .3s both}.curtain.bot::after{top:0}
+@keyframes curtUp{to{transform:translateY(-104%)}}@keyframes curtDown{to{transform:translateY(104%)}}
+
+/* ═══ UKŁAD STRONY ═══ */
+.app{position:relative;z-index:5;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;
+  justify-content:space-between;gap:6px;
+  padding:calc(env(safe-area-inset-top) + 8px) var(--pad) calc(env(safe-area-inset-bottom) + 10px)}
+
+/* ramka — wspólny styl nagłówka i panelu światów (jak zaakceptowana ramka na telefonie) */
+.framed{width:100%;max-width:640px}
+
+/* NAGŁÓWEK */
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 7px 7px 12px;animation:fadeUp .7s var(--ease) .9s both}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;min-width:0}
+.brand-mark{width:34px;height:34px;object-fit:contain;flex:none;filter:drop-shadow(0 0 6px rgba(200,164,92,.25))}
+.brand .tx{min-width:0}
+.brand .tx b{display:block;font-family:var(--serif);font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--gold-l);white-space:nowrap;line-height:1.1}
+.brand .tx small{display:block;margin-top:3px;font-family:var(--sans);font-size:6.6px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink2);white-space:nowrap}
+.lang{display:flex;align-items:center;gap:1px;padding:2px;border-radius:999px;border:1px solid rgba(185,154,93,.3);background:rgba(30,22,16,.5);flex:none}
+.lang-btn{height:34px;min-width:38px;padding:0 8px;border-radius:999px;font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;color:#c9b797;transition:.25s var(--ease)}
+.lang-btn.on{background:rgba(185,154,93,.2);color:#F4EBD8;box-shadow:inset 0 1px 0 rgba(246,226,184,.16)}
+
+/* ═══ MANDALA ═══ */
+.stage{position:relative;flex:none;width:var(--S);height:var(--S);touch-action:pan-y;user-select:none;-webkit-user-select:none;
+  --d:calc(var(--S)*.235);--ro:calc(var(--S)*.378);--hub:calc(var(--S)*.40)}
+/* rolka zdjęć (walec 3D) — za mandalą, na całą szerokość ekranu */
+.reel{position:absolute;left:50%;top:50%;width:100vw;height:calc(var(--S)*.96);transform:translate(-50%,-50%);
+  perspective:calc(var(--S)*3.4);perspective-origin:50% 46%;pointer-events:none;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);
+  animation:fadeIn 1s ease-out .9s both}
+.reel-v{position:absolute;top:-2%;bottom:-2%;left:50%;width:100vw;transform:translateX(-50%);pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
+.cyl{position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d}
+.face{position:absolute;border-radius:14px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border:1px solid rgba(200,164,92,.28);box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.face img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.78) saturate(1.04)}
+.face::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,6,3,.1) 40%,rgba(9,6,3,.6))}
+.face .shade{position:absolute;inset:0;background:#0a0503;opacity:0;z-index:2}
+/* lekkie przyciemnienie środka, żeby mandala była czytelna na zdjęciach */
+.stage::before{content:"";position:absolute;inset:-4%;border-radius:50%;z-index:1;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(10,6,3,.55),rgba(10,6,3,.28) 70%,transparent)}
+.ring{position:absolute;left:50%;top:50%;width:calc(var(--ro)*2);height:calc(var(--ro)*2);transform:translate(-50%,-50%);
+  border-radius:50%;border:1px dashed rgba(200,164,92,.3);z-index:2;pointer-events:none}
+
+.slot{position:absolute;left:50%;top:50%;z-index:4;width:var(--d);height:var(--d);margin:calc(var(--d)/-2) 0 0 calc(var(--d)/-2);
+  transform:rotate(var(--a)) translate(var(--ro)) rotate(calc(-1*var(--a)))}
+.node{position:relative;width:100%;height:100%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:calc(var(--d)*.09);color:var(--cream);
+  background:radial-gradient(circle at 35% 25%,#3b2e20,#21190f 78%);border:2px solid #c6a66e;outline:1px solid rgba(230,208,160,.5);outline-offset:3px;
+  box-shadow:inset 0 1px 3px rgba(233,204,146,.16),0 4px 14px rgba(0,0,0,.4);
+  animation:igniteNode .55s ease-out both;animation-delay:var(--delay,1.4s);transition:box-shadow .25s}
+.node svg{flex:none;width:calc(var(--d)*.27);height:calc(var(--d)*.27);stroke:#efd29a;fill:none;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.node b{display:block;margin-top:calc(var(--d)*.06);font-family:var(--sans);font-weight:600;text-transform:uppercase;
+  font-size:max(7.4px,calc(var(--S)*.0245));line-height:1.15;letter-spacing:.02em;color:#f0d7a0;max-width:94%}
+.node span{display:block;margin-top:calc(var(--d)*.03);font-family:var(--serif);font-size:max(7px,calc(var(--S)*.0225));line-height:1.12;color:#c9b892;max-width:90%}
+.node.primary{background:linear-gradient(145deg,#d9c092 0%,#bea06b 100%);border-color:#9b783f;
+  animation:igniteNode .55s ease-out var(--delay,1.4s) both,mandalaPulse 4s linear 2.4s infinite}
+.node.primary.voucher{animation:igniteNode .55s ease-out var(--delay,1.4s) both,mandalaPulse 4s linear 4.4s infinite}
+.node.primary b{color:#2b2418}.node.primary span{color:#51402a}.node.primary svg{stroke:#3a2d1c}
+.node:active{box-shadow:0 0 26px rgba(200,164,92,.55)}
+.node:focus-visible,.hub:focus-visible{outline:3px solid #fff0ce;outline-offset:5px}
+@keyframes igniteNode{0%{opacity:0;transform:scale(.72)}62%{opacity:1}100%{opacity:1;transform:scale(1)}}
+@keyframes mandalaPulse{0%,50%,100%{transform:scale(1)}12.5%,37.5%{transform:scale(1.035)}25%{transform:scale(1.07);box-shadow:0 0 0 5px rgba(232,200,136,.13),0 0 26px rgba(235,198,125,.4)}}
+
+.hub{position:absolute;left:50%;top:50%;z-index:5;width:var(--hub);height:var(--hub);margin:calc(var(--hub)/-2) 0 0 calc(var(--hub)/-2);border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  background:radial-gradient(circle at 50% 34%,rgba(24,17,10,.97),rgba(10,6,3,.99));border:1px solid var(--gold);
+  box-shadow:0 0 0 6px rgba(200,164,92,.07),0 0 54px rgba(200,164,92,.32);
+  animation:hubFocus .9s ease-out 1s both,breath 6s ease-in-out 2.2s infinite}
+.hub svg{width:calc(var(--hub)*.34);height:calc(var(--hub)*.34);stroke:var(--gold-l);fill:none;stroke-width:2.2;stroke-linecap:round;filter:drop-shadow(0 0 10px rgba(200,164,92,.6))}
+.hub b{display:block;margin-top:calc(var(--hub)*.04);font-family:var(--serif);font-weight:500;font-size:calc(var(--S)*.05);line-height:1.18;color:var(--cream)}
+.hub span{display:block;margin-top:calc(var(--hub)*.03);font-family:var(--sans);font-size:max(7px,calc(var(--S)*.021));letter-spacing:.2em;text-transform:uppercase;color:var(--ink2)}
+@keyframes breath{0%,100%{box-shadow:0 0 0 6px rgba(200,164,92,.07),0 0 44px rgba(200,164,92,.3)}50%{box-shadow:0 0 0 9px rgba(200,164,92,.13),0 0 70px rgba(200,164,92,.52)}}
+@keyframes hubFocus{0%{opacity:.4;filter:blur(8px)}100%{opacity:1;filter:blur(0)}}
+
+/* podpis rolki pod mandalą — zamiast napisu nachodzącego na stopkę */
+.scene-bar{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;max-width:640px;min-height:38px;animation:fadeUp .7s var(--ease) 1.6s both}
+.scene-bar button{flex:none;width:36px;height:36px;border-radius:50%;border:1px solid rgba(200,164,92,.36);background:rgba(18,12,7,.6);
+  display:grid;place-items:center;color:var(--gold-l)}
+.scene-bar button svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.scene-cap{min-width:0;flex:1 1 auto;max-width:260px;text-align:center;font-family:var(--serif);font-style:italic;font-size:21px;line-height:1.1;color:var(--cream);
+  text-shadow:0 2px 12px #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:opacity .35s}
+.scene-cap.fade{opacity:0}
+
+/* ═══ ŚWIATY + STOPKA ═══ */
+.foot{width:100%;max-width:640px;display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeUp .7s var(--ease) 1.8s both}
+.worlds{padding:9px 12px 10px}
+.rail-title{font-family:var(--sans);font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding-left:4px;margin-bottom:7px;animation:railGold 7.5s ease-in-out infinite}
+@keyframes railGold{0%,100%{color:#F6E7C0}50%{color:#B99A5D}}
+.world-rail{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.wbtn{flex:none;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
+.wbtn small{font-family:var(--sans);font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);white-space:nowrap}
+.globe,.orb-face{position:relative;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;overflow:hidden;border:1px solid rgba(217,192,138,.72);
+  box-shadow:0 0 12px rgba(197,139,72,.22),inset 0 0 14px rgba(197,139,72,.2);background:radial-gradient(circle at 34% 28%,rgba(214,172,108,.3),rgba(28,20,14,.92) 70%)}
+.globe{perspective:180px}
+.globe-in{position:absolute;inset:5px;transform-style:preserve-3d;animation:globeSpin 16s linear infinite}
+.globe-in i{position:absolute;inset:0;border:1px solid rgba(223,196,141,.6);border-radius:50%}
+.globe-in i:nth-child(2){transform:rotateY(36deg)}.globe-in i:nth-child(3){transform:rotateY(72deg)}.globe-in i:nth-child(4){transform:rotateY(108deg)}.globe-in i:nth-child(5){transform:rotateY(144deg)}
+.globe .par{position:absolute;left:5px;right:5px;border:1px solid rgba(223,196,141,.42);border-radius:50%}
+.globe .par.a{top:32%;height:36%}.globe .par.b{top:18%;height:64%}
+@keyframes globeSpin{to{transform:rotateY(360deg)}}
+.orb-face svg{width:26px;height:26px;fill:none;stroke:#e2c68d;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.orb-face img{width:33px;height:auto;filter:drop-shadow(0 1px 5px rgba(0,0,0,.55))}
+.orb-face .lock{display:flex;flex-direction:column;align-items:center;gap:1px;line-height:1}
+.orb-face .lock img{width:27px}.orb-face .lock b{font-family:var(--sans);font-weight:400;font-size:4.4px;letter-spacing:.14em;text-transform:uppercase;color:#e2c68d}
+.ai-dot{position:relative;flex:none;height:52px;padding:4px 16px 4px 4px;border-radius:999px;display:flex;align-items:center;gap:10px;color:#f6e8c6;border:1px solid rgba(217,192,138,.58);
+  background:linear-gradient(145deg,rgba(35,25,19,.94),rgba(20,14,11,.96));box-shadow:0 12px 30px rgba(0,0,0,.42),inset 0 1px 1px rgba(255,244,215,.35),0 0 16px rgba(197,139,72,.16)}
+.ai-dot::before{content:"";position:absolute;inset:-4px;border-radius:999px;border:1px solid rgba(246,232,198,.24);box-shadow:0 0 13px rgba(217,192,138,.14);animation:aiBreath 3.8s ease-in-out infinite;pointer-events:none}
+@keyframes aiBreath{0%,100%{opacity:.48;transform:scale(.96)}50%{opacity:1;transform:scale(1.03)}}
+.ai-portrait{position:relative;width:44px;height:44px;flex:none;border-radius:50%;border:1px solid rgba(217,192,138,.74);box-shadow:0 0 12px rgba(197,139,72,.2)}
+.ai-portrait img{position:absolute;inset:2px;width:calc(100% - 4px);height:calc(100% - 4px);border-radius:50%;object-fit:cover;object-position:50% 42%;filter:saturate(.88) contrast(1.03)}
+.ask-mark{position:absolute;right:-4px;bottom:-2px;width:17px;height:17px;border-radius:50%;display:grid;place-items:center;color:#5c4225;background:#ead9b2;border:1px solid #9f7841;box-shadow:0 3px 8px rgba(0,0,0,.4)}
+.ask-mark svg{width:9px;height:9px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.ask-word{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#ead9b2;white-space:nowrap}
+.ai-dot.on{border-color:#e6d0a0;box-shadow:0 0 22px rgba(200,164,92,.45)}
+
+/* CZAT Z MALI — ten sam mechanizm co we wcześniejszej wersji telefonu (chat.php Szkoły) */
+#ask{position:fixed;right:10px;left:10px;bottom:calc(env(safe-area-inset-bottom) + 96px);z-index:70;max-width:560px;margin:0 auto;max-height:calc(100vh - 170px);max-height:calc(100svh - 170px);
+  display:flex;flex-direction:column;border:1px solid rgba(185,154,93,.5);border-radius:24px;background:rgba(26,21,17,.92);
+  -webkit-backdrop-filter:blur(30px) saturate(1.35);backdrop-filter:blur(30px) saturate(1.35);box-shadow:0 34px 80px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.07);
+  overflow:hidden;touch-action:pan-y;opacity:0;transform:translateY(24px) scale(.97);pointer-events:none;visibility:hidden;
+  transition:opacity .35s var(--ease),transform .4s var(--ease),visibility 0s .4s}
+#ask.on{opacity:1;transform:none;pointer-events:auto;visibility:visible;transition:opacity .35s var(--ease),transform .4s var(--ease)}
+#ask .ah{display:flex;align-items:center;gap:11px;padding:12px 14px;border-bottom:1px solid rgba(185,154,93,.2)}
+#ask .ah .ai-portrait{width:36px;height:36px}
+#ask .ah b{flex:1;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:#F4EBD8}
+#ask .ah button{width:34px;height:34px;color:rgba(233,220,193,.6);font-size:17px;border-radius:50%}
+#ask .aw{flex:1;min-height:120px;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:12px;-webkit-overflow-scrolling:touch}
+#ask .b{max-width:88%;padding:11px 14px;font-family:var(--sans);font-size:13.5px;line-height:1.55;border-radius:16px;white-space:pre-wrap;word-break:break-word}
+#ask .b.ja{align-self:flex-end;background:rgba(185,154,93,.2);border:1px solid rgba(185,154,93,.32);color:#F4EBD8;border-bottom-right-radius:6px}
+#ask .b.on2{align-self:flex-start;background:rgba(20,16,13,.6);border:1px solid rgba(185,154,93,.18);color:#D9CBAE;border-bottom-left-radius:6px}
+#ask .b.err{border-color:rgba(196,117,107,.45);color:#E7B3AB}
+#ask .kropki{align-self:flex-start;display:flex;gap:5px;padding:12px 14px}
+#ask .kropki i{width:6px;height:6px;border-radius:50%;background:#D4AF6A;opacity:.35;animation:kr 1.2s ease-in-out infinite}
+#ask .kropki i:nth-child(2){animation-delay:.2s}#ask .kropki i:nth-child(3){animation-delay:.4s}
+@keyframes kr{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+#ask .podp{display:flex;gap:7px;flex-wrap:wrap;padding:0 16px 12px}
+#ask .podp button{border:1px solid rgba(185,154,93,.28);background:rgba(20,16,13,.5);color:#C3B394;border-radius:16px;padding:8px 12px;font-size:12px;font-family:var(--sans)}
+#ask .af{display:flex;gap:9px;padding:12px;border-top:1px solid rgba(185,154,93,.2);align-items:flex-end}
+#ask .af textarea{flex:1;min-height:42px;max-height:110px;resize:none;border:1px solid rgba(185,154,93,.28);border-radius:14px;background:rgba(20,16,13,.6);color:#F4EBD8;padding:11px 13px;font-family:var(--sans);font-size:16px;line-height:1.4;outline:none}
+#ask .af textarea:focus{border-color:#D4AF6A}
+#ask .af .go{width:42px;height:42px;flex:none;border-radius:50%;background:linear-gradient(120deg,#E8D5A2,#C9A860);color:#16110D;font-size:16px}
+#ask .af .go:disabled{opacity:.4}
+#ask .nota{padding:0 16px 12px;font-size:9px;letter-spacing:.4px;color:rgba(233,220,193,.4);font-family:var(--sans);line-height:1.5}
+
+.legal{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;font-family:var(--sans);font-size:9.5px;letter-spacing:.03em;color:#c9b892}
+.legal a{text-decoration:none;padding:8px 2px}
+.legal .sep{width:1px;height:12px;background:rgba(200,164,92,.45)}
+.soc{display:flex;gap:4px}
+.soc a{width:32px;height:32px;display:grid;place-items:center;border-radius:50%}
+.soc svg{width:17px;height:17px;fill:none;stroke:#d9c08a;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+@keyframes fadeUp{0%{opacity:0;transform:translateY(9px)}100%{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* okno światów */
+.worlds-dialog{position:fixed;inset:0;margin:auto;width:min(420px,90vw);max-height:80vh;padding:24px;border:1px solid #9b783f;border-radius:18px;background:#191208;color:#f7f0e3;box-shadow:0 20px 80px #0009}
+.worlds-dialog::backdrop{background:#090603bb;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.worlds-dialog h2{font-family:var(--serif);font-size:26px;font-weight:500;margin-bottom:16px}
+.worlds-dialog a{display:block;padding:14px 0;border-top:1px solid #c8a45c30;color:#e6d0a0;text-decoration:none;font-family:var(--serif);font-size:20px}
+.worlds-dialog a small{display:block;font:12px var(--sans);color:#c9b892;margin-top:4px}
+.worlds-dialog .x{float:right;color:#e6d0a0;border:1px solid #9b783f;border-radius:50%;width:34px;height:34px;font-size:22px;line-height:1}
+
+/* ═══ DOPASOWANIA ═══ */
+/* wąskie telefony (iPhone SE, mini) */
+@media (max-width:360px){
+  :root{--pad:8px}
+  .brand .tx b{font-size:13.5px;letter-spacing:.15em}.brand .tx small{font-size:5.8px;letter-spacing:.2em}
+  .brand-mark{width:28px;height:28px}.lang-btn{min-width:32px;padding:0 6px;font-size:9.5px}
+  .node span{display:none}
+  .globe,.orb-face{width:40px;height:40px}.ai-dot{height:48px;padding:3px 12px 3px 3px;gap:7px}.ai-portrait{width:40px;height:40px}.ask-word{font-size:8.5px;letter-spacing:.14em}
+  .hub span{letter-spacing:.12em}
+  .legal{gap:6px;font-size:8.6px;flex-wrap:nowrap;white-space:nowrap}.soc{gap:0}.soc a{width:28px}
+  .scene-cap{font-size:18px}
+}
+/* niskie ekrany — mniej odstępów, mandala i tak ma minimum 276 px (strona wtedy się przewija) */
+@media (max-height:640px){.app{gap:4px}.rail-title{margin-bottom:4px}.worlds{padding:7px 10px 8px}.wbtn small{display:none}}
+/* iPad i większe tablety — ten sam układ, większa skala */
+@media (min-width:700px){
+  :root{--pad:24px}
+  .hdr{padding:10px 10px 10px 18px}.brand-mark{width:46px;height:46px}.brand .tx b{font-size:21px}.brand .tx small{font-size:8px}
+  .lang-btn{height:42px;min-width:48px;font-size:12px}
+  .scene-cap{font-size:28px;max-width:420px}.scene-bar button{width:46px;height:46px}
+  .worlds{padding:14px 22px 16px}.rail-title{font-size:11px}
+  .globe,.orb-face{width:60px;height:60px}.orb-face svg{width:34px;height:34px}.orb-face img{width:42px}.orb-face .lock img{width:34px}.orb-face .lock b{font-size:5.4px}
+  .wbtn small{font-size:9px}.ai-dot{height:66px;padding:4px 22px 4px 4px}.ai-portrait{width:58px;height:58px}.ask-word{font-size:12px}
+  .legal{font-size:11px}
+}
+html[lang="th"] .node b{letter-spacing:0;font-size:max(8.5px,calc(var(--S)*.029))}
+html[lang="th"] .node span{font-size:max(7.5px,calc(var(--S)*.022))}
+@media (prefers-reduced-motion:reduce){
+  .curtain{display:none}.bg,.globe-in,.rail-title{animation:none}
+  .hdr,.reel,.hero,.actions,.node,.node.primary,.hub,.foot{animation:none!important;opacity:1!important;filter:none!important}
+}
+
+/* ═══ WERSJA 2: jasna rolka + 3 guziki, mandala dopiero po kliknięciu lotosu ═══ */
+:root{--S:clamp(276px,min(calc(100vw - 20px),calc(100vh - 150px)),560px);--H:clamp(300px,calc(100vh - 318px),760px)}
+@supports (height:100svh){:root{--S:clamp(276px,min(calc(100vw - 20px),calc(100svh - 150px)),560px);--H:clamp(300px,calc(100svh - 318px),760px)}}
+.hero{position:relative;flex:none;width:100vw;height:var(--H);margin:0 calc(-1*var(--pad));touch-action:pan-y;user-select:none;-webkit-user-select:none;animation:fadeIn 1s ease-out .8s both}
+.hero .reel{position:absolute;inset:0;left:0;top:0;width:100%;height:100%;transform:none;perspective:1300px;perspective-origin:50% 45%;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
+.hero .face img{filter:none}
+.hero .face::after{background:linear-gradient(180deg,rgba(9,6,3,0) 52%,rgba(9,6,3,.72))}
+.face .cap{position:absolute;left:18px;right:18px;bottom:62px;z-index:3;font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.1;color:var(--cream);text-shadow:0 2px 14px #000}
+.face .cap::after{content:"";display:block;width:34px;height:1px;margin-top:9px;background:var(--gold)}
+.face .cap:empty{display:none}
+.hero-arrow{position:absolute;top:44%;z-index:4;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:var(--gold-l);
+  border:1px solid rgba(200,164,92,.4);background:rgba(14,9,5,.45);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.hero-arrow.l{left:10px}.hero-arrow.r{right:10px}
+.hero-arrow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+.actions{position:relative;z-index:6;flex:none;margin-top:-58px;display:flex;align-items:center;justify-content:center;gap:clamp(14px,5vw,30px);animation:fadeUp .7s var(--ease) 1.3s both}
+.act{width:78px;height:78px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  background:linear-gradient(145deg,#dcc496 0%,#bea06b 100%);border:2px solid #9b783f;outline:1px solid rgba(230,208,160,.6);outline-offset:3px;
+  box-shadow:0 10px 26px rgba(0,0,0,.5),inset 0 1px 3px rgba(255,248,225,.4);animation:mandalaPulse 4s linear 2.4s infinite}
+#aVoucher{animation-delay:4.4s}
+.act svg{width:23px;height:23px;fill:none;stroke:#3a2d1c;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.act b{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#2b2418}
+.lotus-btn{width:104px;height:104px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  background:radial-gradient(circle at 50% 34%,rgba(30,21,12,.97),rgba(10,6,3,.99));border:1px solid var(--gold);
+  box-shadow:0 0 0 6px rgba(200,164,92,.08),0 0 44px rgba(200,164,92,.35),0 12px 30px rgba(0,0,0,.55);animation:breath 6s ease-in-out 2s infinite}
+.lotus-btn svg{width:46px;height:46px;stroke:var(--gold-l);fill:none;stroke-width:2.4;stroke-linecap:round;filter:drop-shadow(0 0 8px rgba(200,164,92,.6))}
+.lotus-btn b{font-family:var(--sans);font-size:9.5px;font-weight:500;letter-spacing:.32em;padding-left:.32em;text-transform:uppercase;color:var(--gold-l)}
+.act:active,.lotus-btn:active{transform:scale(.95)}
+
+/* mandala jako nakładka */
+.mov{position:fixed;inset:0;z-index:55;display:grid;place-items:center;background:rgba(9,6,3,.84);
+  -webkit-backdrop-filter:blur(12px) saturate(1.1);backdrop-filter:blur(12px) saturate(1.1);
+  opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility 0s .45s}
+.mov.on{opacity:1;visibility:visible;transition:opacity .35s var(--ease)}
+.mov .stage::before{display:none}
+.mov .ring{opacity:0;transform:translate(-50%,-50%) scale(.4);transition:opacity .4s,transform .55s var(--ease)}
+.mov.on .ring{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.mov .slot{opacity:0;transform:rotate(var(--a)) translate(0) rotate(calc(-1*var(--a))) scale(.5);
+  transition:transform .55s cubic-bezier(.2,.9,.25,1.12),opacity .3s;transition-delay:calc(var(--i)*35ms)}
+.mov.on .slot{opacity:1;transform:rotate(var(--a)) translate(var(--ro)) rotate(calc(-1*var(--a))) scale(1)}
+.mov .node{animation:none}
+.mov .node.primary{animation:mandalaPulse 4s linear 1s infinite}
+.mov .hub{animation:none;transform:scale(.6);opacity:0;transition:transform .45s var(--ease),opacity .3s}
+.mov.on .hub{transform:scale(1);opacity:1;animation:breath 6s ease-in-out .6s infinite}
+.mov-x{position:absolute;top:calc(env(safe-area-inset-top) + 14px);right:14px;width:42px;height:42px;border-radius:50%;font-size:18px;color:var(--gold-l);
+  border:1px solid rgba(200,164,92,.45);background:rgba(18,12,7,.6)}
+body.locked{overflow:hidden}
+@media (max-width:360px){.act{width:66px;height:66px}.act svg{width:20px;height:20px}.act b{font-size:8px}.lotus-btn{width:90px;height:90px}.lotus-btn svg{width:38px;height:38px}.face .cap{font-size:20px;bottom:54px}.actions{margin-top:-50px}}
+@media (min-width:700px){.act{width:104px;height:104px}.act svg{width:30px;height:30px}.act b{font-size:11px}.lotus-btn{width:136px;height:136px}.lotus-btn svg{width:60px;height:60px}.lotus-btn b{font-size:12px}
+  .actions{margin-top:-74px}.face .cap{font-size:34px;bottom:84px;left:28px}.hero-arrow{width:50px;height:50px}.hero-arrow.l{left:22px}.hero-arrow.r{right:22px}}
+@media (prefers-reduced-motion:reduce){.act,.lotus-btn,.mov .slot,.mov .hub{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="tint"></div><div class="grain"></div>
+<div class="curtain top"></div><div class="curtain bot"></div>
+
+<main class="app">
+  <header class="hdr framed">
+    <a class="brand" href="https://thaimaliwan.pl" aria-label="Thai Maliwan">
+      <img class="brand-mark" src="www-assets/thai-maliwan-mark.png" alt="">
+      <span class="tx"><b>THAI MALIWAN</b><small id="brandSub">Harmonia ciała i umysłu</small></span>
+    </a>
+    <div class="lang" id="lang" role="group" aria-label="Język strony">
+      <button class="lang-btn on" type="button" data-lang="pl" lang="pl">PL</button><button class="lang-btn" type="button" data-lang="en" lang="en">EN</button><button class="lang-btn" type="button" data-lang="th" lang="th">ไทย</button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero" aria-label="Galeria salonu">
+    <div class="reel" aria-hidden="true"><div class="cyl" id="cyl"></div></div>
+    <button class="hero-arrow l" type="button" id="prev" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="hero-arrow r" type="button" id="next" aria-label="Następne zdjęcie"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  </section>
+
+  <nav class="actions" aria-label="Najważniejsze">
+    <button class="act" type="button" id="aBook"><svg viewBox="0 0 24 24"><path d="M4 6h16v15H4z"/><path d="M4 10h16M8 3v5M16 3v5"/></svg><b id="aBookT">Rezerwuj</b></button>
+    <button class="lotus-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mov"><svg viewBox="0 0 100 100"><g>
+        <path d="M50 16c7 15 10 32 7 49-8-13-11-32-7-49z"/><path d="M50 18c-4 18-1 36 7 49 3-17 0-34-7-49z"/>
+        <path d="M32 26c10 13 17 28 18 43-13-9-21-26-18-43z"/><path d="M68 26c3 17-5 34-18 43 1-15 8-30 18-43z"/>
+        <path d="M16 44c15 7 27 19 32 35-15-3-29-15-32-35z"/><path d="M84 44c-3 20-17 32-32 35 5-16 17-28 32-35z"/>
+        <ellipse cx="50" cy="82" rx="8" ry="5"/></g></svg><b id="menuT">Menu</b></button>
+    <button class="act" type="button" id="aVoucher"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M4 13h16M12 9v11M12 9c-2-4-6-3-6 0M12 9c2-4 6-3 6 0"/></svg><b id="aVoucherT">Voucher</b></button>
+  </nav>
+
+  <footer</div>
+
+  <footer class="foot">
+    <div class="worlds framed">
+      <p class="rail-title" id="railTitle">Wejdź w nasze światy</p>
+      <div class="world-rail">
+        <button class="wbtn" id="worldDot" type="button" aria-label="Światy Maliwan">
+          <span class="globe" aria-hidden="true"><span class="globe-in"><i></i><i></i><i></i><i></i><i></i></span><span class="par a"></span><span class="par b"></span></span><small id="wAll">Wszystkie</small>
+        </button>
+        <a class="wbtn" id="w0" target="_blank" rel="noopener"><span class="orb-face"><span class="lock"><img src="www-assets/thai-maliwan-mark.png" alt=""><b>Szkoła</b></span></span><small>Szkoła</small></a>
+        <a class="wbtn" id="w1" target="_blank" rel="noopener"><span class="orb-face"><img src="www-assets/menu-koncepcja/world-ritual.png" alt=""></span><small>Ritual</small></a>
+        <button class="ai-dot" id="aiDot" type="button" aria-label="Zapytaj Mali">
+          <span class="ai-portrait" aria-hidden="true"><img src="data:image/webp;base64,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" alt=""><span class="ask-mark"><svg viewBox="0 0 24 24"><path d="M4.5 6.4h15v8.4h-8.3l-4.2 3.1v-3.1H4.5z"/><circle cx="8.6" cy="10.6" r=".95" fill="currentColor" stroke="none"/><circle cx="12" cy="10.6" r=".95" fill="currentColor" stroke="none"/><circle cx="15.4" cy="10.6" r=".95" fill="currentColor" stroke="none"/></svg></span></span>
+          <span class="ask-word" id="maliT">Zapytaj</span>
+        </button>
+      </div>
+    </div>
+    <nav class="legal" aria-label="Informacje">
+      <span class="soc">
+        <a id="sFb" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v6h3v-6h2l1-3h-3V9z"/></svg></a>
+        <a id="sIg" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17" cy="7" r="1"/></svg></a>
+        <a id="sMail" href="https://thaimaliwan.pl/kontakt/" aria-label="E-mail"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4.2 7.2 12 12.6l7.8-5.4"/></svg></a>
+      </span>
+      <span class="sep"></span>
+      <a id="lReg" href="https://thaimaliwan.pl/regulaminy/" target="_blank" rel="noopener">Regulaminy i zasady</a>
+      <span class="sep"></span>
+      <a id="lPriv" href="https://thaimaliwan.pl/polityka-prywatnosci/" target="_blank" rel="noopener">Prywatność</a>
+    </nav>
+  </footer>
+</main>
+
+<div class="mov" id="mov" aria-hidden="true" role="dialog" aria-label="Menu">
+  <button class="mov-x" type="button" id="movX" aria-label="Zamknij">✕</button>
+  <section class="stage" id="stage">
+    <div class="ring"></div>
+    <div id="orbit"></div>
+    <button class="hub" id="hub" type="button">
+      <svg viewBox="0 0 100 100"><g>
+        <path d="M50 16c7 15 10 32 7 49-8-13-11-32-7-49z"/><path d="M50 18c-4 18-1 36 7 49 3-17 0-34-7-49z"/>
+        <path d="M32 26c10 13 17 28 18 43-13-9-21-26-18-43z"/><path d="M68 26c3 17-5 34-18 43 1-15 8-30 18-43z"/>
+        <path d="M16 44c15 7 27 19 32 35-15-3-29-15-32-35z"/><path d="M84 44c-3 20-17 32-32 35 5-16 17-28 32-35z"/>
+        <ellipse cx="50" cy="82" rx="8" ry="5"/></g></svg>
+      <b id="hubT">W czym mogę<br>Ci pomóc?</b><span id="hubS">Wybierz rytuał</span>
+    </button>
+  </section>
+</div>
+
+<div id="ask" role="dialog" aria-label="Asystentka Mali" aria-hidden="true">
+ <div class="ah"><span class="ai-portrait" aria-hidden="true"><img src="data:image/webp;base64,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" alt=""></span><b id="askTytul">Zapytaj Mali</b><button id="askX" type="button" aria-label="Zamknij">✕</button></div>
+ <div class="aw" id="askOkno"></div>
+ <div class="podp" id="askPodp"></div>
+ <div class="af"><textarea id="askPole" rows="1" placeholder="Napisz pytanie…"></textarea><button class="go" id="askGo" type="button" aria-label="Wyślij">→</button></div>
+ <div class="nota" id="askNota"></div>
+</div>
+
+<dialog class="worlds-dialog" id="worldsDialog" aria-labelledby="worldsTitle"><button type="button" class="x" id="closeWorlds" aria-label="Zamknij">×</button><h2 id="worldsTitle">Światy Maliwan</h2><div id="worldsLinks"></div></dialog>
+
+<script>
+(function(){
+const P=new URLSearchParams(location.search);
+const SALON=P.get('salon')==='SZ'?'SZ':'ZW';
+let LANG=['pl','en','th'].includes(P.get('lang'))?P.get('lang'):'pl';
+document.querySelector('.bg').style.backgroundImage='url(www-assets/desktop-luxury-background.jpg)';
+
+/* ── ZDJĘCIA ROLKI (te same co na komputerze) ── */
+const D='www-assets/galerie-film/starsza-klisza/';
+const IMG=["09-szewska-salon","14-masaz-olejowy","12-szewska-buddy","01-zwierzyniecka-recepcja","07-zwierzyniecka-herbata","19-masaz-tajski-zwierzyniecka","17-zwierzyniecka-detale","03-szewska-recepcja","10-szewska-logo","15-masaz-tajski-szewska","13-szewska-swiece","02-zwierzyniecka-relaks","18-masaz-stop","16-zwierzyniecka-budda","11-szewska-gabinet","06-szewska-herbata","20-szewska-stemple","08-zwierzyniecka-olejki","05-szewska-budda"].map(n=>D+n+'.png');
+const CAP={
+ sz:{pl:'Salon Szewska',en:'Szewska salon',th:'สาขา Szewska'},
+ zw:{pl:'Salon Zwierzyniecka',en:'Zwierzyniecka salon',th:'สาขา Zwierzyniecka'},
+ olej:{pl:'Masaż olejowy',en:'Oil massage',th:'นวดน้ำมัน'},
+ tajski:{pl:'Masaż tajski',en:'Thai massage',th:'นวดแผนไทย'},
+ stopy:{pl:'Masaż stóp',en:'Foot massage',th:'นวดเท้า'}
+};
+function capKey(src){if(/olejowy/.test(src))return'olej';if(/masaz-tajski/.test(src))return'tajski';if(/masaz-stop/.test(src))return'stopy';return /szewska/.test(src)?'sz':'zw';}
+const POS=["center","50% 40%","75% center","center","50% 40%","center","center","center","50% 40%","50% 40%","50% 40%","center","50% 40%","50% 40%","50% 40%","50% 40%","center","50% 40%","50% 40%"];
+const N=IMG.length,FACES=8,STEP=360/FACES;
+const cyl=document.getElementById('cyl'),stage=document.getElementById('stage'),hero=document.getElementById('hero');
+const mod=n=>((n%N)+N)%N;
+const slideFor=(slot,rot)=>mod(slot-Math.round((slot*STEP+rot)/360)*FACES);
+const faces=[];
+for(let i=0;i<FACES;i++){
+ const f=document.createElement('div');f.className='face';f.dataset.ang=i*STEP;f.dataset.slot=i;f.dataset.idx=-1;
+ f.innerHTML='<img decoding="async" alt=""><div class="cap"></div><div class="shade"></div>';cyl.appendChild(f);faces.push(f);
+}
+function capFace(f){const i=+f.dataset.idx;if(i<0)return;f.querySelector('.cap').textContent=CAP[capKey(IMG[i])][LANG];}
+function setFace(f,idx){if(+f.dataset.idx===idx)return;f.dataset.idx=idx;const im=f.firstChild;im.src=IMG[idx];im.style.objectPosition=POS[idx];im.alt=CAP[capKey(IMG[idx])][LANG];capFace(f);}
+let R=300;
+function layout(){
+ const W=hero.clientWidth,H=hero.clientHeight,fw=Math.round(Math.min(W*.74,H*.82,620)),fh=Math.round(H*.9);
+ R=Math.round(fw/2/Math.tan(STEP/2*Math.PI/180));
+ faces.forEach((f,i)=>{f.style.width=fw+'px';f.style.height=fh+'px';f.style.left=-fw/2+'px';f.style.top=-fh/2+'px';
+  f.style.transform='rotateY('+(i*STEP)+'deg) translateZ('+R+'px)';});
+ cyl.style.transformOrigin='0 0';
+}
+layout();addEventListener('resize',layout);
+
+/* ── MANDALA — 8 przycisków jak na komputerze ── */
+const ic={
+ kal:'<path d="M4 6h16v15H4z"/><path d="M4 10h16M8 3v5M16 3v5"/>',
+ osoba:'<circle cx="12" cy="8" r="3.5"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/>',
+ dlonie:'<path d="M4 13c2-3 5-4 8-4s6 1 8 4"/><path d="M7 13v4M12 12v6M17 13v4"/>',
+ prezent:'<rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M4 13h16M12 9v11M12 9c-2-4-6-3-6 0M12 9c2-4 6-3 6 0"/>',
+ lotos:'<path d="M12 3c-3 4-3 8 0 12 3-4 3-8 0-12zM12 20C6 19 3 15 3 9c5 1 8 5 9 11zM12 20c6-1 9-5 9-11-5 1-8 5-9 11z"/>',
+ czat:'<path d="M4 5h16v11H9l-4 4V5z"/><path d="M8 10h8M8 13h5"/>',
+ serce:'<path d="M12 20S4 15 4 9c0-3 4-4 6-1 2-3 6-2 6 1 0 6-4 11-4 11z"/>',
+ pin:'<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/>'
+};
+const NODES=[
+ {a:-90, i:ic.kal,    p:1,       go:'www-komputer-rezerwacje.html?view=reservation'},
+ {a:-45, i:ic.prezent,p:1,v:1,   go:'www-komputer-bony.html?view=voucher'},
+ {a:0,   i:ic.dlonie,            go:'www-komputer-masaze.html?view=reservation'},
+ {a:45,  i:ic.lotos,             go:'www-komputer-rytualy.html?view=reservation'},
+ {a:90,  i:ic.czat,  chat:1,        go:'www-komputer-mali.html?'},
+ {a:135, i:ic.serce,             go:'www-komputer-o-nas.html?view=about'},
+ {a:180, i:ic.pin,               go:'www-komputer-kontakt.html?view=contact'},
+ {a:-135,i:ic.osoba,             go:'www-komputer-masazystki.html?'}
+];
+function target(go){const u=new URL(go,location.href);u.searchParams.set('salon',SALON);u.searchParams.set('lang',LANG);return u.href;}
+const orbit=document.getElementById('orbit');
+NODES.forEach((n,i)=>{
+ const s=document.createElement('div');s.className='slot';s.style.setProperty('--a',n.a+'deg');s.style.setProperty('--i',i);
+ const b=document.createElement('button');b.type='button';b.className='node'+(n.p?' primary':'')+(n.v?' voucher':'');
+ b.style.setProperty('--delay',(1.3+i*.07).toFixed(2)+'s');
+ b.innerHTML='<svg viewBox="0 0 24 24">'+n.i+'</svg><b></b><span></span>';
+ b.addEventListener('click',()=>{if(n.chat){openMenu(false);window.__openChat&&window.__openChat(true);return;}location.href=target(n.go);});
+ s.appendChild(b);orbit.appendChild(s);
+});
+const mov=document.getElementById('mov'),menuBtn=document.getElementById('menuBtn');
+function openMenu(v){mov.classList.toggle('on',v);mov.setAttribute('aria-hidden',String(!v));menuBtn.setAttribute('aria-expanded',String(v));document.body.classList.toggle('locked',v);
+ if(v){window.__openChat&&window.__openChat(false);}}
+menuBtn.addEventListener('click',()=>openMenu(true));
+document.getElementById('movX').addEventListener('click',()=>openMenu(false));
+document.getElementById('hub').addEventListener('click',()=>openMenu(false));
+mov.addEventListener('click',e=>{if(e.target===mov)openMenu(false);});
+addEventListener('keydown',e=>{if(e.key==='Escape')openMenu(false);});
+document.getElementById('aBook').addEventListener('click',()=>{location.href=target(NODES[0].go);});
+document.getElementById('aVoucher').addEventListener('click',()=>{location.href=target(NODES[1].go);});
+
+
+/* ── RUCH ROLKI: auto + przeciąganie palcem (pion przewija stronę) ── */
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const BASE=reduce?0:0.02;
+let rot=0,vel=BASE,drag=false,lastX=0,startX=0,startY=0,dragV=0,moved=false;
+function frame(){
+ if(!drag){rot+=vel;vel+=(BASE-vel)*0.03;}
+ cyl.style.transform='rotateY('+rot+'deg)';
+ faces.forEach(f=>{
+  const idx=slideFor(+f.dataset.slot,rot);setFace(f,idx);
+  let a=((+f.dataset.ang+rot)%360+360)%360;if(a>180)a-=360;
+  const front=Math.cos(a*Math.PI/180);
+  f.lastChild.style.opacity=(Math.max(0,(1-front)/2)*.9).toFixed(3);
+ });
+ requestAnimationFrame(frame);
+}
+frame();
+document.getElementById('next').onclick=()=>{rot-=STEP;};
+document.getElementById('prev').onclick=()=>{rot+=STEP;};
+hero.addEventListener('pointerdown',e=>{drag=true;moved=false;lastX=startX=e.clientX;startY=e.clientY;dragV=0;});
+addEventListener('pointermove',e=>{if(!drag)return;
+ if(!moved){if(Math.abs(e.clientY-startY)>Math.abs(e.clientX-startX)+4&&Math.abs(e.clientY-startY)>8){drag=false;return;}
+  if(Math.abs(e.clientX-startX)>8)moved=true;}
+ const dx=e.clientX-lastX;lastX=e.clientX;dragV=dx*.16;rot+=dragV;});
+function endDrag(){if(!drag)return;drag=false;if(moved)vel=Math.max(-1.6,Math.min(1.6,dragV))||BASE;}
+addEventListener('pointerup',endDrag);addEventListener('pointercancel',()=>{drag=false;});
+hero.addEventListener('click',e=>{if(moved){e.stopPropagation();e.preventDefault();moved=false;}},true);
+
+/* ── ŚWIATY ── */
+const WORLDS=[
+ {url:'https://thaimaliwan.pl/szkola/'},
+ {url:'https://thaimaliwan.pl/oferta/rytualy-spa/'}
+];
+WORLDS.forEach((w,i)=>{document.getElementById('w'+i).href=w.url;});
+const dlg=document.getElementById('worldsDialog');
+document.getElementById('worldDot').onclick=()=>dlg.showModal();
+document.getElementById('closeWorlds').onclick=()=>dlg.close();
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+const SALONS={
+ ZW:{phone:'+48 888 496 495',email:'info@thaimaliwan.pl',instagram:'https://www.instagram.com/thaimaliwan_zwierzyniecka/',facebook:'https://www.facebook.com/thaimaliwanpl/'},
+ SZ:{phone:'+48 881 069 692',email:'szewska@thaimaliwan.pl',instagram:'https://www.instagram.com/thaimaliwan_szewska/',facebook:'https://www.facebook.com/thaimaliwanszewska'}
+}[SALON];
+document.getElementById('sFb').href=SALONS.facebook;document.getElementById('sIg').href=SALONS.instagram;document.getElementById('sMail').href='mailto:'+SALONS.email;
+['lReg','lPriv'].forEach(id=>{const a=document.getElementById(id),u=new URL(a.href);u.hostname=SALON==='SZ'?'thaimaliwanspa.pl':'thaimaliwan.pl';a.href=u.href;});
+
+/* ── JĘZYKI (teksty z wersji komputerowej) ── */
+const L={
+ pl:{chat:{tyt:'Zapytaj Mali',ph:'Napisz pytanie…',wit:'Dzień dobry, tu Mali. Pomogę wybrać masaż, sprawdzić ceny albo umówić wizytę. O co chcesz zapytać?',podp:['Który masaż wybrać?','Ile kosztuje masaż tajski?','Jak zarezerwować?','Mam voucher — co dalej?'],nota:'Asystentka odpowiada na podstawie informacji ze strony. Rezerwacje telefonicznie: {tel}',blad:'Nie udało się połączyć. Zadzwoń {tel} albo napisz {mail}.'},brand:'Harmonia ciała i umysłu',hub:['W czym mogę','Ci pomóc?','Wybierz rytuał'],
+  nodes:[['Rezerwacje','zarezerwuj wizytę'],['Vouchery','podaruj relaks'],['Masaże','dla Ciebie i dla par'],['Rytuały','chwila odprężenia'],['Zapytaj Mali','pomogę Ci wybrać'],['O nas','poznaj Thai Maliwan'],['Kontakt','znajdź swój salon'],['Masażystki','poznaj nasz zespół']],
+  act:['Rezerwuj','Voucher','Menu'],rail:'Wejdź w nasze światy',all:'Wszystkie',w:['Szkoła','Ritual','Menu'],ask:'Zapytaj',legal:['Regulaminy i zasady','Prywatność'],
+  wt:'Światy Maliwan',wn:[['Szkoła Maliwan','Poznaj szkołę masażu'],['Maliwan Ritual','Odkryj nasze rytuały'],['Menu masaży','Wybierz swoją chwilę relaksu']],close:'Zamknij',group:'Język strony'},
+ en:{chat:{tyt:'Ask Mali',ph:'Write your question…',wit:'Hello, this is Mali. I can help you choose a massage, check prices or book a visit. What would you like to know?',podp:['Which massage should I choose?','How much is a Thai massage?','How do I book?','I have a voucher — what next?'],nota:'The assistant answers from the information on this page. Bookings by phone: {tel}',blad:'Connection failed. Call {tel} or write to {mail}.'},brand:'Harmony of body and mind',hub:['How can','I help you?','Choose your ritual'],
+  nodes:[['Bookings','book your visit'],['Vouchers','give relaxation'],['Massages','for you and for two'],['Rituals','a moment to unwind'],['Ask Mali','let me help you choose'],['About us','meet Thai Maliwan'],['Contact','find your salon'],['Therapists','meet our team']],
+  act:['Book','Voucher','Menu'],rail:'Enter our worlds',all:'All',w:['School','Ritual','Menu'],ask:'Ask',legal:['Terms and rules','Privacy'],
+  wt:'Maliwan worlds',wn:[['Maliwan School','Discover our massage school'],['Maliwan Ritual','Explore our rituals'],['Massage menu','Choose your moment of relaxation']],close:'Close',group:'Page language'},
+ th:{chat:{tyt:'ถามมะลิ',ph:'พิมพ์คำถามของคุณ…',wit:'สวัสดีค่ะ มะลิเองค่ะ ยินดีช่วยเลือกการนวด ตรวจสอบราคา หรือจองคิว ต้องการทราบเรื่องอะไรคะ',podp:['ควรเลือกนวดแบบไหน?','นวดไทยราคาเท่าไหร่?','จองอย่างไร?','มีบัตรกำนัล — ทำอย่างไรต่อ?'],nota:'ผู้ช่วยตอบจากข้อมูลบนหน้าเว็บนี้ จองทางโทรศัพท์: {tel}',blad:'เชื่อมต่อไม่สำเร็จ โทร {tel} หรือเขียนถึง {mail}'},brand:'ความสมดุลของกายและใจ',hub:['มีอะไรให้','ช่วยไหมคะ?','เลือกพิธีสปา'],
+  nodes:[['จองคิว','จองเวลาของคุณ'],['บัตรกำนัล','มอบความผ่อนคลาย'],['นวด','สำหรับคุณและคู่รัก'],['พิธีสปา','ช่วงเวลาแห่งการพักผ่อน'],['ถามมะลิ','ให้ฉันช่วยคุณเลือก'],['เกี่ยวกับเรา','รู้จักไทยมะลิวรรณ'],['ติดต่อ','ค้นหาสาขาของเรา'],['นักบำบัด','รู้จักทีมงานของเรา']],
+  act:['จองคิว','บัตรกำนัล','เมนู'],rail:'เข้าสู่โลกของเรา',all:'ทั้งหมด',w:['โรงเรียน','Ritual','เมนู'],ask:'ถามมะลิ',legal:['ข้อกำหนดและกฎ','ความเป็นส่วนตัว'],
+  wt:'โลกของมะลิวรรณ',wn:[['โรงเรียนมะลิวรรณ','รู้จักโรงเรียนสอนนวดของเรา'],['Maliwan Ritual','ค้นพบพิธีสปาของเรา'],['เมนูนวด','เลือกช่วงเวลาแห่งการผ่อนคลาย']],close:'ปิด',group:'ภาษาของหน้าเว็บ'}
+};
+
+/* ── CZAT Z MALI (mechanizm z poprzedniej wersji telefonu: chat.php Szkoły) ── */
+const CHAT_URL='https://thaimaliwan.pl/szkola/chat.php';
+(function(){
+ const q=s=>document.querySelector(s);const box=q('#ask'),okno=q('#askOkno'),pole=q('#askPole'),go=q('#askGo'),podp=q('#askPodp'),dot=q('#aiDot');let historia=[],czeka=false;
+ const fill=s=>s.replace('{tel}',SALONS.phone).replace('{mail}',SALONS.email);
+ const t=()=>L[LANG].chat;
+ function bak(kto,tresc,err){const d=document.createElement('div');d.className='b '+(kto==='ja'?'ja':'on2')+(err?' err':'');d.textContent=tresc;okno.appendChild(d);okno.scrollTop=okno.scrollHeight;return d;}
+ function odswiez(){q('#askTytul').textContent=t().tyt;pole.placeholder=t().ph;q('#askNota').textContent=fill(t().nota);
+  podp.innerHTML='';t().podp.forEach(x=>{const b=document.createElement('button');b.type='button';b.textContent=x;b.onclick=()=>{pole.value=x;wyslij();};podp.appendChild(b);});}
+ function otworz(v){if(v){box.style.bottom=Math.max(12,innerHeight-dot.getBoundingClientRect().top+12)+'px';}box.classList.toggle('on',v);box.setAttribute('aria-hidden',String(!v));dot.classList.toggle('on',v);if(v&&!okno.children.length){odswiez();bak('on',t().wit);}}
+ async function wyslij(){const tekst=pole.value.trim();if(!tekst||czeka)return;czeka=true;go.disabled=true;pole.value='';pole.style.height='';podp.style.display='none';bak('ja',tekst);
+  const kr=document.createElement('div');kr.className='kropki';kr.innerHTML='<i></i><i></i><i></i>';okno.appendChild(kr);okno.scrollTop=okno.scrollHeight;
+  try{const r=await fetch(CHAT_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pytanie:tekst,jezyk:LANG,historia:historia})});
+   const j=await r.json().catch(()=>({}));kr.remove();const odp=(j&&j.odpowiedz&&r.ok)?j.odpowiedz:fill(t().blad);bak('on',odp,!r.ok);
+   historia.push({rola:'klient',tresc:tekst},{rola:'agent',tresc:odp});if(historia.length>6)historia=historia.slice(-6);}
+  catch(e){kr.remove();bak('on',fill(t().blad),true);}
+  czeka=false;go.disabled=false;}
+ dot.onclick=()=>otworz(!box.classList.contains('on'));
+ q('#askX').onclick=()=>otworz(false);go.onclick=wyslij;
+ pole.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();wyslij();}});
+ pole.addEventListener('input',()=>{pole.style.height='auto';pole.style.height=Math.min(110,pole.scrollHeight)+'px';});
+ addEventListener('keydown',e=>{if(e.key==='Escape')otworz(false);});
+ window.__openChat=otworz;
+ window.__resetCzat=()=>{if(okno.children.length){okno.innerHTML='';historia=[];podp.style.display='';odswiez();bak('on',t().wit);}else odswiez();};
+})();
+function setLang(lang){
+ const u=L[lang];if(!u)return;LANG=lang;document.documentElement.lang=lang;
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.lang===lang;b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on));});
+ document.getElementById('lang').setAttribute('aria-label',u.group);
+ document.getElementById('brandSub').textContent=u.brand;
+ const h=document.getElementById('hubT');h.replaceChildren(document.createTextNode(u.hub[0]),document.createElement('br'),document.createTextNode(u.hub[1]));
+ document.getElementById('hubS').textContent=u.hub[2];
+ document.querySelectorAll('.node').forEach((el,i)=>{el.querySelector('b').textContent=u.nodes[i][0];el.querySelector('span').textContent=u.nodes[i][1];el.setAttribute('aria-label',u.nodes[i].join(' — '));});
+ document.getElementById('railTitle').textContent=u.rail;document.getElementById('wAll').textContent=u.all;
+ [0,1].forEach(i=>{const a=document.getElementById('w'+i);a.querySelector('small').textContent=u.w[i];a.setAttribute('aria-label',u.wn[i][0]);});
+ document.getElementById('maliT').textContent=u.ask;
+ document.getElementById('lReg').textContent=u.legal[0];document.getElementById('lPriv').textContent=u.legal[1];
+ document.getElementById('worldsTitle').textContent=u.wt;document.getElementById('closeWorlds').setAttribute('aria-label',u.close);
+ document.getElementById('worldsLinks').innerHTML=WORLDS.map((w,i)=>'<a href="'+w.url+'" target="_blank" rel="noopener">'+u.wn[i][0]+'<small>'+u.wn[i][1]+'</small></a>').join('');
+ faces.forEach(capFace);document.getElementById('aBookT').textContent=u.act[0];document.getElementById('aVoucherT').textContent=u.act[1];document.getElementById('menuT').textContent=u.act[2];window.__resetCzat&&window.__resetCzat();
+ const q=new URLSearchParams(location.search);q.set('lang',lang);history.replaceState(null,'','?'+q.toString());
+}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+setLang(LANG);
+})();
+</script>
+</body>
+</html>
