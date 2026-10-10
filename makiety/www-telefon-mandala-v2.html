@@ -301,6 +301,40 @@ body.locked{overflow:hidden}
 .actions{margin-top:calc(-1*(var(--H)*.025 + 112px))}
 @media (max-width:360px){.actions{margin-top:calc(-1*(var(--H)*.025 + 96px))}}
 @media (min-width:700px){.actions{margin-top:calc(-1*(var(--H)*.025 + 150px))}}
+
+/* ═══ 10.10 13:06 — rolka większa, guziki niżej, światy i stopka mniejsze, kolory rolki jak na komputerze ═══ */
+:root{--H:clamp(340px,calc(100vh - 212px),900px)}
+@supports (height:100svh){:root{--H:clamp(340px,calc(100svh - 212px),900px)}}
+.app{gap:4px}
+.actions{margin-top:calc(-1*(var(--H)*.025 + 84px))}
+@media (max-width:360px){.actions{margin-top:calc(-1*(var(--H)*.025 + 72px))}}
+@media (min-width:700px){.actions{margin-top:calc(-1*(var(--H)*.025 + 112px))}}
+/* ciepła złota poświata za rolką i złote ramki zdjęć — jak na stronie komputerowej */
+.hero .reel{background:radial-gradient(55% 48% at 50% 50%,rgba(200,164,92,.20),rgba(200,164,92,.06) 55%,transparent 75%)}
+.hero .face{border:1px solid rgba(214,180,112,.42);box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 22px rgba(200,164,92,.12),inset 0 1px 0 rgba(255,247,224,.10)}
+.hero .face::after{background:linear-gradient(180deg,rgba(40,26,12,.08) 0,rgba(9,6,3,0) 40%,rgba(9,6,3,.35) 100%)}
+.hero .face img{filter:sepia(.12) saturate(1.05) brightness(1.02)}
+.hero .sprocket{opacity:.6}
+/* światy + Zapytaj + stopka — trochę mniejsze, proporcjonalnie */
+.foot{gap:4px}
+.worlds{padding:5px 10px 3px}
+.rail-title{font-size:8.5px;letter-spacing:.3em;margin-bottom:6px}
+.world-rail{justify-content:center;gap:16px}
+.wbtn{gap:4px}
+.wbtn small{font-size:7px}
+.globe,.orb-face{width:42px;height:42px}
+.orb-face svg{width:23px;height:23px}.orb-face img{width:30px}.orb-face .lock img{width:25px}.orb-face .lock b{font-size:4px}
+.ai-dot{height:47px;padding:3px 15px 3px 3px;gap:9px}
+.ai-portrait{width:39px;height:39px}
+.ask-mark{width:15px;height:15px}.ask-mark svg{width:8px;height:8px}
+.ask-word{font-size:9.5px;letter-spacing:.18em}
+.legal{font-size:9px;gap:9px}
+.legal a{padding:6px 2px}
+.soc a{width:28px;height:28px}.soc svg{width:15px;height:15px}
+@media (max-width:360px){.globe,.orb-face{width:36px;height:36px}.ai-dot{height:42px}.ai-portrait{width:34px;height:34px}.world-rail{gap:10px}.legal{font-size:8px}}
+@media (min-width:700px){:root{--H:clamp(340px,calc(100svh - 240px),900px)}.globe,.orb-face{width:56px;height:56px}.orb-face svg{width:31px;height:31px}.orb-face img{width:40px}.orb-face .lock img{width:33px}.orb-face .lock b{font-size:5.2px}
+  .ai-dot{height:62px}.ai-portrait{width:52px;height:52px}.ask-word{font-size:12px}.rail-title{font-size:11px}.wbtn small{font-size:9px}.legal{font-size:11px}}
+.app{padding-bottom:calc(env(safe-area-inset-bottom) + 4px)}
 </style>
 </head>
 <body>
