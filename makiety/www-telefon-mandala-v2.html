@@ -236,7 +236,7 @@ html[lang="th"] .node span{font-size:max(7.5px,calc(var(--S)*.022))}
 :root{--S:clamp(276px,min(calc(100vw - 20px),calc(100vh - 150px)),560px);--H:clamp(300px,calc(100vh - 318px),760px)}
 @supports (height:100svh){:root{--S:clamp(276px,min(calc(100vw - 20px),calc(100svh - 150px)),560px);--H:clamp(300px,calc(100svh - 318px),760px)}}
 .hero{position:relative;flex:none;width:100vw;height:var(--H);margin:0 calc(-1*var(--pad));touch-action:pan-y;user-select:none;-webkit-user-select:none;animation:fadeIn 1s ease-out .8s both}
-.hero .reel{position:absolute;inset:0;left:0;top:0;width:100%;height:100%;transform:none;perspective:1300px;perspective-origin:50% 45%;
+.hero .reel{position:absolute;inset:0;left:0;top:0;width:100%;height:100%;transform:none;perspective:1300px;perspective-origin:50% 50%;
   -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
 .hero .face img{filter:none}
 .hero .face::after{background:linear-gradient(180deg,rgba(9,6,3,.55) 0,rgba(9,6,3,0) 26%,rgba(9,6,3,0) 70%,rgba(9,6,3,.6))}
@@ -248,7 +248,7 @@ html[lang="th"] .node span{font-size:max(7.5px,calc(var(--S)*.022))}
 .hero-arrow.l{left:10px}.hero-arrow.r{right:10px}
 .hero-arrow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 
-.actions{position:relative;z-index:6;flex:none;margin-top:-58px;display:flex;align-items:center;justify-content:center;gap:clamp(14px,5vw,30px);animation:fadeUp .7s var(--ease) 1.3s both}
+.actions{position:relative;z-index:6;flex:none;margin-top:-44px;display:flex;align-items:center;justify-content:center;gap:clamp(14px,5vw,30px);animation:fadeUp .7s var(--ease) 1.3s both}
 .act{width:78px;height:78px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
   background:linear-gradient(145deg,#dcc496 0%,#bea06b 100%);border:2px solid #9b783f;outline:1px solid rgba(230,208,160,.6);outline-offset:3px;
   box-shadow:0 10px 26px rgba(0,0,0,.5),inset 0 1px 3px rgba(255,248,225,.4);animation:mandalaPulse 4s linear 2.4s infinite}
@@ -405,8 +405,9 @@ for(let i=0;i<FACES;i++){
 function capFace(f){const i=+f.dataset.idx;if(i<0)return;f.querySelector('.cap').textContent=CAP[capKey(IMG[i])][LANG];}
 function setFace(f,idx){if(+f.dataset.idx===idx)return;f.dataset.idx=idx;const im=f.firstChild;im.src=IMG[idx];im.style.objectPosition=POS[idx];im.alt=CAP[capKey(IMG[idx])][LANG];capFace(f);}
 let R=300;
+function fitFace(fwA,fhA,P){const k=1/Math.tan(STEP/2*Math.PI/180)/2;const fw=fwA*P/(P+k*fwA);const sc=P/(P-k*fw);return [Math.round(fw),Math.round(fhA/sc)];}
 function layout(){
- const W=hero.clientWidth,H=hero.clientHeight,fw=Math.round(Math.min(W*.74,H*.82,620)),fh=Math.round(H*.9);
+ const W=hero.clientWidth,H=hero.clientHeight,P=1300,ff=fitFace(Math.min(W*.8,H*.78,640),H*.92,P),fw=ff[0],fh=ff[1];
  R=Math.round(fw/2/Math.tan(STEP/2*Math.PI/180));
  faces.forEach((f,i)=>{f.style.width=fw+'px';f.style.height=fh+'px';f.style.left=-fw/2+'px';f.style.top=-fh/2+'px';
   f.style.transform='rotateY('+(i*STEP)+'deg) translateZ('+R+'px)';});
@@ -557,7 +558,7 @@ function setLang(lang){
  document.getElementById('worldsTitle').textContent=u.wt;document.getElementById('closeWorlds').setAttribute('aria-label',u.close);
  document.getElementById('worldsLinks').innerHTML=WORLDS.map((w,i)=>'<a href="'+w.url+'" target="_blank" rel="noopener">'+u.wn[i][0]+'<small>'+u.wn[i][1]+'</small></a>').join('');
  faces.forEach(capFace);document.getElementById('aBookT').textContent=u.act[0];document.getElementById('aVoucherT').textContent=u.act[1];document.getElementById('menuT').textContent=u.act[2];window.__resetCzat&&window.__resetCzat();
- const q=new URLSearchParams(location.search);q.set('lang',lang);history.replaceState(null,'','?'+q.toString());
+ const q=new URLSearchParams(location.search);q.set('lang',lang);history.replaceState(null,'',location.pathname+'?'+q.toString());
 }
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 setLang(LANG);

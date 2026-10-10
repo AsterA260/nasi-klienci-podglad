@@ -65,7 +65,7 @@ a{color:inherit;text-decoration:none}
   --d:calc(var(--S)*.235);--ro:calc(var(--S)*.378);--hub:calc(var(--S)*.40)}
 /* rolka zdjęć (walec 3D) — za mandalą, na całą szerokość ekranu */
 .reel{position:absolute;left:50%;top:50%;width:100vw;height:calc(var(--S)*.96);transform:translate(-50%,-50%);
-  perspective:calc(var(--S)*3.4);perspective-origin:50% 46%;pointer-events:none;
+  perspective:calc(var(--S)*3.4);perspective-origin:50% 50%;pointer-events:none;
   -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);
   animation:fadeIn 1s ease-out .9s both}
 .reel-v{position:absolute;top:-2%;bottom:-2%;left:50%;width:100vw;transform:translateX(-50%);pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
@@ -246,6 +246,12 @@ html[lang="th"] .node span{font-size:max(7.5px,calc(var(--S)*.022))}
 html[lang="th"] .node b{font-size:9.5px;letter-spacing:0}
 @media (max-width:360px){.stage{--d:40px;--hub:74px}.node svg{width:18px;height:18px}.node b{font-size:7.2px}}
 @media (min-width:700px){.stage{--d:60px;--hub:112px}.node svg{width:27px;height:27px}.node b{font-size:10px}.hub svg{width:54px;height:54px}.hub span{font-size:9px}}
+
+/* rolka w całości: bez wygaszania góry/dołu i bez przyciemnienia środka, zdjęcia jasne jak na komputerze */
+.reel-v{-webkit-mask-image:none;mask-image:none}
+.stage::before{display:none}
+.face img{filter:none}
+.face::after{background:linear-gradient(180deg,rgba(9,6,3,0) 55%,rgba(9,6,3,.45))}
 </style>
 </head>
 <body>
@@ -352,8 +358,9 @@ for(let i=0;i<FACES;i++){
 }
 function setFace(f,idx){if(+f.dataset.idx===idx)return;f.dataset.idx=idx;const im=f.firstChild;im.src=IMG[idx];im.style.objectPosition=POS[idx];}
 let R=300;
+function fitFace(fwA,fhA,P){const k=1/Math.tan(STEP/2*Math.PI/180)/2;const fw=fwA*P/(P+k*fwA);const sc=P/(P-k*fw);return [Math.round(fw),Math.round(fhA/sc)];}
 function layout(){
- const S=stage.clientWidth,fw=Math.round(S*.6),fh=Math.round(S*.9);
+ const S=stage.clientWidth,P=S*3.4,ff=fitFace(Math.min(S*.82,innerWidth*.8),S*.94,P),fw=ff[0],fh=ff[1];
  R=Math.round(fw/2/Math.tan(STEP/2*Math.PI/180));
  faces.forEach((f,i)=>{f.style.width=fw+'px';f.style.height=fh+'px';f.style.left=-fw/2+'px';f.style.top=-fh/2+'px';
   f.style.transform='rotateY('+(i*STEP)+'deg) translateZ('+R+'px)';});
@@ -500,7 +507,7 @@ function setLang(lang){
  document.getElementById('worldsTitle').textContent=u.wt;document.getElementById('closeWorlds').setAttribute('aria-label',u.close);
  document.getElementById('worldsLinks').innerHTML=WORLDS.map((w,i)=>'<a href="'+w.url+'" target="_blank" rel="noopener">'+u.wn[i][0]+'<small>'+u.wn[i][1]+'</small></a>').join('');
  lastCap='';window.__resetCzat&&window.__resetCzat();
- const q=new URLSearchParams(location.search);q.set('lang',lang);history.replaceState(null,'','?'+q.toString());
+ const q=new URLSearchParams(location.search);q.set('lang',lang);history.replaceState(null,'',location.pathname+'?'+q.toString());
 }
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 setLang(LANG);
