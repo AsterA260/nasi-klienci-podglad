@@ -231,6 +231,21 @@ html[lang="th"] .node span{font-size:max(7.5px,calc(var(--S)*.022))}
   .curtain{display:none}.bg,.globe-in,.rail-title{animation:none}
   .hdr,.reel,.node,.node.primary,.hub,.scene-bar,.foot{animation:none!important;opacity:1!important;filter:none!important}
 }
+
+/* ═══ MAŁE PRZYCISKI (10.10, prośba Norberta): kółka wielkości „Szkoły”, podpis pod kółkiem, środek proporcjonalnie ═══ */
+.stage{--d:46px;--hub:84px}
+.node{padding:0;overflow:visible;border-width:1.5px;outline-offset:2px}
+.node svg{width:21px;height:21px}
+.node b{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:7px;max-width:none;white-space:nowrap;
+  font-size:8px;letter-spacing:.08em;color:#f3dfb2;text-shadow:0 1px 3px #000,0 0 10px rgba(0,0,0,.9)}
+.node span{display:none}
+.node.primary b{color:#f6e3b4}
+.hub b{display:none}
+.hub svg{width:40px;height:40px}
+.hub span{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:8px;white-space:nowrap;font-size:7.5px;letter-spacing:.22em;color:var(--gold-l);text-shadow:0 1px 3px #000,0 0 10px rgba(0,0,0,.9)}
+html[lang="th"] .node b{font-size:9.5px;letter-spacing:0}
+@media (max-width:360px){.stage{--d:40px;--hub:74px}.node svg{width:18px;height:18px}.node b{font-size:7.2px}}
+@media (min-width:700px){.stage{--d:60px;--hub:112px}.node svg{width:27px;height:27px}.node b{font-size:10px}.hub svg{width:54px;height:54px}.hub span{font-size:9px}}
 </style>
 </head>
 <body>
