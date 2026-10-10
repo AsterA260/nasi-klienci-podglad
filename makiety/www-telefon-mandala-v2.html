@@ -235,9 +235,13 @@ html[lang="th"] .node span{font-size:max(7.5px,calc(var(--S)*.022))}
 /* ═══ WERSJA 2: jasna rolka + 3 guziki, mandala dopiero po kliknięciu lotosu ═══ */
 :root{--S:clamp(276px,min(calc(100vw - 20px),calc(100vh - 150px)),560px);--H:clamp(300px,calc(100vh - 318px),760px)}
 @supports (height:100svh){:root{--S:clamp(276px,min(calc(100vw - 20px),calc(100svh - 150px)),560px);--H:clamp(300px,calc(100svh - 318px),760px)}}
-.hero{position:relative;flex:none;width:100vw;height:var(--H);margin:0 calc(-1*var(--pad));touch-action:pan-y;user-select:none;-webkit-user-select:none;animation:fadeIn 1s ease-out .8s both}
-.hero .reel{position:absolute;inset:0;left:0;top:0;width:100%;height:100%;transform:none;perspective:1300px;perspective-origin:50% 50%;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
+.hero{position:relative;flex:none;width:100vw;height:var(--H);margin:6px calc(-1*var(--pad)) 0;touch-action:pan-y;user-select:none;-webkit-user-select:none;animation:fadeIn 1s ease-out .8s both}
+.hero .reel{position:absolute;inset:0;left:0;top:0;width:100%;height:100%;transform:none;perspective:1300px;perspective-origin:50% 54%;
+  -webkit-mask-image:none;mask-image:none}
+.hero .cyl{top:54%}
+.hero::before,.hero::after{content:"";position:absolute;top:-4%;bottom:-4%;width:8%;z-index:2;pointer-events:none}
+.hero::before{left:0;background:linear-gradient(90deg,rgba(13,9,5,.92),rgba(13,9,5,0))}
+.hero::after{right:0;background:linear-gradient(270deg,rgba(13,9,5,.92),rgba(13,9,5,0))}
 .hero .face img{filter:none}
 .hero .face::after{background:linear-gradient(180deg,rgba(9,6,3,.55) 0,rgba(9,6,3,0) 26%,rgba(9,6,3,0) 70%,rgba(9,6,3,.6))}
 .face .cap{position:absolute;left:18px;right:18px;top:20px;z-index:3;font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.1;color:var(--cream);text-shadow:0 2px 14px #000}
@@ -407,7 +411,7 @@ function setFace(f,idx){if(+f.dataset.idx===idx)return;f.dataset.idx=idx;const i
 let R=300;
 function fitFace(fwA,fhA,P){const k=1/Math.tan(STEP/2*Math.PI/180)/2;const fw=fwA*P/(P+k*fwA);const sc=P/(P-k*fw);return [Math.round(fw),Math.round(fhA/sc)];}
 function layout(){
- const W=hero.clientWidth,H=hero.clientHeight,P=1300,ff=fitFace(Math.min(W*.8,H*.78,640),H*.92,P),fw=ff[0],fh=ff[1];
+ const W=hero.clientWidth,H=hero.clientHeight,P=1300,ff=fitFace(Math.min(W*.78,H*.74,620),H*.84,P),fw=ff[0],fh=ff[1];
  R=Math.round(fw/2/Math.tan(STEP/2*Math.PI/180));
  faces.forEach((f,i)=>{f.style.width=fw+'px';f.style.height=fh+'px';f.style.left=-fw/2+'px';f.style.top=-fh/2+'px';
   f.style.transform='rotateY('+(i*STEP)+'deg) translateZ('+R+'px)';});
